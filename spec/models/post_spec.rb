@@ -3,8 +3,9 @@ require 'rails_helper'
 RSpec.describe Post, type: :model do
 
   describe 'validations' do
-    it { should validate_presence_of :emotion_id }
+    it { should validate_presence_of :emotion_id } #add validation for emotion id existing
     it { should validate_numericality_of :emotion_id }
+    it { should validate_associated :emotion }
     
     it { should validate_presence_of :description }
 
@@ -13,6 +14,7 @@ RSpec.describe Post, type: :model do
 
     it { should validate_presence_of :tone }
     
+    it { should define_enum_for(:post_status).with_values([:private, :public])}
    
   end
 
