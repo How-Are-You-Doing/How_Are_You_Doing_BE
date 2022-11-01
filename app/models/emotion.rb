@@ -1,0 +1,3 @@
+class Emotion < ApplicationRecord
+  
+end
