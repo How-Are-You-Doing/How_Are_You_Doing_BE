@@ -10,14 +10,14 @@ RSpec.describe Friend do
     it { should validate_numericality_of :followee_id }
 
     it { should validate_presence_of :request_status }
-    it { should validate_numericality_of :request_status }
+    # it { should validate_numericality_of :request_status }
 
     it { should define_enum_for(:request_status).with_values([:pending, :accepted, :rejected])}
   end
 
   describe 'relationships' do
-    it { should have_many :foll}
-    
+    it { should belong_to :followee}
+    it { should belong_to :follower}
   end
 
 end
