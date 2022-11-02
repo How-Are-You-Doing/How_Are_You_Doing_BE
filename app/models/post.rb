@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-  enum post_status: { private: 0, public: 1 }
+  enum post_status: { personal: 0, shared: 1 }
   belongs_to :user
   has_one :emotion
 

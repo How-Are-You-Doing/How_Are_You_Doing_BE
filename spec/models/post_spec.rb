@@ -14,7 +14,7 @@ RSpec.describe Post, type: :model do
 
     it { should validate_presence_of :tone }
     
-    it { should define_enum_for(:post_status).with_values([:private, :public])}
+    it { should define_enum_for(:post_status).with_values([:personal, :shared])}
    
   end
 
