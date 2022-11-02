@@ -12,5 +12,4 @@ RSpec.describe Emotion, type: :model do
   describe 'relationships' do
     it { should have_many(:posts) }
   end
-
 end
