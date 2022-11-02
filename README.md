@@ -21,7 +21,6 @@
 - `bundle install`
 - `rails db:create`
 - `rails db:migrate`
-- Install Figaro with `bundle exec figaro install` to create an `application.yml` file locally (this to be updated with any needed ENV variables!!!)
 
 ## Endpoints
 
