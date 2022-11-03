@@ -9,19 +9,11 @@ class User < ApplicationRecord
 
   validates_presence_of :name, :email, :google_id
 
-  def accepted_friend_ids
-    followed_users.where(request_status: "accepted").pluck(:followee_id)
-  end
-
   def all_friend_ids
     followed_users.pluck(:followee_id)
   end
 
-  def pending_friend_ids
-    followed_users.where(request_status: "pending").pluck(:followee_id)
-  end
-
-  def rejected_friend_ids
-    followed_users.where(request_status: "rejected").pluck(:followee_id)
+  def friends_by_status(status)
+    followed_users.where(request_status: status).pluck(:followee_id)
   end
 end
