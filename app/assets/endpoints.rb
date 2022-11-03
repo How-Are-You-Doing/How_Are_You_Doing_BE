@@ -198,3 +198,23 @@ post 'api/v1/users'
 	"status" : 201
 }
 
+
+get '/api/v1/users?by_email=#{email}'
+#this endpoint would allow a user to find a friend by searching for them by name and email at the same time 
+
+(A)
+{ “data” : 
+	{ }
+}
+
+(B)
+{ “data” : 
+	{ 
+		“id”: “36” ,
+	“type": "user",
+	"attributes": {
+		"name": "Jacob Methusula"	 
+		}
+	}
+}
+
