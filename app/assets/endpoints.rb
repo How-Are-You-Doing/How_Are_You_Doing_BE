@@ -193,9 +193,10 @@ get 'api/v1/users?search=<google_id>'
 
 post 'api/v1/users'
 #pass in info through headers
+#201 return status code
 
 { 
-	"status" : 201
+	"message" : "User successfully created"
 }
 
 
