@@ -70,7 +70,7 @@ post 'api/v1/users'
 ## Search for a friend using their email address
 get '/api/v1/users?by_email=#{email}'
 
-<img src="./app/assets/images/search_friend_endpoint.jpg" "  />
+<img src="./app/assets/images/search_friend_endpoint.jpg"  />
 
 
 
