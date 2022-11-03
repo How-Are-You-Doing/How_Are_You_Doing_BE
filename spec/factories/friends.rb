@@ -1,4 +1,5 @@
 require 'faker'
+
 FactoryBot.define do
   factory :friend do
     association :follower, factory: :user

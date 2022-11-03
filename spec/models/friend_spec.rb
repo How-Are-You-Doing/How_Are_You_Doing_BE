@@ -20,4 +20,6 @@ RSpec.describe Friend do
     it { should belong_to :follower}
   end
 
+
+
 end
