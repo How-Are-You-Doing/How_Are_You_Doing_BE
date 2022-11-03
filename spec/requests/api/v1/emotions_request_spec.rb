@@ -6,7 +6,7 @@ describe 'Emotions API' do
       it 'sends a list of all emotions' do
         create_list(:emotion, 5)
 
-        get 'api/v1/post_emotions'
+        get '/api/v1/post_emotions'
 
         expect(response).to be successful
 
