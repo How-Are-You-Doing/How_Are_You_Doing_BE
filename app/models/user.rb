@@ -12,4 +12,8 @@ class User < ApplicationRecord
   def accepted_friend_ids
     followed_users.where(request_status: "accepted").pluck(:followee_id)
   end
+
+  def all_friend_ids
+    followed_users.pluck(:followee_id)
+  end
 end
