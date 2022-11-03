@@ -16,4 +16,12 @@ class User < ApplicationRecord
   def all_friend_ids
     followed_users.pluck(:followee_id)
   end
+
+  def pending_friend_ids
+    followed_users.where(request_status: "pending").pluck(:followee_id)
+  end
+
+  def rejected_friend_ids
+    followed_users.where(request_status: "rejected").pluck(:followee_id)
+  end
 end
