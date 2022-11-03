@@ -4,9 +4,14 @@ describe 'Posts API' do
   describe 'user post index' do
     describe 'happy path' do
       it 'sends a list of all posts for a user' do
-        create_list(:post, 5)
+        user = create(:user)
+        posts = create_list(:post, 5, user_id: user)
 
-        get '/api/v1/users/history'
+        require "pry"; binding.pry
+
+        headers = {"HTTP_USER" => "user.google_id"}
+
+        get '/api/v1/users/history', headers: headers
 
         expect(response).to be_successful
 
