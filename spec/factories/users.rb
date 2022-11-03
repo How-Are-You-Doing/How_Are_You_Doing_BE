@@ -1,9 +1,11 @@
 require 'faker'
 
+oauth_hash = Faker::Omniauth.google
+
 FactoryBot.define do
   factory :user do
     name { Faker::Name.name }
     email { Faker::Internet.email }
-    phone_number { Faker::PhoneNumber.phone_number }
+    google_id { oauth_hash[:uid] }
   end
 end 
