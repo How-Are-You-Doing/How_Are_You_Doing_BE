@@ -3202,4 +3202,284 @@ http_interactions:
         was inspired to learn to fly."}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
         BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/inspire","https://en.wiktionary.org/wiki/inspired"]}]'
   recorded_at: Thu, 03 Nov 2022 05:11:16 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/terrified
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Thu, 03 Nov 2022 05:16:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '960'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '449'
+      X-Ratelimit-Reset:
+      - '1667452597'
+      Etag:
+      - W/"3c0-GOXXekcO+dviX8fgRo/PibGOCEk"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"terrified","phonetic":"/ˈtɛɹɪfaɪd/","phonetics":[{"text":"/ˈtɛɹɪfaɪd/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/terrified-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=2454339","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Extremely
+        frightened.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"verb","definitions":[{"definition":"To
+        frighten greatly; to fill with terror.","synonyms":[],"antonyms":[]},{"definition":"To
+        menace or intimidate.","synonyms":[],"antonyms":[]},{"definition":"To make
+        terrible.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/terrified","https://en.wiktionary.org/wiki/terrify"]}]'
+  recorded_at: Thu, 03 Nov 2022 05:16:23 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/exuberant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Thu, 03 Nov 2022 05:16:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '448'
+      X-Ratelimit-Reset:
+      - '1667452597'
+      Etag:
+      - W/"478-6k3QdwFfsVj3j/Dia+qsvf1qx+U"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"exuberant","phonetic":"/ɪɡˈzuːbəɹənt/","phonetics":[{"text":"/ɪɡˈzuːbəɹənt/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/exuberant-au.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=75796669","license":{"name":"BY-SA
+        4.0","url":"https://creativecommons.org/licenses/by-sa/4.0"}},{"text":"/ɪɡˈzuːbəɹənt/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/exuberant-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=363346"}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"(of
+        people) Very high-spirited; extremely energetic and enthusiastic.","synonyms":["buoyant","cheerful","high-spirited"],"antonyms":[],"example":"exuberant
+        feeling"},{"definition":"(of things that grow) Abundant, luxuriant.","synonyms":["profuse","superabundant"],"antonyms":[],"example":"exuberant
+        foliage"}],"synonyms":["buoyant","cheerful","high-spirited","profuse","superabundant"],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/exuberant"]}]'
+  recorded_at: Thu, 03 Nov 2022 05:16:23 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/rattled
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Thu, 03 Nov 2022 05:16:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '447'
+      X-Ratelimit-Reset:
+      - '1667452597'
+      Etag:
+      - W/"59e-Ag/LbL1eq4V5LMCulcXDMGYVeeE"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"rattled","phonetics":[{"audio":"https://api.dictionaryapi.dev/media/pronunciations/en/rattled-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=2453664","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        create a rattling sound by shaking or striking.","synonyms":[],"antonyms":[],"example":"Rattle
+        the can of cat treats if you need to find Fluffy."},{"definition":"To scare,
+        startle, unsettle, or unnerve.","synonyms":[],"antonyms":[]},{"definition":"To
+        make a rattling noise; to make noise by or from shaking.","synonyms":[],"antonyms":[],"example":"I
+        wish the dashboard in my car would quit rattling."},{"definition":"To assail,
+        annoy, or stun with a ratting noise.","synonyms":[],"antonyms":[]},{"definition":"To
+        scold; to rail at.","synonyms":[],"antonyms":[]},{"definition":"To drive or
+        ride briskly, so as to make a clattering.","synonyms":[],"antonyms":[],"example":"We
+        rattled along for a couple of miles."},{"definition":"To make a clatter with
+        one''s voice; to talk rapidly and idly; often with on or away.","synonyms":[],"antonyms":[],"example":"She
+        rattled on for an hour."}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/rattle","https://en.wiktionary.org/wiki/rattled"]}]'
+  recorded_at: Thu, 03 Nov 2022 05:16:23 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/cranky
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Thu, 03 Nov 2022 05:16:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '972'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '446'
+      X-Ratelimit-Reset:
+      - '1667452597'
+      Etag:
+      - W/"3cc-IsTBe+IG5U5E7w9mPqzr/UNmd7o"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"cranky","phonetic":"/ˈkɹæŋki/","phonetics":[{"text":"/ˈkɹæŋki/","audio":""},{"audio":"https://api.dictionaryapi.dev/media/pronunciations/en/cranky-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=378768"}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Weak,
+        unwell.","synonyms":[],"antonyms":[]},{"definition":"(of a machine, etc.)
+        Not in good working condition.","synonyms":["shaky"],"antonyms":[]},{"definition":"Grouchy,
+        grumpy, irritable; easily upset.","synonyms":[],"antonyms":[],"example":"He
+        got home from a long day at work tired and cranky."},{"definition":"Not in
+        perfect mental working order; eccentric, peculiar.","synonyms":[],"antonyms":[]},{"definition":"Full
+        of spirit; spirited.","synonyms":[],"antonyms":[]}],"synonyms":["shaky"],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/cranky"]}]'
+  recorded_at: Thu, 03 Nov 2022 05:16:24 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/humiliated
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Thu, 03 Nov 2022 05:16:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '728'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '445'
+      X-Ratelimit-Reset:
+      - '1667452597'
+      Etag:
+      - W/"2d8-/SeD1B9NtJ8Zp53Z8hs4MLwOo4Q"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"humiliated","phonetics":[],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        injure the dignity and self-respect of.","synonyms":[],"antonyms":[]},{"definition":"To
+        make humble; to lower in condition or status.","synonyms":[],"antonyms":[]}],"synonyms":["debase","demean","disgrace","humble","mortify","shame"],"antonyms":["dignify","honor"]},{"partOfSpeech":"adjective","definitions":[{"definition":"Deprived
+        of dignity or self-respect","synonyms":[],"antonyms":[]}],"synonyms":["degraded"],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/humiliate","https://en.wiktionary.org/wiki/humiliated"]}]'
+  recorded_at: Thu, 03 Nov 2022 05:16:24 GMT
 recorded_with: VCR 6.1.0
