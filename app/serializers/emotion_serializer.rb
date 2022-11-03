@@ -1,4 +1,5 @@
 class EmotionSerializer 
   include JSONAPI::Serializer
-  attributes :term, :definition
+  attributes :emotion, &:term
+  attributes :definition
 end

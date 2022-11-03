@@ -1,8 +1,8 @@
 class Api::V1::EmotionsController < ApplicationController 
 
   def index
-    emotions = Emotion.get_definitions
-    render jason: EmotionSerializer.new(emotions)
+    Emotion.get_definitions
+    render json: EmotionSerializer.new(Emotion.all)
   end
 
 end
