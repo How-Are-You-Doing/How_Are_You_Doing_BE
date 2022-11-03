@@ -20,4 +20,14 @@ RSpec.describe Friend do
     it { should belong_to :follower}
   end
 
+  describe 'instance methods' do
+    describe '#accepted_friends' do
+      user = create(:user)
+
+      accepted_friends = create_list(:friends, 3, follower: user, status: 1)
+      rejected_friends = create_list(:friends, 3, follower: user, status: 2)
+      pending_friends = create_list(:friends, 3, follower: user, status: 0)
+    end
+  end
+
 end
