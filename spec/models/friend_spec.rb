@@ -27,6 +27,8 @@ RSpec.describe Friend do
       accepted_friends = create_list(:friends, 3, follower: user, status: 1)
       rejected_friends = create_list(:friends, 3, follower: user, status: 2)
       pending_friends = create_list(:friends, 3, follower: user, status: 0)
+
+      expect(user.accepted_friends.count).to eq(3)
     end
   end
 

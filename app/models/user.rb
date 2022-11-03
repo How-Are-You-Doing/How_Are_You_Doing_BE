@@ -9,4 +9,9 @@ class User < ApplicationRecord
 
   validates_presence_of :name, :email, :phone_number
 
+  def accepted_friends
+    followees
+    .joins(:friends)
+    .where(request_status: "accepted")
+  end
 end
