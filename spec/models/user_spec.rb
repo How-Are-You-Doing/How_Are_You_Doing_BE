@@ -27,9 +27,13 @@ RSpec.describe User do
         rejected_friends = create_list(:friend, 3, follower: user, request_status: 2)
         pending_friends = create_list(:friend, 3, follower: user, request_status: 0)
         randos = create_list(:friend, 5)
-
-        binding.pry
-        expect(user.accepted_friends.count).to eq(3)
+       
+        x = user.accepted_friend_ids
+    
+        expect(user.accepted_friend_ids.count).to eq(3)
+        expect(user.accepted_friend_ids).to be_a(Array)
+        expect(user.accepted_friend_ids).to include(accepted_friends.first.followee_id)
+        expect(user.accepted_friend_ids).to_not include(rejected_friends.last.followee_id)
       end
     end
   end
