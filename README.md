@@ -67,7 +67,10 @@ post 'api/v1/users'
 
 <img src="./app/assets/images/create_user_endpoint.jpg" alt="This is what we expect to return when we query for friends of a user with status pending"  />
 
+## Search for a friend using their email address
+get '/api/v1/users?by_email=#{email}'
 
+<img src="./app/assets/images/search_friend_endpoint.jpg" "  />
 
 
 
