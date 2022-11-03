@@ -20,20 +20,28 @@ RSpec.describe User do
 
   describe 'instance methods' do
     describe '#accepted_friends' do
-      it 'can determine which of a users friends are accepted' do
+      it 'can determine the ids of which of a users friends are accepted' do
         user = create(:user)
 
         accepted_friends = create_list(:friend, 3, follower: user, request_status: 1)
         rejected_friends = create_list(:friend, 3, follower: user, request_status: 2)
         pending_friends = create_list(:friend, 3, follower: user, request_status: 0)
         randos = create_list(:friend, 5)
-       
-        x = user.accepted_friend_ids
     
         expect(user.accepted_friend_ids.count).to eq(3)
         expect(user.accepted_friend_ids).to be_a(Array)
         expect(user.accepted_friend_ids).to include(accepted_friends.first.followee_id)
         expect(user.accepted_friend_ids).to_not include(rejected_friends.last.followee_id)
+      end
+
+      it 'returns an empty array if a user has no accepted friends' do
+        user = create(:user)
+
+        rejected_friends = create_list(:friend, 3, follower: user, request_status: 2)
+        pending_friends = create_list(:friend, 3, follower: user, request_status: 0)
+        randos = create_list(:friend, 5)
+
+        expect(user.accepted_friend_ids).to eq([])
       end
     end
   end
