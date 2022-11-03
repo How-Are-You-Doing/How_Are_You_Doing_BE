@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/thrilled
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Thu, 03 Nov 2022 03:20:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '449'
+      X-Ratelimit-Reset:
+      - '1667445697'
+      Etag:
+      - W/"4e4-GEF/jXVtScu27zrlf0T+sUeXY8Q"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"thrilled","phonetic":"/θɹɪld/","phonetics":[{"text":"/θɹɪld/","audio":""}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        suddenly excite someone, or to give someone great pleasure; to (figuratively)
+        electrify; to experience such a sensation.","synonyms":[],"antonyms":[]},{"definition":"To
+        (cause something to) tremble or quiver.","synonyms":[],"antonyms":[]},{"definition":"To
+        perforate by a pointed instrument; to bore; to transfix; to drill.","synonyms":[],"antonyms":[]},{"definition":"To
+        hurl; to throw; to cast.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"verb","definitions":[{"definition":"To
+        drill and thread in one operation, using a tool bit that cuts the hole and
+        the threads in one series of computer-controlled movements.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Extremely
+        excited or delighted.","synonyms":[],"antonyms":[],"example":"Ben was thrilled
+        to lead the game."}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/thrill","https://en.wiktionary.org/wiki/thrilled"]}]'
+  recorded_at: Thu, 03 Nov 2022 03:20:16 GMT
+recorded_with: VCR 6.1.0
