@@ -14,9 +14,46 @@ user_4 = User.create!(name: "Randy Bobandy", email: "assistantsupervisor@sunnyva
 user_5 = User.create!(name: "Gon Freecss", email: "gon@hunterassociation.com", google_id: "58544636")
 user_6 = User.create!(name: "Hisoka Morow", email: "hisoka.morow@meteorcity.gov", google_id: "91239464")
 user_7 = User.create!(name: "Jenny", email: "jenny@tommytutone.com", google_id: "8675309")
+#emotions
+emotions_list = CSV.parse(File.read(‘spec/emotions_list/Emotions.csv’), headers:true)
+        @emotions = emotions_list.map {|emotion| Emotion.new(emotion)}
 
-#posts
-u1_p1 = Post.create!(description: "This is the text for user 1 post 1", post_status: 0, tone: "melancholy", emotion_id: 1 user: user_1)
+        #posts
+u1_p1 = Post.create!(description: "This is the text for user 1 post 1", post_status: 0, tone: "melancholy", emotion_id: 1, user: user_1)
+u1_p2 = Post.create!(description: "This is the text for user 1 post 2", post_status: 0, tone: "happy", emotion_id: 2, user: user_1)
+u1_p3 = Post.create!(description: "This is the text for user 1 post 3", post_status: 0, tone: "sad", emotion_id: 3, user: user_1)
+u1_p4 = Post.create!(description: "This is the text for user 1 post 4", post_status: 0, tone: "angry", emotion_id: 4, user: user_1)
+
+u2_p1 = Post.create!(description: "This is the text for user 2 post 1", post_status: 1, tone: "hyped up", emotion_id: 1, user: user_2)
+u2_p2 = Post.create!(description: "This is the text for user 2 post 2", post_status: 1, tone: "relaxed", emotion_id: 5, user: user_2)
+u2_p3 = Post.create!(description: "This is the text for user 2 post 3", post_status: 1, tone: "relaxed", emotion_id: 5, user: user_2)
+u2_p4 = Post.create!(description: "This is the text for user 2 post 4", post_status: 1, tone: "relaxed", emotion_id: 7, user: user_2)
+
+u3_p1 = Post.create!(description: "This is the text for user 3 post 1", post_status: 1, tone: "quizzical", emotion_id: 6, user: user_3)
+u3_p2 = Post.create!(description: "This is the text for user 3 post 2", post_status: 0, tone: "frustrated", emotion_id: 7, user: user_3)
+u3_p3 = Post.create!(description: "This is the text for user 3 post 3", post_status: 1, tone: "psychotic", emotion_id: 8, user: user_3)
+u3_p4 = Post.create!(description: "This is the text for user 3 post 4", post_status: 1, tone: "lazy", emotion_id: 9, user: user_3)
+
+u4_p1 = Post.create!(description: "This is the text for user 4 post 1", post_status: 1, tone: "quizzical", emotion_id: 10, user: user_4)
+u4_p2 = Post.create!(description: "This is the text for user 4 post 2", post_status: 0, tone: "frustrated", emotion_id: 11, user: user_4)
+u4_p3 = Post.create!(description: "This is the text for user 4 post 3", post_status: 0, tone: "psychotic", emotion_id: 12, user: user_4)
+u4_p4 = Post.create!(description: "This is the text for user 4 post 4", post_status: 1, tone: "lazy", emotion_id: 13, user: user_4)
+
+u5_p1 = Post.create!(description: "This is the text for user 5 post 1", post_status: 1, tone: "eager", emotion_id: 14, user: user_5)
+u5_p2 = Post.create!(description: "This is the text for user 5 post 2", post_status: 0, tone: "rushed", emotion_id: 15, user: user_5)
+u5_p3 = Post.create!(description: "This is the text for user 5 post 3", post_status: 0, tone: "banana", emotion_id: 16, user: user_5)
+u5_p4 = Post.create!(description: "This is the text for user 5 post 4", post_status: 1, tone: "melancholy", emotion_id: 17, user: user_5)
+
+u6_p1 = Post.create!(description: "This is the text for user 6 post 1", post_status: 1, tone: "randy", emotion_id: 17, user: user_6)
+u6_p2 = Post.create!(description: "This is the text for user 6 post 2", post_status: 0, tone: "energetic", emotion_id: 18, user: user_6)
+u6_p3 = Post.create!(description: "This is the text for user 6 post 3", post_status: 0, tone: "scared", emotion_id: 19, user: user_6)
+u6_p4 = Post.create!(description: "This is the text for user 6 post 4", post_status: 0, tone: "scary", emotion_id: 20, user: user_6)
+
+u7_p1 = Post.create!(description: "This is the text for user 7 post 1", post_status: 1, tone: "happy", emotion_id: 21, user: user_7)
+u7_p2 = Post.create!(description: "This is the text for user 7 post 2", post_status: 1, tone: "relaxed", emotion_id: 22, user: user_7)
+u7_p3 = Post.create!(description: "This is the text for user 7 post 3", post_status: 0, tone: "frustrated", emotion_id: 1, user: user_7)
+u7_p4 = Post.create!(description: "This is the text for user 7 post 4", post_status: 0, tone: "eager", emotion_id: 23, user: user_7)
+u7_p5 = Post.create!(description: "This is the text for user 7 post 5", post_status: 0, tone: "underwhelmed", emotion_id: 24, user: user_7)
 
 #friends
 u1_u2 = Friend.create!(follower: user_1, followee: user_2, request_status: 1)
@@ -46,3 +83,6 @@ u6_u4 = Friend.create!(follower: user_6, followee: user_4, request_status: 2)
 u7_u1 = Friend.create!(follower: user_7, followee: user_1, request_status: 2)
 u7_u4 = Friend.create!(follower: user_7, followee: user_4, request_status: 2)
 u7_u5 = Friend.create!(follower: user_7, followee: user_4, request_status: 1)
+
+emotions_list = CSV.parse(File.read(‘spec/emotions_list/Emotions.csv’), headers:true)
+        @emotions = emotions_list.map {|emotion| Emotion.new(emotion)}
