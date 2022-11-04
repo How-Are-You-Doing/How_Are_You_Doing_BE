@@ -82,9 +82,14 @@ describe 'Posts API' do
     describe 'happy path' do
       it 'returns a users most recent post if a user has posts' do
         user = create(:user)
-        posts = create_list(:post, 5, user: user)
-
-        get '/api/v1/posts/last'
+        oldest_post = create(:post, user: user, created_at: 100.day.ago)
+        middle_post = create(:post, user: user, created_at: 50.day.ago)
+        newest_post = create(:post, user: user, created_at: 1.day.ago)
+        create_list(:post, 5)
+       
+        headers = {"HTTP_USER" => "#{user.google_id}"}
+        
+        get '/api/v1/posts/last', headers: headers
 
         expect(response).to be_successful
       end

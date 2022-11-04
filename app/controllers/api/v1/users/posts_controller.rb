@@ -9,7 +9,8 @@ class Api::V1::Users::PostsController < ApplicationController
   end
 
   def most_recent
-
+    user = User.find_by(google_id: user_header)
+    
   end
 
   private

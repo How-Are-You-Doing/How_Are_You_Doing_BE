@@ -16,4 +16,8 @@ class User < ApplicationRecord
   def friends_by_status(status)
     followed_users.where(request_status: status).pluck(:followee_id)
   end
+
+  def most_recent_post
+    posts.order(created_at: :desc).first
+  end
 end
