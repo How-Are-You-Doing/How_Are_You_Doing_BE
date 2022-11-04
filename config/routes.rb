@@ -7,6 +7,9 @@ Rails.application.routes.draw do
       resources :users, only: [:create, :index]
       resources :friends, only: [:index]
 
+      namespace :users do
+        resources :posts, only: [:index], path: :history
+      end
     end
   end
 end
