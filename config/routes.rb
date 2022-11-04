@@ -6,7 +6,8 @@ Rails.application.routes.draw do
       resources :emotions, only: [:index]
       resources :users, only: [:create, :index]
       resources :friends, only: [:index, :create, :update]
-
+      resources :posts, only: [:create]
+      get "posts/last", to: "users/posts#most_recent"
       namespace :users do
         resources :posts, only: [:index], path: :history
       end

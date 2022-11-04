@@ -8,6 +8,10 @@ class Api::V1::Users::PostsController < ApplicationController
     end
   end
 
+  def most_recent
+
+  end
+
   private
 
   def user_header

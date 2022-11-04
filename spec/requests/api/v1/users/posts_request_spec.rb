@@ -77,4 +77,19 @@ describe 'Posts API' do
       end
     end
   end
+
+  describe 'user post most_recent' do
+    describe 'happy path' do
+      it 'returns a users most recent post if a user has posts' do
+        user = create(:user)
+        posts = create_list(:post, 5, user: user)
+
+        get '/api/v1/posts/last'
+
+        expect(response).to be_successful
+      end
+    end
+
+  end
+
 end
