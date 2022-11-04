@@ -57,6 +57,23 @@ describe 'Posts API' do
         expect(response).to have_http_status(400)
         
         expect(posts).to have_key(:data)
+        expect(posts[:data]).to be_a(Hash)
+      end
+
+      it 'sends a empty array is user has no posts' do
+        user = create(:user)
+
+        headers = {"HTTP_USER" => "#{user.google_id}"}
+
+        get '/api/v1/users/history', headers: headers
+
+        posts = JSON.parse(response.body, symbolize_names: true)
+
+        expect(response).to be_successful
+
+
+        expect(posts).to have_key(:data)
+        expect(posts[:data]).to be_an(Array)
       end
     end
   end
