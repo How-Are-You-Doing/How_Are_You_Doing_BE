@@ -92,6 +92,39 @@ describe 'Posts API' do
         get '/api/v1/posts/last', headers: headers
 
         expect(response).to be_successful
+
+        post_data = JSON.parse(response.body, symbolize_names: true)
+        post = post_data[:data]
+      
+        expect(post_data).to be_a(Hash)
+        expect(post_data.count).to eq(1)
+
+        expect(post[:id].to_i).to eq(newest_post.id)
+        expect(post[:type]).to eq("post")
+        expect(post[:attributes].count).to eq(5)
+        expect(post[:attributes][:emotion]).to eq(newest_post.emotion.term)
+        expect(post[:attributes][:post_status]).to eq(newest_post.post_status)
+        expect(post[:attributes][:description]).to eq(newest_post.description)
+        expect(post[:attributes][:tone]).to eq(newest_post.tone)
+        expect(post[:attributes][:created_at].to_date).to eq(newest_post.created_at.to_date)
+      end
+    end
+
+    describe 'sad path' do
+      it 'returns an empty array if a user has no posts' do
+        user = create(:user)
+        create_list(:post, 5)
+
+        headers = {"HTTP_USER" => "#{user.google_id}"}
+        
+        get '/api/v1/posts/last', headers: headers
+
+        expect(response).to be_successful
+
+        post_data = JSON.parse(response.body, symbolize_names: true)
+      
+        expect(post_data).to eq({:data=>[]})
+
       end
     end
 
