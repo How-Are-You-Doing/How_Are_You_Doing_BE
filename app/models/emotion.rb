@@ -2,7 +2,7 @@ class Emotion < ApplicationRecord
   has_many :posts
   validates_presence_of :term
   validates_presence_of :definition, on: :update
-  validates_uniqueness_of :term
+  validates_uniqueness_of :term 
 
   def self.get_definitions
     all.each do |emotion|

@@ -97,6 +97,18 @@ RSpec.describe User do
         expect(user.all_friend_ids).to eq([])
       end
     end
+
+    describe "#most_recent_post" do
+      it 'returns a users most recent post' do
+        user = create(:user)
+        oldest_post = create(:post, user: user, created_at: 100.day.ago)
+        middle_post = create(:post, user: user, created_at: 50.day.ago)
+        newest_post = create(:post, user: user, created_at: 1.day.ago)
+        create_list(:post, 5)
+        
+        expect(user.most_recent_post).to eq(newest_post)
+      end
+    end
   end
 
 
