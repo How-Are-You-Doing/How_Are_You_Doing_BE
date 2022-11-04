@@ -109,8 +109,26 @@ RSpec.describe User do
         expect(user.most_recent_post).to eq(newest_post)
       end
     end
+
+    describe "#public_posts" do
+      it 'returns only public/shared posts for a user' do
+        user = create(:user)
+        posts = create_list(:post, 2, user: user, post_status: :personal)
+        posts = create_list(:post, 3, user: user, post_status: :shared)
+        other_users_posts = create_list(:post, 5)
+
+        expect(user.public_posts.count).to eq(3)
+        user.public_posts.each{|post| expect(post.post_status).to eq('shared')}
+      end
+
+      it 'returns no posts if all posts for a user are private/personal' do
+        user = create(:user)
+        posts = create_list(:post, 4, user: user, post_status: :personal)
+        other_users_posts = create_list(:post, 5)
+
+        expect(user.public_posts.count).to eq(0)
+      end
+    end
   end
-
-
 end
 
