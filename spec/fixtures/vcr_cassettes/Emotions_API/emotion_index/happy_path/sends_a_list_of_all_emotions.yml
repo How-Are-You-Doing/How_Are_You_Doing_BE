@@ -4326,4 +4326,773 @@ http_interactions:
         and determined.","synonyms":["headstrong","obstinate","self-willed","spiteful"],"antonyms":[]}],"synonyms":["headstrong","obstinate","self-willed","spiteful","volitional","voluntary"],"antonyms":[]}],"license":{"name":"CC
         BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/wilful","https://en.wiktionary.org/wiki/willful"]}]'
   recorded_at: Thu, 03 Nov 2022 23:15:06 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/emboldened
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 07:57:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '716'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '449'
+      X-Ratelimit-Reset:
+      - '1667548781'
+      Etag:
+      - W/"2cc-0zlw64PaaK1HMnIyL1cNnMj3Lig"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"emboldened","phonetics":[],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        render (someone) bolder or more courageous.","synonyms":[],"antonyms":[]},{"definition":"To
+        encourage, inspire, or motivate.","synonyms":[],"antonyms":[]},{"definition":"To
+        format text in boldface.","synonyms":["boldface"],"antonyms":[]}],"synonyms":["boldface"],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Having
+        been made bold.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/embolden","https://en.wiktionary.org/wiki/emboldened"]}]'
+  recorded_at: Fri, 04 Nov 2022 07:57:12 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/worn
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 07:57:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '448'
+      X-Ratelimit-Reset:
+      - '1667548781'
+      Etag:
+      - W/"11e2-FJtBhTgdV3uFQPGTFMhYBc69TnA"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"worn","phonetic":"/wɔːn/","phonetics":[{"text":"/wɔːn/","audio":""},{"text":"/wɔɹn/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/worn-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1676908","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        carry or have equipped on or about one''s body, as an item of clothing, equipment,
+        decoration, etc.","synonyms":[],"antonyms":[],"example":"He''s wearing some
+        nice pants today.  She wore her medals with pride.  Please wear your seatbelt. 
+        Can you wear makeup and sunscreen at the same time?  He was wearing his lunch
+        after tripping and falling into the buffet."},{"definition":"To have or carry
+        on one''s person habitually, consistently; or, to maintain in a particular
+        fashion or manner.","synonyms":[],"antonyms":[],"example":"He wears eyeglasses. 
+        She wears her hair in braids."},{"definition":"To bear or display in one''s
+        aspect or appearance.","synonyms":[],"antonyms":[],"example":"She wore a smile
+        all day.  He walked out of the courtroom wearing an air of satisfaction."},{"definition":"(with
+        \"it\") To overcome one''s reluctance and endure a (previously specified)
+        situation.","synonyms":[],"antonyms":[],"example":"I know you don''t like
+        working with him, but you''ll just have to wear it."},{"definition":"To eat
+        away at, erode, diminish, or consume gradually; to cause a gradual deterioration
+        in; to produce (some change) through attrition, exposure, or constant use.","synonyms":[],"antonyms":[],"example":"You''re
+        going to wear a hole in the bottom of those shoes.  The water has slowly worn
+        a channel into these rocks.  Long illness had worn the bloom from her cheeks. 
+        Exile had worn the man to a shadow."},{"definition":"To undergo gradual deterioration;
+        become impaired; be reduced or consumed gradually due to any continued process,
+        activity, or use.","synonyms":[],"antonyms":[],"example":"The tiles were wearing
+        thin due to years of children''s feet."},{"definition":"To exhaust, fatigue,
+        expend, or weary.","synonyms":[],"antonyms":[],"example":"His neverending
+        criticism has finally worn my patience.  Toil and care soon wear the spirit. 
+        Our physical advantage allowed us to wear the other team out and win."},{"definition":"To
+        last or remain durable under hard use or over time; to retain usefulness,
+        value, or desirable qualities under any continued strain or long period of
+        time; sometimes said of a person, regarding the quality of being easy or difficult
+        to tolerate.","synonyms":[],"antonyms":[],"example":"Don''t worry, this fabric
+        will wear. These pants will last you for years.  This color wears so well.
+        I must have washed this sweater a thousand times.  I have to say, our friendship
+        has worn pretty well.  It''s hard to get to know him, but he wears well."},{"definition":"(in
+        the phrase \"wearing on (someone)\") To cause annoyance, irritation, fatigue,
+        or weariness near the point of an exhaustion of patience.","synonyms":[],"antonyms":[],"example":"Her
+        high pitched voice is really wearing on me lately."},{"definition":"(of time)
+        To pass slowly, gradually or tediously.","synonyms":[],"antonyms":[],"example":"wear
+        on, wear away.  As the years wore on, we seemed to have less and less in common."},{"definition":"To
+        bring (a sailing vessel) onto the other tack by bringing the wind around the
+        stern (as opposed to tacking when the wind is brought around the bow); to
+        come round on another tack by turning away from the wind. Also written \"ware\".
+        Past: weared, or wore/worn.","synonyms":["gybe"],"antonyms":[]}],"synonyms":["gybe"],"antonyms":[]},{"partOfSpeech":"verb","definitions":[{"definition":"To
+        guard; watch; keep watch, especially from entry or invasion.","synonyms":[],"antonyms":[]},{"definition":"To
+        defend; protect.","synonyms":[],"antonyms":[]},{"definition":"To ward off;
+        prevent from approaching or entering; drive off; repel.","synonyms":[],"antonyms":[],"example":"to
+        wear the wolf from the sheep"},{"definition":"To conduct or guide with care
+        or caution, as into a fold or place of safety.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Damaged
+        and shabby as a result of much use","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/wear","https://en.wiktionary.org/wiki/worn"]}]'
+  recorded_at: Fri, 04 Nov 2022 07:57:12 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/vain
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 07:57:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '447'
+      X-Ratelimit-Reset:
+      - '1667548781'
+      Etag:
+      - W/"457-5290g2eBu5JXN+R2COYCskqDM8Y"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"vain","phonetic":"/veɪn/","phonetics":[{"text":"/veɪn/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/vain-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1243869","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Overly
+        proud of oneself, especially concerning appearance; having a high opinion
+        of one''s own accomplishments with slight reason.","synonyms":[],"antonyms":[]},{"definition":"Having
+        no real substance, value, or importance; empty; void; worthless; unsatisfying.","synonyms":[],"antonyms":[]},{"definition":"Effecting
+        no purpose; pointless, futile.","synonyms":[],"antonyms":[],"example":"vain
+        toil;  a vain attempt"},{"definition":"Showy; ostentatious.","synonyms":[],"antonyms":[]}],"synonyms":["conceited","inflated","puffed
+        up","fruitless","futile","ineffectual","pointless"],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/vain"]}]'
+  recorded_at: Fri, 04 Nov 2022 07:57:13 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/guilty
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 07:57:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '446'
+      X-Ratelimit-Reset:
+      - '1667548781'
+      Etag:
+      - W/"589-AFhU8a65OxyO70hi8+kWTha1YwM"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"guilty","phonetic":"/ˈɡɪl.ti/","phonetics":[{"text":"/ˈɡɪl.ti/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/guilty-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1684630","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"noun","definitions":[{"definition":"A
+        plea by a defendant who does not contest a charge.","synonyms":[],"antonyms":[]},{"definition":"A
+        verdict of a judge or jury on a defendant judged to have committed a crime.","synonyms":[],"antonyms":[]},{"definition":"One
+        who is declared guilty of a crime.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Responsible
+        for a dishonest act.","synonyms":[],"antonyms":[],"example":"He was guilty
+        of cheating at cards."},{"definition":"Judged to have committed a crime.","synonyms":[],"antonyms":[],"example":"The
+        guilty man was led away."},{"definition":"Having a sense of guilt.","synonyms":[],"antonyms":[],"example":"Do
+        you have a guilty conscience?"},{"definition":"Blameworthy.","synonyms":[],"antonyms":[],"example":"I
+        have a guilty secret."}],"synonyms":["culpable","shildy"],"antonyms":["innocent","not
+        guilty"]}],"license":{"name":"CC BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/guilty"]}]'
+  recorded_at: Fri, 04 Nov 2022 07:57:13 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/useless
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 07:57:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '445'
+      X-Ratelimit-Reset:
+      - '1667548781'
+      Etag:
+      - W/"55b-lz3afevetVBax0aByNsGD5H3PXU"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"useless","phonetic":"/ˈjuːs.ləs/","phonetics":[{"text":"/ˈjuːs.ləs/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/useless-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1750049","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Without
+        use or possibility to be used.","synonyms":[],"antonyms":[],"example":"This
+        fork has prongs that are bent. It''s useless now."},{"definition":"Unhelpful,
+        not useful; pointless (of an action).","synonyms":[],"antonyms":[],"example":"I
+        think it''s useless to keep this discussion going. It''s like talking to a
+        wall."},{"definition":"(of a person) Good-for-nothing; not dependable.","synonyms":[],"antonyms":[],"example":"Bill
+        never mows the lawn, takes out the trash or anything. He''s useless, but I
+        love him anyways."},{"definition":"(of a person) Unable to do well at a particular
+        task or thing. Useless is mildly insulting.","synonyms":[],"antonyms":[],"example":"My
+        brother is useless at most computer games, but he is an awesome PS2 player."}],"synonyms":["good-for-nothing","unskillful"],"antonyms":["skillful","useful"]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/useless"]}]'
+  recorded_at: Fri, 04 Nov 2022 07:57:13 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/flustered
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 07:57:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '994'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '444'
+      X-Ratelimit-Reset:
+      - '1667548781'
+      Etag:
+      - W/"3e2-pIfqQqZGFueScXwujXNKSH4HL5o"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"flustered","phonetics":[],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        make hot and rosy, as with drinking.","synonyms":[],"antonyms":[]},{"definition":"(by
+        extension) To confuse; befuddle; throw into panic by making overwrought with
+        confusion.","synonyms":[],"antonyms":[],"example":"He seemed to get flustered
+        when speaking in front of too many people."},{"definition":"To be in a heat
+        or bustle; to be agitated and confused.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Confused,
+        befuddled, in a state of panic by having become overwrought with confusion.","synonyms":[],"antonyms":[],"example":"The
+        speaker became quite flustered when she dropped all her notes."}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/fluster","https://en.wiktionary.org/wiki/flustered"]}]'
+  recorded_at: Fri, 04 Nov 2022 07:57:23 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/addled
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 07:57:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '443'
+      X-Ratelimit-Reset:
+      - '1667548781'
+      Etag:
+      - W/"4d3-KRsLq2BQ4smtc49J+aHuao6dHsI"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"addled","phonetic":"/ˈæ.dəld/","phonetics":[{"text":"/ˈæ.dəld/","audio":""}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"(provincial)
+        To earn, earn by labor; earn money or one''s living.","synonyms":[],"antonyms":[]},{"definition":"(provincial)
+        To thrive or grow; to ripen.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"verb","definitions":[{"definition":"To
+        make addle; to grow addle; to muddle","synonyms":[],"antonyms":[]},{"definition":"To
+        cause fertilised eggs to lose viability, by killing the developing embryo
+        within through shaking, piercing, freezing or oiling, without breaking the
+        shell.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"(of
+        eggs) Bad, rotten; inviable, containing a dead embryo.","synonyms":[],"antonyms":[]},{"definition":"Confused;
+        mixed up.","synonyms":[],"antonyms":[]},{"definition":"Morbid, corrupt, putrid,
+        or barren.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/addle","https://en.wiktionary.org/wiki/addled"]}]'
+  recorded_at: Fri, 04 Nov 2022 07:57:23 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/threatened
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 07:57:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '442'
+      X-Ratelimit-Reset:
+      - '1667548781'
+      Etag:
+      - W/"559-wcGBYNwAquwAC4SEBA8vTR+aIDs"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"threatened","phonetic":"/ˈθɹɛt.n̩d/","phonetics":[{"text":"/ˈθɹɛt.n̩d/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/threatened-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1750013","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        make a threat against someone; to use threats.","synonyms":[],"antonyms":[],"example":"He
+        threatened me with a knife."},{"definition":"To menace, or be dangerous.","synonyms":[],"antonyms":[],"example":"The
+        rocks threatened the ship''s survival."},{"definition":"To portend, or give
+        a warning of.","synonyms":[],"antonyms":[],"example":"The black clouds threatened
+        heavy rain."},{"definition":"To be close to equaling or surpassing (a record,
+        etc.)","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"(of
+        a plant or animal) At risk of becoming endangered in the near future.","synonyms":[],"antonyms":[]},{"definition":"Feeling
+        insecure or vulnerable.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/threaten","https://en.wiktionary.org/wiki/threatened"]}]'
+  recorded_at: Fri, 04 Nov 2022 07:57:23 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/keen
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 07:57:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '441'
+      X-Ratelimit-Reset:
+      - '1667548781'
+      Etag:
+      - W/"c8c-dIcPkkr/B32merzMfbsCqQ9Jueo"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"keen","phonetics":[{"audio":"https://api.dictionaryapi.dev/media/pronunciations/en/keen-au.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=75804076","license":{"name":"BY-SA
+        4.0","url":"https://creativecommons.org/licenses/by-sa/4.0"}},{"text":"/kiːn/","audio":""},{"text":"/kin/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/keen-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1749880","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        make cold, to sharpen.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Often
+        with a prepositional phrase, or with to and an infinitive: showing a quick
+        and ardent responsiveness or willingness; eager, enthusiastic, interested.","synonyms":[],"antonyms":[],"example":"I’m
+        keen on computers."},{"definition":"Fierce, intense, vehement.","synonyms":[],"antonyms":[],"example":"This
+        boy has a keen appetite."},{"definition":"Having a fine edge or point; sharp.","synonyms":[],"antonyms":[]},{"definition":"Acute
+        of mind, having or expressing mental acuteness; penetrating, sharp.","synonyms":[],"antonyms":[]},{"definition":"Acrimonious,
+        bitter, piercing.","synonyms":[],"antonyms":[],"example":"keen satire or sarcasm"},{"definition":"Of
+        cold, wind, etc.: cutting, penetrating, piercing, sharp.","synonyms":[],"antonyms":[],"example":"a
+        keen wind"},{"definition":"Of prices, extremely low as to be competitive.","synonyms":[],"antonyms":[]},{"definition":"Marvelous.","synonyms":[],"antonyms":[],"example":"I
+        just got this peachy keen new dress."},{"definition":"Brave, courageous; audacious,
+        bold.","synonyms":[],"antonyms":[]}],"synonyms":["biting","cutting","piercing","acute","penetrating","shrewd","sharp","ardent","eager","prompt"],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/keen"]},{"word":"keen","phonetics":[{"audio":"https://api.dictionaryapi.dev/media/pronunciations/en/keen-au.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=75804076","license":{"name":"BY-SA
+        4.0","url":"https://creativecommons.org/licenses/by-sa/4.0"}},{"text":"/kiːn/","audio":""},{"text":"/kin/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/keen-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1749880","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"noun","definitions":[{"definition":"A
+        prolonged wail for a deceased person.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"verb","definitions":[{"definition":"To
+        utter a keen.","synonyms":[],"antonyms":[]},{"definition":"To utter with a
+        loud wailing voice or wordless cry.","synonyms":[],"antonyms":[]},{"definition":"To
+        mourn.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/keen"]}]'
+  recorded_at: Fri, 04 Nov 2022 07:57:54 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/embarrassed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 07:57:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '440'
+      X-Ratelimit-Reset:
+      - '1667548781'
+      Etag:
+      - W/"5be-/m1n0zErCQRta0ArCeLsNmaJNds"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"embarrassed","phonetic":"/ɪmˈbæɹ.əst/","phonetics":[{"text":"/ɪmˈbæɹ.əst/","audio":""}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        humiliate; to disrupt somebody''s composure or comfort with acting publicly
+        or freely; to disconcert; to abash","synonyms":[],"antonyms":[],"example":"The
+        crowd''s laughter and jeers embarrassed him."},{"definition":"To hinder from
+        liberty of movement; to impede; to obstruct.","synonyms":[],"antonyms":[],"example":"The
+        motion was advanced in order to embarrass the progress of the bill."},{"definition":"To
+        involve in difficulties concerning money matters; to encumber with debt; to
+        beset with urgent claims or demands.","synonyms":[],"antonyms":[],"example":"A
+        man or his business is embarrassed when he cannot meet his pecuniary engagements."}],"synonyms":["abash","discomfit","disconcert","humiliate","shame"],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Having
+        a feeling of shameful discomfort.","synonyms":[],"antonyms":[],"example":"After
+        returning from the pool, Aleshia felt significantly better, though she was
+        still slightly embarrassed."},{"definition":"Impeded; obstructed.","synonyms":[],"antonyms":[]}],"synonyms":["ashamed"],"antonyms":["honored","proud"]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/embarrass","https://en.wiktionary.org/wiki/embarrassed"]}]'
+  recorded_at: Fri, 04 Nov 2022 07:57:54 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/qualified
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 07:57:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '439'
+      X-Ratelimit-Reset:
+      - '1667548781'
+      Etag:
+      - W/"814-dwwuxU7FPMdkuwH+7dMv88xnHbc"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"qualified","phonetic":"/ˈkwɒl.ɪ.faɪd/","phonetics":[{"text":"/ˈkwɒl.ɪ.faɪd/","audio":""},{"text":"/ˈkwɑl.ɪ.faɪd/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/qualified-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=2651361","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Meeting
+        the standards, requirements, and training for a position.","synonyms":[],"antonyms":[]},{"definition":"Restricted
+        or limited by conditions.","synonyms":[],"antonyms":[],"example":"Assuming
+        that I have all the information, my qualified opinion is that your plan will
+        work."}],"synonyms":[],"antonyms":["non-qualified","unqualified"]},{"partOfSpeech":"verb","definitions":[{"definition":"To
+        describe or characterize something by listing its qualities.","synonyms":[],"antonyms":[]},{"definition":"To
+        make someone, or to become competent or eligible for some position or task.","synonyms":[],"antonyms":[]},{"definition":"To
+        certify or license someone for something.","synonyms":[],"antonyms":[]},{"definition":"To
+        modify, limit, restrict or moderate something; especially to add conditions
+        or requirements for an assertion to be true.","synonyms":[],"antonyms":[]},{"definition":"To
+        mitigate, alleviate (something); to make less disagreeable.","synonyms":[],"antonyms":[]},{"definition":"To
+        compete successfully in some stage of a competition and become eligible for
+        the next stage.","synonyms":[],"antonyms":[]},{"definition":"To give individual
+        quality to; to modulate; to vary; to regulate.","synonyms":[],"antonyms":[]},{"definition":"To
+        throw and catch each object at least twice.","synonyms":[],"antonyms":[],"example":"to
+        qualify seven balls you need at least fourteen catches"}],"synonyms":[],"antonyms":["unqualify"]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/qualified","https://en.wiktionary.org/wiki/qualify"]}]'
+  recorded_at: Fri, 04 Nov 2022 07:57:54 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/considerate
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 07:57:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '438'
+      X-Ratelimit-Reset:
+      - '1667548781'
+      Etag:
+      - W/"8b9-m7qkaeFkB6kQ2ewyd0+w5lQ1wDg"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"considerate","phonetic":"/kənˈsɪdəɹət/","phonetics":[{"text":"/kənˈsɪdəɹət/","audio":""}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        think about seriously.","synonyms":["bethink","reflect"],"antonyms":[],"example":"Consider
+        that we’ve had three major events and the year has hardly begun."},{"definition":"To
+        think about something seriously or carefully: to deliberate.","synonyms":[],"antonyms":[]},{"definition":"To
+        think of doing.","synonyms":["bethink","think of"],"antonyms":[],"example":"I’m
+        considering going to the beach tomorrow."},{"definition":"(ditransitive) To
+        assign some quality to.","synonyms":["deem","regard","think of"],"antonyms":[],"example":"Consider
+        yourself lucky, but consider your opponent skillful."},{"definition":"To look
+        at attentively.","synonyms":["observe","regard"],"antonyms":[],"example":"She
+        sat there for a moment, considering him."},{"definition":"To take up as an
+        example.","synonyms":[],"antonyms":[],"example":"Consider a triangle having
+        three equal sides."},{"definition":"(parliamentary procedure) To debate (or
+        dispose of) a motion.","synonyms":["bethink","deliberate"],"antonyms":[],"example":"This
+        body will now consider the proposed amendments to Section 453 of the zoning
+        code."},{"definition":"To have regard to; to take into view or account; to
+        pay due attention to; to respect.","synonyms":["take into account"],"antonyms":[],"example":"He
+        never seems to consider the feelings of others."}],"synonyms":["bethink","deliberate","bethink","reflect","bethink","think
+        of","deem","regard","think of","observe","regard","take into account"],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Consciously
+        thoughtful and observant (often of other people); caring","synonyms":[],"antonyms":[],"example":"It
+        was very considerate of you to give up your place for your friend."},{"definition":"Characterised
+        by careful and conscious thought; deliberate","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":["inconsiderate"]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/consider","https://en.wiktionary.org/wiki/considerate"]}]'
+  recorded_at: Fri, 04 Nov 2022 07:57:54 GMT
 recorded_with: VCR 6.1.0
