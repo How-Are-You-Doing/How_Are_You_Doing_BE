@@ -3482,4 +3482,848 @@ http_interactions:
         of dignity or self-respect","synonyms":[],"antonyms":[]}],"synonyms":["degraded"],"antonyms":[]}],"license":{"name":"CC
         BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/humiliate","https://en.wiktionary.org/wiki/humiliated"]}]'
   recorded_at: Thu, 03 Nov 2022 05:16:24 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/impertinent
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Thu, 03 Nov 2022 22:31:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '916'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '449'
+      X-Ratelimit-Reset:
+      - '1667514697'
+      Etag:
+      - W/"394-O0w4SoVXDJkVMTVPgT9j/fxmNDE"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"impertinent","phonetic":"/ɪm.ˈpɜː.tɪ.nənt/","phonetics":[{"text":"/ɪm.ˈpɜː.tɪ.nənt/","audio":""},{"text":"/ɪm.ˈpɝ.tɨ.nənt/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/impertinent-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=2453535","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"noun","definitions":[{"definition":"An
+        impertinent individual.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Insolent,
+        ill-mannered","synonyms":[],"antonyms":[]},{"definition":"Irrelevant (opposite
+        of pertinent)","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/impertinent"]}]'
+  recorded_at: Thu, 03 Nov 2022 22:31:21 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/isolated
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Thu, 03 Nov 2022 22:31:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '448'
+      X-Ratelimit-Reset:
+      - '1667514697'
+      Etag:
+      - W/"686-unfZeSE6f0+yXO7Vp4Lu7LIEjlE"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"isolated","phonetic":"/ˈaɪsəleɪtɪd/","phonetics":[{"text":"/ˈaɪsəleɪtɪd/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/isolated-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=2651084","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        set apart or cut off from others.","synonyms":[],"antonyms":[]},{"definition":"To
+        place in quarantine or isolation.","synonyms":[],"antonyms":[]},{"definition":"To
+        separate a substance in pure form from a mixture.","synonyms":[],"antonyms":[]},{"definition":"To
+        insulate, or make free of external influence.","synonyms":[],"antonyms":[]},{"definition":"To
+        separate a pure strain of bacteria etc. from a mixed culture.","synonyms":[],"antonyms":[]},{"definition":"To
+        insulate an electrical component from a source of electricity.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Placed
+        or standing apart or alone; in isolation.","synonyms":[],"antonyms":[]},{"definition":"(of
+        a pawn) Such that no pawn of the same color is in an adjacent file.","synonyms":[],"antonyms":[]},{"definition":"(of
+        precipitation) affecting 10 percent to 20 percent of a forecast zone.","synonyms":[],"antonyms":[]},{"definition":"Which
+        has been extracted from the organism.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/isolate","https://en.wiktionary.org/wiki/isolated"]}]'
+  recorded_at: Thu, 03 Nov 2022 22:31:22 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/charitable
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Thu, 03 Nov 2022 22:31:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '743'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '447'
+      X-Ratelimit-Reset:
+      - '1667514697'
+      Etag:
+      - W/"2e7-0BuX2KC+qoE5xBaJddEJO+wI0WI"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"charitable","phonetics":[{"audio":"https://api.dictionaryapi.dev/media/pronunciations/en/charitable-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=2453893","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Pertaining
+        to charity.","synonyms":[],"antonyms":[]},{"definition":"Kind, generous.","synonyms":[],"antonyms":[]},{"definition":"Having
+        a purpose or character of a charity.","synonyms":[],"antonyms":[]}],"synonyms":["eleemosynary"],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/charitable"]}]'
+  recorded_at: Thu, 03 Nov 2022 22:31:22 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/ambivalent
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Thu, 03 Nov 2022 22:31:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '446'
+      X-Ratelimit-Reset:
+      - '1667514697'
+      Etag:
+      - W/"4d7-X6c9qg4trXtV7RBJJTxqkWZg2n8"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"ambivalent","phonetics":[{"audio":"https://api.dictionaryapi.dev/media/pronunciations/en/ambivalent-au.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=75729417","license":{"name":"BY-SA
+        4.0","url":"https://creativecommons.org/licenses/by-sa/4.0"}},{"text":"/æmˈbɪv.ə.lənt/","audio":""},{"text":"/æmˈbɪv.ə.lənt/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/ambivalent-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=3631235","license":{"name":"BY-SA
+        4.0","url":"https://creativecommons.org/licenses/by-sa/4.0"}}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Simultaneously
+        experiencing or expressing opposing or contradictory feelings, beliefs, or
+        motivations.","synonyms":[],"antonyms":[]},{"definition":"Alternately having
+        one opinion or feeling, and then the opposite.","synonyms":[],"antonyms":[],"example":"He
+        has an ambivalent relationship towards his parents."}],"synonyms":["fluctuating","vacillating","wavering","conflicted","uncertain","undecided","unresolved"],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/ambivalent"]}]'
+  recorded_at: Thu, 03 Nov 2022 22:31:22 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/moody
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Thu, 03 Nov 2022 22:32:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '844'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '449'
+      X-Ratelimit-Reset:
+      - '1667514997'
+      Etag:
+      - W/"34c-aVj3WRr4ngLEIHeG94PYoWyav7Y"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"moody","phonetic":"/ˈmuːdi/","phonetics":[{"text":"/ˈmuːdi/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/moody-au.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=79268192","license":{"name":"BY-SA
+        4.0","url":"https://creativecommons.org/licenses/by-sa/4.0"}}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Given
+        to sudden or frequent changes of mind; temperamental.","synonyms":[],"antonyms":[]},{"definition":"Sulky
+        or depressed.","synonyms":[],"antonyms":[]},{"definition":"Dour, gloomy or
+        brooding.","synonyms":[],"antonyms":[]},{"definition":"Dodgy or stolen.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/moody"]}]'
+  recorded_at: Thu, 03 Nov 2022 22:32:08 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/lethargic
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Thu, 03 Nov 2022 22:32:09 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '625'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '448'
+      X-Ratelimit-Reset:
+      - '1667514997'
+      Etag:
+      - W/"271-55C9weucxaZyJAn8/8aMQRDAc7Y"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"lethargic","phonetic":"/ləˈθɑɹdʒɪk/","phonetics":[{"text":"/ləˈθɑɹdʒɪk/","audio":""},{"text":"/ləˈθɑːdʒək/","audio":""},{"text":"/ləˈθɑː.dʒɪk/","audio":""},{"text":"/ləˈθɑɹdʒɪk/","audio":""}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Sluggish,
+        slow","synonyms":[],"antonyms":[]},{"definition":"Indifferent, apathetic","synonyms":[],"antonyms":[]}],"synonyms":["lazy","torpid","unmoving"],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/lethargic"]}]'
+  recorded_at: Thu, 03 Nov 2022 22:32:09 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/reasonable
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Thu, 03 Nov 2022 22:32:09 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '447'
+      X-Ratelimit-Reset:
+      - '1667514997'
+      Etag:
+      - W/"4c7-AlSa6Q0c80a744813cYVqjwULsE"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"reasonable","phonetic":"/ˈɹiː.zən.ə.bəl/","phonetics":[{"text":"/ˈɹiː.zən.ə.bəl/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/reasonable-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1684711","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Having
+        the faculty of reason; rational, reasoning.","synonyms":[],"antonyms":[]},{"definition":"Just;
+        fair; agreeable to reason.","synonyms":[],"antonyms":[]},{"definition":"Not
+        excessive or immoderate; within due limits; proper.","synonyms":[],"antonyms":[],"example":"a
+        reasonable demand, amount, or price"},{"definition":"Not expensive; fairly
+        priced.","synonyms":[],"antonyms":[],"example":"$20 a bottle is very reasonable
+        for a good wine at a restaurant."},{"definition":"Satisfactory.","synonyms":[],"antonyms":[],"example":"The
+        builders did a reasonable job, given the short notice."}],"synonyms":["reasonous"],"antonyms":["arbitrary","unreasonable"]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/reasonable"]}]'
+  recorded_at: Thu, 03 Nov 2022 22:32:09 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/distant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Thu, 03 Nov 2022 22:32:09 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '446'
+      X-Ratelimit-Reset:
+      - '1667514997'
+      Etag:
+      - W/"441-9jBIBtVIH1JVj7AxO0R1MQutJH8"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"distant","phonetic":"/ˈdɪstənt/","phonetics":[{"text":"/ˈdɪstənt/","audio":""},{"audio":"https://api.dictionaryapi.dev/media/pronunciations/en/distant-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1247128","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Far
+        off (physically, logically or mentally).","synonyms":[],"antonyms":[],"example":"We
+        heard a distant rumbling but didn''t pay any more attention to it.   She was
+        surprised to find that her fiancé was a distant relative of hers.   His distant
+        look showed that he was not listening to me."},{"definition":"Emotionally
+        unresponsive or unwilling to express genuine feelings.","synonyms":[],"antonyms":[],"example":"Ever
+        since our argument, she has been totally distant toward me."}],"synonyms":["aloof","cold","faraway"],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/distant"]}]'
+  recorded_at: Thu, 03 Nov 2022 22:32:09 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/astonished
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Thu, 03 Nov 2022 22:32:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '837'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '445'
+      X-Ratelimit-Reset:
+      - '1667514997'
+      Etag:
+      - W/"345-CkaTSMwOIuUutsccx5uDTdkx0kk"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"astonished","phonetics":[{"audio":"https://api.dictionaryapi.dev/media/pronunciations/en/astonished-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1749710","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        surprise greatly.","synonyms":[],"antonyms":[]}],"synonyms":["astound","flabbergast","surprise"],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Amazed;
+        surprised.","synonyms":[],"antonyms":[]}],"synonyms":["agape","amazed","bewildered","shocked","speechless"],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/astonish","https://en.wiktionary.org/wiki/astonished"]}]'
+  recorded_at: Thu, 03 Nov 2022 22:32:41 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/needed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Thu, 03 Nov 2022 22:32:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '444'
+      X-Ratelimit-Reset:
+      - '1667514997'
+      Etag:
+      - W/"5ab-c11ALB3mzvQd6xFAubfDaO7m3Jk"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"needed","phonetic":"/ˈniːdɪd/","phonetics":[{"text":"/ˈniːdɪd/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/needed-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1230332","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        have an absolute requirement for.","synonyms":[],"antonyms":[],"example":"Living
+        things need water to survive."},{"definition":"To want strongly; to feel that
+        one must have something.","synonyms":[],"antonyms":[],"example":"After ten
+        days of hiking, I needed a shower and a shave."},{"definition":"(modal verb)
+        To be obliged or required (to do something).","synonyms":[],"antonyms":[],"example":"You
+        need not go if you don''t want to."},{"definition":"To be required; to be
+        necessary.","synonyms":[],"antonyms":[]},{"definition":"To be necessary (to
+        someone).","synonyms":[],"antonyms":[]}],"synonyms":["desire","want","will","wish","would
+        like","be","lack","without","in need of","require"],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Necessary;
+        being required.","synonyms":[],"antonyms":[],"example":"A much-needed rest."}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/need","https://en.wiktionary.org/wiki/needed"]}]'
+  recorded_at: Thu, 03 Nov 2022 22:32:41 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/daring
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Thu, 03 Nov 2022 22:32:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '443'
+      X-Ratelimit-Reset:
+      - '1667514997'
+      Etag:
+      - W/"75b-LG2HWzEVXfGLeZhHU4F109eVct4"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"daring","phonetic":"/ˈdɛəɹɪŋ/","phonetics":[{"text":"/ˈdɛəɹɪŋ/","audio":""},{"text":"/ˈdɛəɹɪŋ/","audio":""}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        have enough courage (to do something).","synonyms":[],"antonyms":[],"example":"I
+        wouldn''t dare argue with my boss."},{"definition":"To defy or challenge (someone
+        to do something)","synonyms":[],"antonyms":[],"example":"I dare you (to) kiss
+        that girl."},{"definition":"To have enough courage to meet or do something,
+        go somewhere, etc.; to face up to","synonyms":[],"antonyms":[],"example":"Will
+        you dare death to reach your goal?"},{"definition":"To terrify; to daunt.","synonyms":[],"antonyms":[]},{"definition":"To
+        catch (larks) by producing terror through the use of mirrors, scarlet cloth,
+        a hawk, etc., so that they lie still till a net is thrown over them.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"verb","definitions":[{"definition":"To
+        stare stupidly or vacantly; to gaze as though amazed or terrified.","synonyms":[],"antonyms":[]},{"definition":"To
+        lie or crouch down in fear.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"noun","definitions":[{"definition":"Boldness.","synonyms":[],"antonyms":[]}],"synonyms":["boldness"],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Adventurous,
+        willing to take on or look for risks; overbold.","synonyms":[],"antonyms":[]},{"definition":"Courageous
+        or showing bravery; doughty.","synonyms":[],"antonyms":[]},{"definition":"Racy;
+        sexually provocative.","synonyms":[],"antonyms":[]}],"synonyms":["audacious","bold","dareful","venturesome"],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/dare","https://en.wiktionary.org/wiki/daring"]}]'
+  recorded_at: Thu, 03 Nov 2022 22:32:41 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/aggressive
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Thu, 03 Nov 2022 22:32:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '442'
+      X-Ratelimit-Reset:
+      - '1667514997'
+      Etag:
+      - W/"426-iqbycHtPjs0bviApzAoEkerykKU"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"aggressive","phonetic":"/əˈɡɹɛs.ɪv/","phonetics":[{"text":"/əˈɡɹɛs.ɪv/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/aggressive-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=2650624","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Characterized
+        by aggression; unjustly attacking; prone to behave in a way that involves
+        attacking or arguing.","synonyms":[],"antonyms":[],"example":"an aggressive
+        policy, war, person, nation"},{"definition":"Of heuristics, source code optimization
+        techniques, etc.: exploiting every opportunity to be applied.","synonyms":[],"antonyms":[]},{"definition":"(of
+        a tumour or disease) That spreads quickly or extensively; virulent; malignant.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":["passive"]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/aggressive"]}]'
+  recorded_at: Thu, 03 Nov 2022 22:32:41 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/disappointed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Thu, 03 Nov 2022 23:15:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '449'
+      X-Ratelimit-Reset:
+      - '1667517397'
+      Etag:
+      - W/"6b9-CrmLNL2np9f+nE5tb7pF5z9hipg"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"disappointed","phonetic":"/ˌdɪsəˈpɔɪntɪd/","phonetics":[{"text":"/ˌdɪsəˈpɔɪntɪd/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/disappointed-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=2100373","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        sadden or displease (someone) by underperforming, or by not delivering something
+        promised or hoped for.","synonyms":[],"antonyms":[],"example":"His lack of
+        respect disappointed her."},{"definition":"To deprive (someone of something
+        expected or hoped for).","synonyms":[],"antonyms":[]},{"definition":"To fail
+        to meet (an expectation); to fail to fulfil (a hope).","synonyms":[],"antonyms":[]},{"definition":"To
+        show (an opinion, belief, etc.) to be mistaken.","synonyms":[],"antonyms":[]},{"definition":"To
+        prevent (something planned or attempted).","synonyms":["frustrate","thwart"],"antonyms":[]}],"synonyms":["frustrate","thwart"],"antonyms":["satisfy"]},{"partOfSpeech":"adjective","definitions":[{"definition":"Defeated
+        of expectations or hope; experiencing disappointment; let down.","synonyms":[],"antonyms":[],"example":"After
+        all his anticipation, the trip left him deeply disappointed."},{"definition":"Expressing
+        or indicating disappointment.","synonyms":[],"antonyms":[],"example":"a disappointed
+        tone / face / silence"}],"synonyms":["discomfited","foiled","frustrated","thwarted"],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/disappoint","https://en.wiktionary.org/wiki/disappointed"]}]'
+  recorded_at: Thu, 03 Nov 2022 23:15:06 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/cautious
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Thu, 03 Nov 2022 23:15:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '757'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '448'
+      X-Ratelimit-Reset:
+      - '1667517397'
+      Etag:
+      - W/"2f5-noEH1tR4b1yLFNIOWIYmaro5J/Q"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"cautious","phonetic":"/ˈkɔːʃəs/","phonetics":[{"text":"/ˈkɔːʃəs/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/cautious-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=2650734","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Careful;
+        using or exercising caution; tentative","synonyms":[],"antonyms":[],"example":"He
+        took a few cautious steps toward the cave."}],"synonyms":[],"antonyms":["careless","incautious","neglecting","uncautious"]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/cautious"]}]'
+  recorded_at: Thu, 03 Nov 2022 23:15:06 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/willful
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Thu, 03 Nov 2022 23:15:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '593'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '447'
+      X-Ratelimit-Reset:
+      - '1667517397'
+      Etag:
+      - W/"251-gl2Gxa0sAm2Upt1Lt0KkwUTGAR0"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"willful","phonetics":[],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Intentional;
+        deliberate.","synonyms":["volitional","voluntary"],"antonyms":[]},{"definition":"Stubborn
+        and determined.","synonyms":["headstrong","obstinate","self-willed","spiteful"],"antonyms":[]}],"synonyms":["headstrong","obstinate","self-willed","spiteful","volitional","voluntary"],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/wilful","https://en.wiktionary.org/wiki/willful"]}]'
+  recorded_at: Thu, 03 Nov 2022 23:15:06 GMT
 recorded_with: VCR 6.1.0
