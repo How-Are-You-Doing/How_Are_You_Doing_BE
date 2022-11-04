@@ -72,6 +72,17 @@ get '/api/v1/users?by_email=#{email}'
 
 <img src="./app/assets/images/search_friend_endpoint.jpg"  />
 
+## create a new post
+post '/api/v1/post'
+
+<img src="./app/assets/images/create_post_endpoint.jpg"  />
+
+
+## update an existing post
+patch '/api/v1/post'
+
+<img src="./app/assets/images/update_post_endpoint.jpg"  />
+
 
 
 

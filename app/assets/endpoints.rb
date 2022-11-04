@@ -224,3 +224,22 @@ get '/api/v1/users?by_email=#{email}'
 	}
 }
 
+
+POST api/v1/posts
+#pass info with params :) 
+#201 return status code
+
+{ 
+	"message" : "Post successfully created"
+}
+
+
+PATCH api/v1/posts
+#pass info with params :) 
+#201 return status code
+
+{ 
+	"message" : "Post successfully updated"
+}
+
+
