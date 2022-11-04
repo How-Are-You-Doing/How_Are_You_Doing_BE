@@ -227,6 +227,28 @@ describe 'Friends API' do
         expect(accepted_friendship.followee_id).to eq(friendship.followee_id)
         expect(accepted_friendship.request_status).to eq("accepted")
       end
+
+      it 'can update the status of a friend relationship after the requestee rejects the request' do
+        friendship = create(:friend)
+        other_friendships = create_list(:friend, 3)
+        expect(friendship.request_status).to eq("pending")
+        headers = {"HTTP_REQUEST_STATUS" => "2"}
+
+        patch "/api/v1/friends/#{friendship.id}", headers: headers
+        
+        other_friendships.each do |other|
+          expect(other.request_status).to eq("pending")
+        end
+        
+        rejected_friendship = Friend.first
+        
+        expect(response).to be_successful
+        expect(response.status).to eq(201)
+        expect(rejected_friendship.id).to eq(friendship.id)
+        expect(rejected_friendship.follower_id).to eq(friendship.follower_id)
+        expect(rejected_friendship.followee_id).to eq(friendship.followee_id)
+        expect(rejected_friendship.request_status).to eq("rejected")
+      end
     end
   end
 end
