@@ -5095,4 +5095,174 @@ http_interactions:
         by careful and conscious thought; deliberate","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":["inconsiderate"]}],"license":{"name":"CC
         BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/consider","https://en.wiktionary.org/wiki/considerate"]}]'
   recorded_at: Fri, 04 Nov 2022 07:57:54 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/buoyant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 20:18:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '514'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '449'
+      X-Ratelimit-Reset:
+      - '1667593181'
+      Etag:
+      - W/"202-LPeKarLpvqox3/b6zJAgOpMVZ7k"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"buoyant","phonetic":"/ˈbɔɪ.ənt/","phonetics":[{"text":"/ˈbɔɪ.ənt/","audio":""}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Having
+        buoyancy; able to float.","synonyms":[],"antonyms":[]},{"definition":"Lighthearted
+        and lively.","synonyms":[],"antonyms":[],"example":"I’m in a buoyant mood."}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/buoyant"]}]'
+  recorded_at: Fri, 04 Nov 2022 20:18:52 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/affectionate
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 20:18:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '448'
+      X-Ratelimit-Reset:
+      - '1667593181'
+      Etag:
+      - W/"6af-n7QjVbkI9KyGR82Q9ZFNAXhFUgI"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"affectionate","phonetic":"/əˈfɛkʃənət/","phonetics":[{"text":"/əˈfɛkʃənət/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/affectionate-1-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=2100907","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"(of
+        a person) Having affection or warm regard; loving; fond.","synonyms":[],"antonyms":[],"example":"She
+        eulogised her always warm and affectionate brother."},{"definition":"(of an
+        action, etc.) Characterised by or proceeding from affection; indicating love;
+        tender.","synonyms":[],"antonyms":[],"example":"the affectionate care of a
+        parent; an affectionate countenance; an affectionate message; affectionate
+        language"},{"definition":"Eager; passionate; strongly inclined toward something.","synonyms":[],"antonyms":[]}],"synonyms":["ardent","attached","devoted","earnest","fond","lovesome","loving","tender","warm"],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/affectionate"]},{"word":"affectionate","phonetic":"/əˈfɛkʃəneɪt/","phonetics":[{"text":"/əˈfɛkʃəneɪt/","audio":""}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        show affection to; to have affection for.","synonyms":[],"antonyms":[]},{"definition":"To
+        emotionally attach (oneself) to.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/affectionate"]}]'
+  recorded_at: Fri, 04 Nov 2022 20:18:53 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/valued
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 20:18:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '447'
+      X-Ratelimit-Reset:
+      - '1667593181'
+      Etag:
+      - W/"58b-xIJaTkscIyHUjvsYaKiqXfwWIEc"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"valued","phonetic":"/ˈvæljuːd/","phonetics":[{"text":"/ˈvæljuːd/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/valued-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=2651678","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        estimate the value of; judge the worth of something.","synonyms":[],"antonyms":[],"example":"I
+        will have the family jewels valued by a professional."},{"definition":"To
+        fix or determine the value of; assign a value to, as of jewelry or art work.","synonyms":[],"antonyms":[]},{"definition":"To
+        regard highly; think much of; place importance upon.","synonyms":[],"antonyms":[],"example":"Gold
+        was valued highly among the Romans."},{"definition":"To hold dear.","synonyms":[],"antonyms":[],"example":"I
+        value these old photographs."}],"synonyms":["appreciate","assess","esteem","prize","rate","respect","treasure","valuate","worthen"],"antonyms":["belittle","derogate","despise","disesteem","disrespect"]},{"partOfSpeech":"adjective","definitions":[{"definition":"Having
+        a value, esteemed.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/value","https://en.wiktionary.org/wiki/valued"]}]'
+  recorded_at: Fri, 04 Nov 2022 20:18:53 GMT
 recorded_with: VCR 6.1.0
