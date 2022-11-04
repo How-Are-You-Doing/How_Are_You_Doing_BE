@@ -181,4 +181,24 @@ describe 'Friends API' do
       end
     end
   end
+
+  describe 'creating a friend' do
+    describe 'happy path' do
+      it "Can create a new friend" do
+        requester = create(:user)
+        requestee = create(:user)
+       
+        headers = {"HTTP_USER" => "#{requester.google_id}"}
+
+        post "/api/v1/friends?email=#{requestee.email}", headers: headers
+        created_friend = Friend.last
+       
+        expect(response).to be_successful
+        expect(response.status).to eq(201)
+
+        expect(created_friend.follower_id).to eq(requester.id)
+        expect(created_friend.followee_id).to eq(requestee.id)
+      end
+    end
+  end
 end
