@@ -4326,4 +4326,835 @@ http_interactions:
         and determined.","synonyms":["headstrong","obstinate","self-willed","spiteful"],"antonyms":[]}],"synonyms":["headstrong","obstinate","self-willed","spiteful","volitional","voluntary"],"antonyms":[]}],"license":{"name":"CC
         BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/wilful","https://en.wiktionary.org/wiki/willful"]}]'
   recorded_at: Thu, 03 Nov 2022 23:15:06 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/moved
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 17:52:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '449'
+      X-Ratelimit-Reset:
+      - '1667584481'
+      Etag:
+      - W/"e48-SX7gXuDsCecnMpLC6cgva1jyoKk"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"moved","phonetic":"/muːvd/","phonetics":[{"text":"/muːvd/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/moved-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1235993","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        change place or posture; to go, in any manner, from one place or position
+        to another.","synonyms":["stir"],"antonyms":[],"example":"A ship moves rapidly."},{"definition":"To
+        act; to take action; to begin to act","synonyms":["get moving","stir"],"antonyms":[],"example":"Come
+        on guys, let''s move: there''s work to do!"},{"definition":"To change residence,
+        for example from one house, town, or state, to another; to go and live at
+        another place. See also move out and move in.","synonyms":[],"antonyms":[],"example":"I
+        decided to move to the country for a more peaceful life."},{"definition":"(and
+        other games) To change the place of a piece in accordance with the rules of
+        the game.","synonyms":[],"antonyms":[],"example":"My opponent''s counter was
+        moving much quicker round the board than mine."},{"definition":"To cause to
+        change place or posture in any manner; to set in motion; to carry, convey,
+        draw, or push from one place to another","synonyms":["impel","stir"],"antonyms":[],"example":"The
+        horse moves a carriage."},{"definition":"To transfer (a piece or man) from
+        one space or position to another, according to the rules of the game","synonyms":[],"antonyms":[],"example":"She
+        moved the queen closer to the centre of the board."},{"definition":"To excite
+        to action by the presentation of motives; to rouse by representation, persuasion,
+        or appeal; to influence.","synonyms":[],"antonyms":[],"example":"This song
+        moves me to dance."},{"definition":"To arouse the feelings or passions of;
+        especially, to excite to tenderness or compassion, to excite (for example,
+        an emotion).","synonyms":["affect","trouble"],"antonyms":[],"example":"That
+        book really moved me."},{"definition":"To propose; to recommend; specifically,
+        to propose formally for consideration and determination, in a deliberative
+        assembly; to submit","synonyms":[],"antonyms":[],"example":"I move to repeal
+        the rule regarding obligatory school uniform."},{"definition":"To mention;
+        to raise (a question); to suggest (a course of action); to lodge (a complaint).","synonyms":[],"antonyms":[]},{"definition":"To
+        incite, urge (someone to do something); to solicit (someone for or of an issue);
+        to make a proposal to.","synonyms":[],"antonyms":[]},{"definition":"To apply
+        to, as for aid.","synonyms":[],"antonyms":[]},{"definition":"To request an
+        action from the court.","synonyms":[],"antonyms":[],"example":"An attorney
+        moved the court to issue a restraining order."},{"definition":"To bow or salute
+        upon meeting.","synonyms":[],"antonyms":[]},{"definition":"To sell, to market
+        (especially, but not exclusively, illegal products)","synonyms":[],"antonyms":[]}],"synonyms":["actuate","affect","trouble","agitate","get
+        moving","stir","impel","impel","stir","incite","incline","induce","influence","instigate","offer","persuade","prompt","propose","rouse","stir","stir","transfer"],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Emotionally
+        affected; touched.","synonyms":[],"antonyms":[],"example":"What happened to
+        that girl in the film was so awful - I was extremely moved."}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/move","https://en.wiktionary.org/wiki/moved"]}]'
+  recorded_at: Fri, 04 Nov 2022 17:52:11 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/perturbed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 17:52:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '821'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '448'
+      X-Ratelimit-Reset:
+      - '1667584481'
+      Etag:
+      - W/"335-HlmBb0gdm9xmEz7KEd10buusIi4"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"perturbed","phonetics":[],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        disturb; to bother or unsettle.","synonyms":[],"antonyms":[]},{"definition":"To
+        slightly modify the motion of an object.","synonyms":[],"antonyms":[]},{"definition":"To
+        modify the motion of a body by exerting a gravitational force.","synonyms":[],"antonyms":[]},{"definition":"To
+        modify slightly, such as an equation or value.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Disturbed;
+        flustered.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/perturb","https://en.wiktionary.org/wiki/perturbed"]}]'
+  recorded_at: Fri, 04 Nov 2022 17:52:12 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/preoccupied
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 17:52:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '447'
+      X-Ratelimit-Reset:
+      - '1667584481'
+      Etag:
+      - W/"4af-Md12TxALrtVxN0dYE/QgA34pAt8"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"preoccupied","phonetics":[{"audio":"https://api.dictionaryapi.dev/media/pronunciations/en/preoccupied-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=720497","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Concerned
+        with something else; distracted; giving one''s attention elsewhere.","synonyms":[],"antonyms":[],"example":"I
+        was preoccupied with a deadline at work, and I forgot his birthday."},{"definition":"Describing
+        a scientific name that was previously used, a junior homonym.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"verb","definitions":[{"definition":"To
+        distract; to occupy or draw attention elsewhere.","synonyms":[],"antonyms":[],"example":"The
+        father tried to preoccupy the child with his keys."},{"definition":"To occupy
+        or take possession of beforehand.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/preoccupied","https://en.wiktionary.org/wiki/preoccupy"]}]'
+  recorded_at: Fri, 04 Nov 2022 17:52:12 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/mad
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 17:52:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '446'
+      X-Ratelimit-Reset:
+      - '1667584481'
+      Etag:
+      - W/"9a1-2OoTnxL430ISEbp9JJz1XUXe5GM"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"mad","phonetic":"/ˈmæːd/","phonetics":[{"text":"/ˈmæːd/","audio":""},{"text":"/ˈmæd/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/mad-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1230741","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        be or become mad.","synonyms":[],"antonyms":[]},{"definition":"To madden,
+        to anger, to frustrate.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Insane;
+        crazy, mentally deranged.","synonyms":[],"antonyms":[],"example":"He''s got
+        this mad idea that he''s irresistible to women."},{"definition":"(chiefly
+        US; informal in UK) Angry, annoyed.","synonyms":[],"antonyms":[],"example":"Are
+        you mad at me?"},{"definition":"Bizarre; incredible.","synonyms":[],"antonyms":[],"example":"It''s
+        mad that I got that job back a day after being fired."},{"definition":"Wildly
+        confused or excited.","synonyms":[],"antonyms":[],"example":"to be mad with
+        terror, lust, or hatred"},{"definition":"Extremely foolish or unwise; irrational;
+        imprudent.","synonyms":[],"antonyms":[]},{"definition":"(usually with for
+        or about) Extremely enthusiastic about; crazy about; infatuated with; overcome
+        with desire for.","synonyms":[],"antonyms":[],"example":"Aren''t you just
+        mad for that red dress?"},{"definition":"(of animals) Abnormally ferocious
+        or furious; or, rabid, affected with rabies.","synonyms":[],"antonyms":[],"example":"a
+        mad dog"},{"definition":"(chiefly Northeastern US) Intensifier, signifies
+        an abundance or high quality of a thing; very, much or many.","synonyms":[],"antonyms":[],"example":"I
+        gotta give you mad props for scoring us those tickets.   Their lead guitarist
+        has mad skills.   There are always mad girls at those parties."},{"definition":"(of
+        a compass needle) Having impaired polarity.","synonyms":[],"antonyms":[]}],"synonyms":["hella","helluv","kinda","mighty","wicked"],"antonyms":[]},{"partOfSpeech":"adverb","definitions":[{"definition":"Intensifier;
+        to a large degree; extremely; exceedingly; very; unbelievably.","synonyms":[],"antonyms":[],"example":"He
+        seems mad keen on her."}],"synonyms":["hella","helluv","wicked"],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/mad"]}]'
+  recorded_at: Fri, 04 Nov 2022 17:52:49 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/mopey
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 17:52:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '205'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '445'
+      X-Ratelimit-Reset:
+      - '1667584481'
+      Etag:
+      - W/"cd-vS+kLkEPbAn4l27wtwjW1CuxxAM"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '{"title":"No Definitions Found","message":"Sorry pal, we couldn''t
+        find definitions for the word you were looking for.","resolution":"You can
+        try the search again at later time or head to the web instead."}'
+  recorded_at: Fri, 04 Nov 2022 17:52:49 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/petulant
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 17:53:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '674'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '444'
+      X-Ratelimit-Reset:
+      - '1667584481'
+      Etag:
+      - W/"2a2-v+g7B7K3oylT8B7p6ChQiGZ1lrs"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"petulant","phonetic":"/ˈpɛtjələnt/","phonetics":[{"text":"/ˈpɛtjələnt/","audio":""}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Childishly
+        irritable","synonyms":[],"antonyms":[],"example":"Lack of sleep is causing
+        Dave''s recent petulant behavior."},{"definition":"Forward; pert; insolent;
+        wanton.","synonyms":[],"antonyms":[]}],"synonyms":["brazen","flippant","impertinent","bad-tempered","crabby","grouchy","huffy","ill-tempered","irritable","snappish"],"antonyms":["easygoing"]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/petulant"]}]'
+  recorded_at: Fri, 04 Nov 2022 17:53:15 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/tiresome
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 17:53:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '622'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '443'
+      X-Ratelimit-Reset:
+      - '1667584481'
+      Etag:
+      - W/"26e-R3hPnBb+fh/1s+QoLzj1bVKm/H8"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"tiresome","phonetic":"/ˈtaɪəsəm/","phonetics":[{"text":"/ˈtaɪəsəm/","audio":""},{"text":"/ˈtaɪɹsəm/","audio":""}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Causing
+        fatigue or boredom; wearisome.","synonyms":[],"antonyms":[],"example":"Eventually
+        his long stories became tiresome."}],"synonyms":["boring","dull","exhausting","irksome","slow","tedious","wearisome"],"antonyms":["energizing","exciting","fresh","interesting"]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/tiresome"]}]'
+  recorded_at: Fri, 04 Nov 2022 17:53:15 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/sanguine
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 17:53:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '442'
+      X-Ratelimit-Reset:
+      - '1667584481'
+      Etag:
+      - W/"8f7-BNM6jEU7CJxI2xsUXhKKHhEhNtk"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"sanguine","phonetic":"/ˈsæŋ.ɡwɪn/","phonetics":[{"text":"/ˈsæŋ.ɡwɪn/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/sanguine-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=658732","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"noun","definitions":[{"definition":"Blood
+        colour; red.","synonyms":[],"antonyms":[]},{"definition":"Anything of a blood-red
+        colour, as cloth.","synonyms":[],"antonyms":[]},{"definition":"A tincture,
+        seldom used, of a blood-red colour (not to be confused with murrey).","synonyms":[],"antonyms":[]},{"definition":"Bloodstone.","synonyms":[],"antonyms":[]},{"definition":"Red
+        crayon.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"verb","definitions":[{"definition":"To
+        stain with blood; to impart the colour of blood to; to ensanguine.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Having
+        the colour of blood; blood red.","synonyms":[],"antonyms":[]},{"definition":"Having
+        a bodily constitution characterised by a preponderance of blood over the other
+        bodily humours, thought to be marked by irresponsible mirth; indulgent in
+        pleasure to the exclusion of important matters.","synonyms":[],"antonyms":[]},{"definition":"Characterized
+        by abundance and active circulation of blood.","synonyms":[],"antonyms":[],"example":"a
+        sanguine bodily temperament"},{"definition":"Warm; ardent.","synonyms":[],"antonyms":[],"example":"a
+        sanguine temper"},{"definition":"Anticipating the best; optimistic; confident;
+        full of hope.","synonyms":[],"antonyms":["despondent"],"example":"I''m sanguine
+        about the eventual success of the project."},{"definition":"Full of blood;
+        bloody.","synonyms":[],"antonyms":[]},{"definition":"Bloodthirsty.","synonyms":[],"antonyms":[]}],"synonyms":["animated","assured","bright","bullish","buoyant","cheerful","cheery","confident","hopeful","optimistic","positive","red","ridibund","spirited","upbeat","vivificated"],"antonyms":["blue","gloomy","pessimistic","despondent"]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/sanguine"]}]'
+  recorded_at: Fri, 04 Nov 2022 17:53:16 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/sincere
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 17:53:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '918'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '441'
+      X-Ratelimit-Reset:
+      - '1667584481'
+      Etag:
+      - W/"396-UP5euRAxnFToquFEun8jlwz5WO8"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"sincere","phonetic":"/sɪnˈsɪə(ɹ)/","phonetics":[{"text":"/sɪnˈsɪə(ɹ)/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/sincere-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1785269","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Genuine;
+        meaning what one says or does; heartfelt.","synonyms":[],"antonyms":[],"example":"I
+        believe he is sincere in his offer to help."},{"definition":"Meant truly or
+        earnestly.","synonyms":[],"antonyms":[],"example":"She gave it a sincere,
+        if misguided effort."},{"definition":"Clean; pure","synonyms":[],"antonyms":[]}],"synonyms":["earnest"],"antonyms":["insincere"]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/sincere"]}]'
+  recorded_at: Fri, 04 Nov 2022 17:53:16 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/dejected
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 17:53:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '695'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '440'
+      X-Ratelimit-Reset:
+      - '1667584481'
+      Etag:
+      - W/"2b7-E9o/hAVqpOmy+rpbNF/g5f9m/9I"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"dejected","phonetic":"/dɪˈdʒɛktəd/","phonetics":[{"text":"/dɪˈdʒɛktəd/","audio":""}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"Make
+        sad or dispirited.","synonyms":[],"antonyms":[]},{"definition":"To cast down.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Sad
+        and dispirited.","synonyms":[],"antonyms":[]}],"synonyms":["despondent","disheartened","down
+        in the mouth"],"antonyms":["hopeful"]}],"license":{"name":"CC BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/deject","https://en.wiktionary.org/wiki/dejected"]}]'
+  recorded_at: Fri, 04 Nov 2022 17:53:16 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/contemplative
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 17:57:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '941'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '449'
+      X-Ratelimit-Reset:
+      - '1667584781'
+      Etag:
+      - W/"3ad-RCqhQ7Xt0A/hYL8gv5rrRtJRMIE"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"contemplative","phonetic":"/kənˈtɛmplətɪv/","phonetics":[{"text":"/kənˈtɛmplətɪv/","audio":""}],"meanings":[{"partOfSpeech":"noun","definitions":[{"definition":"Someone
+        who has dedicated themselves to religious contemplation.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Inclined
+        to contemplate; introspective and thoughtful; meditative.","synonyms":[],"antonyms":[]},{"definition":"Pertaining
+        to a religious contemplative, or a contemplative religious orders, especially
+        the Roman Catholic varieties.","synonyms":[],"antonyms":[]},{"definition":"Relating
+        to, or having the power of, contemplation.","synonyms":[],"antonyms":[],"example":"contemplative
+        faculties"}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/contemplative"]}]'
+  recorded_at: Fri, 04 Nov 2022 17:57:53 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/forlorn
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 17:57:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '448'
+      X-Ratelimit-Reset:
+      - '1667584781'
+      Etag:
+      - W/"5a2-HudwekZQLM3dS9lzTtyOeZujfd4"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"forlorn","phonetics":[{"audio":"https://api.dictionaryapi.dev/media/pronunciations/en/forlorn-au.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=75796889","license":{"name":"BY-SA
+        4.0","url":"https://creativecommons.org/licenses/by-sa/4.0"}},{"text":"/fɔː-/","audio":""},{"text":"/fɔɹˈlɔɹn/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/forlorn-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=2454043","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        abandon, forsake.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"noun","definitions":[{"definition":"A
+        forlorn hope.","synonyms":[],"antonyms":[]},{"definition":"A member of a forlorn
+        hope.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Abandoned,
+        deserted, left behind.","synonyms":[],"antonyms":[]},{"definition":"Miserable,
+        as when lonely after being abandoned.","synonyms":["forsaken"],"antonyms":[]},{"definition":"Unlikely
+        to succeed; hopeless.","synonyms":[],"antonyms":[]}],"synonyms":["forsaken"],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/forlese","https://en.wiktionary.org/wiki/forlorn"]}]'
+  recorded_at: Fri, 04 Nov 2022 17:57:54 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/thrilled
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 17:57:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '447'
+      X-Ratelimit-Reset:
+      - '1667584781'
+      Etag:
+      - W/"4e4-GEF/jXVtScu27zrlf0T+sUeXY8Q"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"thrilled","phonetic":"/θɹɪld/","phonetics":[{"text":"/θɹɪld/","audio":""}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        suddenly excite someone, or to give someone great pleasure; to (figuratively)
+        electrify; to experience such a sensation.","synonyms":[],"antonyms":[]},{"definition":"To
+        (cause something to) tremble or quiver.","synonyms":[],"antonyms":[]},{"definition":"To
+        perforate by a pointed instrument; to bore; to transfix; to drill.","synonyms":[],"antonyms":[]},{"definition":"To
+        hurl; to throw; to cast.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"verb","definitions":[{"definition":"To
+        drill and thread in one operation, using a tool bit that cuts the hole and
+        the threads in one series of computer-controlled movements.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Extremely
+        excited or delighted.","synonyms":[],"antonyms":[],"example":"Ben was thrilled
+        to lead the game."}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/thrill","https://en.wiktionary.org/wiki/thrilled"]}]'
+  recorded_at: Fri, 04 Nov 2022 17:57:54 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/stressed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 17:57:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '446'
+      X-Ratelimit-Reset:
+      - '1667584781'
+      Etag:
+      - W/"58f-aG2iFDPfB3nvZg9RFGPmlpOJpc8"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"stressed","phonetic":"/stɹɛst/","phonetics":[{"text":"/stɹɛst/","audio":""}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        apply force to (a body or structure) causing strain.","synonyms":[],"antonyms":[]},{"definition":"To
+        apply emotional pressure to (a person or animal).","synonyms":[],"antonyms":[]},{"definition":"To
+        suffer stress; to worry or be agitated.","synonyms":[],"antonyms":[]},{"definition":"To
+        emphasise (a syllable of a word).","synonyms":[],"antonyms":[],"example":"“Emphasis”
+        is stressed on the first syllable, but “emphatic” is stressed on the second."},{"definition":"To
+        emphasise (words in speaking).","synonyms":[],"antonyms":[]},{"definition":"To
+        emphasise (a point) in an argument or discussion.","synonyms":[],"antonyms":[],"example":"I
+        must stress that this information is given in strict confidence."}],"synonyms":["emphasise","emphasize","underline","emphasise","emphasize","emphasise","emphasize"],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Suffering
+        stress (either physical or mental).","synonyms":[],"antonyms":[]},{"definition":"Having
+        a stress or accent.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":["unstressed"]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/stress","https://en.wiktionary.org/wiki/stressed"]}]'
+  recorded_at: Fri, 04 Nov 2022 17:57:54 GMT
 recorded_with: VCR 6.1.0
