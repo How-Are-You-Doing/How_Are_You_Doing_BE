@@ -4,7 +4,11 @@ describe 'Emotions API' do
   describe 'emotion index' do
     describe 'happy path' do
       it 'sends a list of all emotions', vcr: {record: :new_episodes} do
-        create_list(:emotion, 5, definition: nil)
+        Emotion.create!(term: 'contemplative')
+        Emotion.create!(term: 'forlorn')
+        Emotion.create!(term: 'thrilled')
+        Emotion.create!(term: 'stressed')
+        Emotion.create!(term: 'ecstatic')
 
         get '/api/v1/emotions'
 
