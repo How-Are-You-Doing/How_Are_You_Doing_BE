@@ -9,9 +9,9 @@ describe "Users API" do
         user = create(:user)
 
         headers = ({
-                    name: 'Green Goblin',
-                    email: 'greenestgobble@gmail.com',
-                    google_id: "225826428274681000",
+                    HTTP_NAME: 'Green Goblin',
+                    HTTP_EMAIL: 'greenestgobble@gmail.com',
+                    HTTP_GOOGLE_ID: "225826428274681000",
                   })
 
         post "/api/v1/users", headers: headers
@@ -20,9 +20,9 @@ describe "Users API" do
         expect(response).to be_successful
         expect(response.status).to eq(201)
 
-        expect(created_user.name).to eq(headers[:name])
-        expect(created_user.email).to eq(headers[:email])
-        expect(created_user.google_id).to eq(headers[:google_id])
+        expect(created_user.name).to eq(headers[:HTTP_NAME])
+        expect(created_user.email).to eq(headers[:HTTP_EMAIL])
+        expect(created_user.google_id).to eq(headers[:HTTP_GOOGLE_ID])
       end
     end
   end

@@ -5265,4 +5265,853 @@ http_interactions:
         a value, esteemed.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
         BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/value","https://en.wiktionary.org/wiki/valued"]}]'
   recorded_at: Fri, 04 Nov 2022 20:18:53 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/apprehensive
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 20:36:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '529'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '449'
+      X-Ratelimit-Reset:
+      - '1667594381'
+      Etag:
+      - W/"211-WFa/3ErsC9LyNmprpggzHr3IwFI"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"apprehensive","phonetics":[],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Anticipating
+        something with anxiety or fear.","synonyms":[],"antonyms":[]},{"definition":"Perceptive;
+        quick to learn; capable of understanding using one''s intellect.","synonyms":["quick
+        on the uptake"],"antonyms":[]}],"synonyms":["quick on the uptake"],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/apprehensive"]}]'
+  recorded_at: Fri, 04 Nov 2022 20:36:01 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/uplifted
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 20:36:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '448'
+      X-Ratelimit-Reset:
+      - '1667594381'
+      Etag:
+      - W/"4ca-N7jpm96cjFR4MOrXvjAWUy4AIp8"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"uplifted","phonetics":[{"audio":"https://api.dictionaryapi.dev/media/pronunciations/en/uplifted-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=2453779","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        raise something or someone to a higher physical, social, moral, intellectual,
+        spiritual or emotional level.","synonyms":[],"antonyms":[]},{"definition":"(of
+        a penalty) To aggravate; to increase.","synonyms":[],"antonyms":[]},{"definition":"(travel)
+        To be accepted for carriage on a flight.","synonyms":[],"antonyms":[]},{"definition":"To
+        remove (a child) from a damaging home environment by a social welfare organization.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Lifted
+        upwards, raised.","synonyms":[],"antonyms":[]},{"definition":"Joyous, hopeful
+        or inspired.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/uplift","https://en.wiktionary.org/wiki/uplifted"]}]'
+  recorded_at: Fri, 04 Nov 2022 20:36:01 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/content
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 20:36:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '447'
+      X-Ratelimit-Reset:
+      - '1667594381'
+      Etag:
+      - W/"e7d-p61KcDE4I4T2DlGpE9nNky8kBLc"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"content","phonetic":"/kənˈtɛnt/","phonetics":[{"text":"/kənˈtɛnt/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/content-1-uk.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=88967376","license":{"name":"BY-SA
+        4.0","url":"https://creativecommons.org/licenses/by-sa/4.0"}}],"meanings":[{"partOfSpeech":"noun","definitions":[{"definition":"(except
+        in phrases) Satisfaction, contentment; pleasure.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"verb","definitions":[{"definition":"To
+        give contentment or satisfaction; to satisfy; to make happy.","synonyms":[],"antonyms":[],"example":"You
+        can''t have any more - you''ll have to content yourself with what you already
+        have."},{"definition":"To satisfy the expectations of; to pay; to requite","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Satisfied","synonyms":["contented","pleased","satisfied"],"antonyms":[]}],"synonyms":["contented","pleased","satisfied"],"antonyms":[]},{"partOfSpeech":"interjection","definitions":[{"definition":"Alright,
+        agreed","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/content"]},{"word":"content","phonetic":"/ˈkɒn.tɛnt/","phonetics":[{"text":"/ˈkɒn.tɛnt/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/content-2-uk.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=88967375","license":{"name":"BY-SA
+        4.0","url":"https://creativecommons.org/licenses/by-sa/4.0"}},{"text":"/ˈkɑn.tɛnt/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/content-2-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1661637","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"noun","definitions":[{"definition":"That
+        which is contained.","synonyms":[],"antonyms":[]},{"definition":"Subject matter;
+        that which is contained in writing or speech.","synonyms":[],"antonyms":[]},{"definition":"The
+        amount of material contained; contents","synonyms":[],"antonyms":[]},{"definition":"Capacity
+        for holding","synonyms":[],"antonyms":[]},{"definition":"The n-dimensional
+        space contained by an n-dimensional polytope (called volume in the case of
+        a polyhedron and area in the case of a polygon)","synonyms":[],"antonyms":[]},{"definition":"(of
+        a polynomial with coefficients in a GCD domain) the greatest common divisor
+        of the coefficients; (of a polynomial with coefficients in an integral domain)
+        the common factor of the coefficients which, when removed, leaves the adjusted
+        coefficients with no common factor that is noninvertible","synonyms":[],"antonyms":[]},{"definition":"Satisfaction;
+        contentment.","synonyms":[],"antonyms":[],"example":"They were in a state
+        of sleepy content after supper."},{"definition":"Acquiescence without examination","synonyms":[],"antonyms":[]},{"definition":"That
+        which contents or satisfies; that which if attained would make one happy.","synonyms":[],"antonyms":[]},{"definition":"(House
+        of Lords) an expression of assent to a bill or motion; an affirmate vote","synonyms":[],"antonyms":[]},{"definition":"(House
+        of Lords) a member who votes in assent","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Contained.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/content"]}]'
+  recorded_at: Fri, 04 Nov 2022 20:36:02 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/peaceful
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 20:36:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '985'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '446'
+      X-Ratelimit-Reset:
+      - '1667594381'
+      Etag:
+      - W/"3d9-0ShUGkwvMuv3uvCW24D7s/MzZz8"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"peaceful","phonetic":"/ˈpiːsfəl/","phonetics":[{"text":"/ˈpiːsfəl/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/peaceful-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1780261","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Not
+        at war or disturbed by strife or turmoil.","synonyms":[],"antonyms":["at war","warring"],"example":"peaceful
+        protest"},{"definition":"Inclined to peace.","synonyms":["pacific","peaceable"],"antonyms":["belligerent","violent"]},{"definition":"Motionless
+        and calm.","synonyms":["placid","still","tranquil"],"antonyms":[]}],"synonyms":["pacific","peaceable","placid","still","tranquil"],"antonyms":["at
+        war","warring","belligerent","violent"]}],"license":{"name":"CC BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/peaceful"]}]'
+  recorded_at: Fri, 04 Nov 2022 20:36:02 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/vivacious
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 20:36:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '445'
+      X-Ratelimit-Reset:
+      - '1667594381'
+      Etag:
+      - W/"462-f26yPmzQhdVvSJMGAIQZkTEg+v8"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"vivacious","phonetic":"/vaɪˈveɪʃəs/","phonetics":[{"text":"/vaɪˈveɪʃəs/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/vivacious-au.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=75857833","license":{"name":"BY-SA
+        4.0","url":"https://creativecommons.org/licenses/by-sa/4.0"}},{"text":"/vaɪˈveɪʃəs/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/vivacious-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=2526745","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Lively
+        and animated; full of life and energy.","synonyms":[],"antonyms":[]},{"definition":"Long-lived.","synonyms":[],"antonyms":[]},{"definition":"Difficult
+        to kill.","synonyms":[],"antonyms":[]}],"synonyms":["animated","bubbly","ebullient","exciting","high-spirited","lively","vibrant"],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/vivacious"]}]'
+  recorded_at: Fri, 04 Nov 2022 20:36:02 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/repulsed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 20:37:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '725'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '444'
+      X-Ratelimit-Reset:
+      - '1667594381'
+      Etag:
+      - W/"2d5-ncdPrCLx1dsDEFkfP5tQZhFnu7U"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"repulsed","phonetics":[],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        repel or drive back.","synonyms":[],"antonyms":[],"example":"to repulse an
+        assault; to repulse the enemy"},{"definition":"To reject or rebuff.","synonyms":[],"antonyms":[],"example":"to
+        repulse a suitor"},{"definition":"To cause revulsion in.","synonyms":[],"antonyms":[],"example":"I
+        find  your  conduct  reprehensible,  disgusting, and  it  repulses  me,  the  way  a  mongoose  repulses  a  snake."}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/repulse","https://en.wiktionary.org/wiki/repulsed"]}]'
+  recorded_at: Fri, 04 Nov 2022 20:37:37 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/interested
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 20:37:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '443'
+      X-Ratelimit-Reset:
+      - '1667594381'
+      Etag:
+      - W/"5a5-vK74Y2hkXidKEy96BE26uCFhLs8"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"interested","phonetic":"/ˈɪntəɹɛstəd/","phonetics":[{"text":"/ˈɪntəɹɛstəd/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/interested-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1234203","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        engage the attention of; to awaken interest in; to excite emotion or passion
+        in, in behalf of a person or thing.","synonyms":[],"antonyms":[],"example":"Action
+        films don''t really interest me."},{"definition":"To be concerned with or
+        engaged in; to affect; to concern; to excite.","synonyms":[],"antonyms":[]},{"definition":"To
+        cause or permit to share.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":["bore","disinterest"]},{"partOfSpeech":"adjective","definitions":[{"definition":"Having
+        or showing interest.","synonyms":[],"antonyms":[],"example":"I''m very interested
+        in going to see that play."},{"definition":"Motivated by considerations of
+        self-interest; self-serving.","synonyms":[],"antonyms":[]},{"definition":"Owning
+        a share of a company.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":["disinterested","uninterested"]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/interest","https://en.wiktionary.org/wiki/interested"]}]'
+  recorded_at: Fri, 04 Nov 2022 20:37:37 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/cooperative
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 20:37:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '932'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '442'
+      X-Ratelimit-Reset:
+      - '1667594381'
+      Etag:
+      - W/"3a4-K7CcWF8nrT/rl7y5B6MUbYYO24k"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"cooperative","phonetics":[],"meanings":[{"partOfSpeech":"noun","definitions":[{"definition":"A
+        type of company that is owned partially or wholly by its employees, customers
+        or tenants.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Ready
+        to work with another person or in a team; ready to cooperate.","synonyms":[],"antonyms":[],"example":"The
+        patient was rarely cooperative, and tended to refuse treatment."},{"definition":"Involving
+        cooperation between individuals or parties.","synonyms":[],"antonyms":[],"example":"a
+        cooperative business enterprise"},{"definition":"Relating to a cooperative
+        or cooperatives.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":["adversarial","competitive"]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/cooperative"]}]'
+  recorded_at: Fri, 04 Nov 2022 20:37:37 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/violent
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 20:37:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '441'
+      X-Ratelimit-Reset:
+      - '1667594381'
+      Etag:
+      - W/"5ec-NKMXtyI94z/5qrbr3MpD7CSNcPI"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"violent","phonetic":"/ˈvaɪ(ə)lənt/","phonetics":[{"text":"/ˈvaɪ(ə)lənt/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/violent-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1197677","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"noun","definitions":[{"definition":"An
+        assailant.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"verb","definitions":[{"definition":"To
+        urge with violence.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Involving
+        extreme force or motion.","synonyms":[],"antonyms":[],"example":"A violent
+        wind ripped the branch from the tree."},{"definition":"Involving physical
+        conflict.","synonyms":[],"antonyms":[],"example":"We would rather negotiate,
+        but we will use violent means if necessary."},{"definition":"Likely to use
+        physical force.","synonyms":[],"antonyms":[],"example":"The escaped prisoners
+        are considered extremely violent."},{"definition":"Intensely vivid.","synonyms":[],"antonyms":[],"example":"The
+        artist expressed his emotional theme through violent colors."},{"definition":"Produced
+        or effected by force; not spontaneous; unnatural.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":["peaceful"]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/violent"]}]'
+  recorded_at: Fri, 04 Nov 2022 20:37:37 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/marvelous
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 20:37:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '725'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '440'
+      X-Ratelimit-Reset:
+      - '1667594381'
+      Etag:
+      - W/"2d5-EHDEEaIwtR8XPne39kf+fBVBogo"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"marvelous","phonetic":"/ˈmɑɹvələs/","phonetics":[{"text":"/ˈmɑɹvələs/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/marvelous-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=2453592","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Exciting
+        wonder or surprise; astonishing; wonderful; delightful.","synonyms":[],"antonyms":[],"example":"I
+        went to a marvelous party last week."}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/marvelous"]}]'
+  recorded_at: Fri, 04 Nov 2022 20:37:38 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/panicky
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 20:40:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '332'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '449'
+      X-Ratelimit-Reset:
+      - '1667594681'
+      Etag:
+      - W/"14c-8kNsHZ9hpEgIKnoHjf2AsRW5RHw"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"panicky","phonetics":[],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"In
+        a state of panic.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/panicky"]}]'
+  recorded_at: Fri, 04 Nov 2022 20:40:36 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/grief-stricken
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 20:40:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '335'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '448'
+      X-Ratelimit-Reset:
+      - '1667594681'
+      Etag:
+      - W/"14f-E2nM5WAwzAJC1xjivhk0XB2peh4"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"grief-stricken","phonetics":[],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Very
+        sad.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/grief-stricken"]}]'
+  recorded_at: Fri, 04 Nov 2022 20:40:36 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/judgmental
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 20:40:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '456'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '447'
+      X-Ratelimit-Reset:
+      - '1667594681'
+      Etag:
+      - W/"1c8-GzFZHe2B5OD4YWoFEKf7Irwz5y4"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"judgmental","phonetics":[],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Of
+        or relating to judgment.","synonyms":[],"antonyms":[]},{"definition":"(chiefly
+        of a person) Inclined to rashly pass judgment, critical.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/judgmental"]}]'
+  recorded_at: Fri, 04 Nov 2022 20:40:37 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/tranquil
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 20:47:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '449'
+      X-Ratelimit-Reset:
+      - '1667594981'
+      Etag:
+      - W/"407-Rg6FFFVE9BquxQFb6x7awTzZsoM"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"tranquil","phonetics":[{"audio":"https://api.dictionaryapi.dev/media/pronunciations/en/tranquil-au.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=75858899","license":{"name":"BY-SA
+        4.0","url":"https://creativecommons.org/licenses/by-sa/4.0"}},{"text":"/ˈtɹæŋ.kwɪl/","audio":""},{"text":"/ˈtɹæŋ.kwɪl/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/tranquil-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1780456","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Free
+        from emotional or mental disturbance.","synonyms":[],"antonyms":[]},{"definition":"Calm;
+        without motion or sound.","synonyms":[],"antonyms":[]}],"synonyms":["peaceful","calm","peaceful","serene","steady"],"antonyms":["agitated"]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/tranquil"]}]'
+  recorded_at: Fri, 04 Nov 2022 20:47:58 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/serene
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Fri, 04 Nov 2022 20:47:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '448'
+      X-Ratelimit-Reset:
+      - '1667594981'
+      Etag:
+      - W/"841-ro1/Se7UNnjdXb1bUASd/G2F1Vc"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"serene","phonetic":"/səˈɹiːn/","phonetics":[{"text":"/səˈɹiːn/","audio":""},{"text":"/səˈɹin/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/serene-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1171228","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"noun","definitions":[{"definition":"Serenity;
+        clearness; calmness.","synonyms":[],"antonyms":[]},{"definition":"Evening
+        air; night chill.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"verb","definitions":[{"definition":"To
+        make serene.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Peaceful,
+        calm, unruffled.","synonyms":[],"antonyms":[],"example":"She looked at her
+        students with joviality and a serene mentality."},{"definition":"Without worry
+        or anxiety; unaffected by disturbance.","synonyms":[],"antonyms":[]},{"definition":"Fair
+        and unclouded (as of the sky); clear; unobscured.","synonyms":[],"antonyms":[]},{"definition":"Used
+        as part of certain titles, originally to indicate sovereignty or independence.","synonyms":[],"antonyms":[],"example":"Her
+        Serene Highness"}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/serene"]},{"word":"serene","phonetic":"/səˈɹiːn/","phonetics":[{"text":"/səˈɹiːn/","audio":""},{"text":"/səˈɹin/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/serene-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1171228","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"noun","definitions":[{"definition":"A
+        fine rain from a cloudless sky after sunset.","synonyms":[],"antonyms":[]}],"synonyms":["serein"],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/serene"]}]'
+  recorded_at: Fri, 04 Nov 2022 20:47:58 GMT
 recorded_with: VCR 6.1.0
