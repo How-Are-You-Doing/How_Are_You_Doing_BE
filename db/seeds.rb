@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+# require 'csv'
 
 user_1 = User.create!(name: "Ricky LaFleur", email: "igotmy@grade10.com", google_id: "19023306")
 user_2 = User.create!(name: "Bubbles", email: "catlover69@hotmail.com", google_id: "7357151")
@@ -15,14 +15,40 @@ user_5 = User.create!(name: "Gon Freecss", email: "gon@hunterassociation.com", g
 user_6 = User.create!(name: "Hisoka Morow", email: "hisoka.morow@meteorcity.gov", google_id: "91239464")
 user_7 = User.create!(name: "Jenny", email: "jenny@tommytutone.com", google_id: "8675309")
 #emotions
-emotions_list = CSV.parse(File.read(‘spec/emotions_list/Emotions.csv’), headers:true)
-        @emotions = emotions_list.map {|emotion| Emotion.new(emotion)}
 
-        #posts
-u1_p1 = Post.create!(description: "This is the text for user 1 post 1", post_status: 0, tone: "melancholy", emotion_id: 1, user: user_1)
-u1_p2 = Post.create!(description: "This is the text for user 1 post 2", post_status: 0, tone: "happy", emotion_id: 2, user: user_1)
-u1_p3 = Post.create!(description: "This is the text for user 1 post 3", post_status: 0, tone: "sad", emotion_id: 3, user: user_1)
-u1_p4 = Post.create!(description: "This is the text for user 1 post 4", post_status: 0, tone: "angry", emotion_id: 4, user: user_1)
+e1 = Emotion.create!(term: "Affectionate")
+e2 = Emotion.create!(term: "Confident")
+e3 = Emotion.create!(term: "Grateful")
+e4 = Emotion.create!(term: "Peaceful")
+e5 = Emotion.create!(term: "Engaged")
+e6 = Emotion.create!(term: "Excited")
+e7 = Emotion.create!(term: "Inspired")
+e8 = Emotion.create!(term: "Joyful")
+e9 = Emotion.create!(term: "Exhilirated")
+e10 = Emotion.create!(term: "Refreshed")
+e11 = Emotion.create!(term: "Hopeful")
+e12 = Emotion.create!(term: "Afraid")
+e13 = Emotion.create!(term: "Confused")
+e14 = Emotion.create!(term: "Embarrassed")
+e15 = Emotion.create!(term: "Tense")
+e16 = Emotion.create!(term: "Annoyed")
+e17 = Emotion.create!(term: "Disconnected")
+e18 = Emotion.create!(term: "Fatigue")
+e19 = Emotion.create!(term: "Vulerable")
+e20 = Emotion.create!(term: "Angry")
+e21 = Emotion.create!(term: "Disquiet")
+e22 = Emotion.create!(term: "Pain")
+e23 = Emotion.create!(term: "Aversion")
+e24 = Emotion.create!(term: "Sad")
+
+# cmd = "rake csvload:emotions"
+
+
+#posts
+u1_p1 = Post.create!(description: "This is the text for user 1 post 1", post_status: 0, tone: "melancholy", emotion: e1, user: user_1)
+u1_p2 = Post.create!(description: "This is the text for user 1 post 2", post_status: 0, tone: "happy", emotion_id: e2.id, user: user_1)
+u1_p3 = Post.create!(description: "This is the text for user 1 post 3", post_status: 0, tone: "sad", emotion_id: e3.id, user: user_1)
+u1_p4 = Post.create!(description: "This is the text for user 1 post 4", post_status: 0, tone: "angry", emotion_id: e4.id, user: user_1)
 
 u2_p1 = Post.create!(description: "This is the text for user 2 post 1", post_status: 1, tone: "hyped up", emotion_id: 1, user: user_2)
 u2_p2 = Post.create!(description: "This is the text for user 2 post 2", post_status: 1, tone: "relaxed", emotion_id: 5, user: user_2)
@@ -84,5 +110,3 @@ u7_u1 = Friend.create!(follower: user_7, followee: user_1, request_status: 2)
 u7_u4 = Friend.create!(follower: user_7, followee: user_4, request_status: 2)
 u7_u5 = Friend.create!(follower: user_7, followee: user_4, request_status: 1)
 
-emotions_list = CSV.parse(File.read(‘spec/emotions_list/Emotions.csv’), headers:true)
-        @emotions = emotions_list.map {|emotion| Emotion.new(emotion)}
