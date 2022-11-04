@@ -5,11 +5,9 @@ describe 'Posts API' do
     describe 'happy path' do
       it 'sends a list of all posts for a user' do
         user = create(:user)
-        posts = create_list(:post, 5, user_id: user)
+        posts = create_list(:post, 5, user: user)
 
-        require "pry"; binding.pry
-
-        headers = {"HTTP_USER" => "user.google_id"}
+        headers = {"HTTP_USER" => "#{user.google_id}"}
 
         get '/api/v1/users/history', headers: headers
 
@@ -48,7 +46,18 @@ describe 'Posts API' do
     end
 
     describe 'sad path' do
+      it 'sends a 400 error if no user headr recived for a user' do
+        user = create(:user)
+        posts = create_list(:post, 5, user: user)
 
+        get '/api/v1/users/history'
+
+        posts = JSON.parse(response.body, symbolize_names: true)
+
+        expect(response).to have_http_status(400)
+        
+        expect(posts).to have_key(:data)
+      end
     end
   end
 end
