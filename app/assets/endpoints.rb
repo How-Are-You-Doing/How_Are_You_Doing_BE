@@ -1,4 +1,4 @@
-get ‘api/v1/post_emotions’
+get ‘api/v1/emotions’
 
 { “data” : 
 	[
@@ -23,7 +23,6 @@ get ‘api/v1/post_emotions’
 
 get 'api/v1/friends?request_status=pending'
 filter on pending
-#headers pass in user
 
 { “data” : 
 	[
@@ -49,7 +48,6 @@ filter on pending
 
 
 get 'api/v1/friends?request_status=accepted'
-# headers pass in user
 
 { “data” : 
 	[
@@ -72,9 +70,8 @@ get 'api/v1/friends?request_status=accepted'
 	]
 }
 
-get 'api/v1/history'
+get '/api/v1/users/history'
 #this endpoint is to see your own history
-#pass in user through headers
 #this is refering to a specific users posts history
 
 { “data” : 
@@ -86,6 +83,7 @@ get 'api/v1/history'
 				"emotion": "pensive"
 				"post_status": "public"
 				"description": "This was what I typed when I made this post."	 
+				"tone" : "anger"
 				"created_at": "2022-11-01 17:02:19.036593 -0600"	 
 			}
 		},
@@ -96,6 +94,7 @@ get 'api/v1/history'
 				"emotion": "pensive"
 				"post_status": "public"
 				"description": "This was what I typed when I made this post."	 
+				"tone" : "anger"
 				"created_at": "2022-11-01 17:02:19.036593 -0600"	 
 			}
 		},
@@ -106,6 +105,7 @@ get 'api/v1/history'
 				"emotion": "pensive"
 				"post_status": "public"
 				"description": "This was what I typed when I made this post."	 
+				"tone" : "anger"
 				"created_at": "2022-11-01 17:02:19.036593 -0600"	 
 			}	
 		},
@@ -114,7 +114,6 @@ get 'api/v1/history'
 }
 
 get 'api/v1/friends'
-#headers pass in user
 #this is refering to a specific users friends
 
 (A) User has friends
@@ -141,8 +140,7 @@ get 'api/v1/friends'
 
 
 
-get 'api/v1/friends/:friends_name/posts'
-#headers pass in user
+get 'api/v1/friends/:friends_email/posts'
 #this is refering to a specific users friend
 
 { “data” : 
@@ -154,6 +152,7 @@ get 'api/v1/friends/:friends_name/posts'
 			"emotion": "joyful"
 			"post_status": "public"
 			"description": "This was what I typed when I made this post."	 
+			"tone" : "anger"
 			"created_at": "2022-11-01 17:02:19.036593 -0600"	 
 			}
 		},
@@ -163,13 +162,15 @@ get 'api/v1/friends/:friends_name/posts'
 		"attributes": {
 			"emotion": "pensive"
 			"post_status": "public"
-			"description": "This was what I typed when I made this post."	 
+			"description": "This was what I typed when I made this post."	
+			"tone" : "anger"
 			"created_at": "2022-11-01 17:02:19.036593 -0600"	 
 		}
 	},
 ...
 	]
 }
+
 
 
 
@@ -197,7 +198,6 @@ get 'api/v1/users?search=<google_id>'
 }
 
 post 'api/v1/users'
-#pass in info through headers
 #201 return status code
 
 { 
