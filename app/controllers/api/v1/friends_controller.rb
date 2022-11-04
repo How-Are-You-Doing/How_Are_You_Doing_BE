@@ -19,4 +19,12 @@ class Api::V1::FriendsController < ApplicationController
       render json: { message: 'Friend successfully created' }, status: 201
     end
   end
+
+  def update
+    friendship = Friend.find(params[:id])
+    friendship.update(request_status: request.headers.env["HTTP_REQUEST_STATUS"].to_i)
+    if friendship.save
+      render json: { message: "This request was #{friendship.request_status}" }, status: 201
+    end
+  end
 end

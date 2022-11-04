@@ -182,11 +182,12 @@ describe 'Friends API' do
     end
   end
 
-  describe 'creating a friend' do
+  describe 'creating a friend relationship' do
     describe 'happy path' do
-      it "Can create a new friend" do
+      it "Can create a new friend relationship with a default status of pending" do
         requester = create(:user)
         requestee = create(:user)
+        create_list(:user, 3)
        
         headers = {"HTTP_USER" => "#{requester.google_id}"}
 
@@ -198,6 +199,33 @@ describe 'Friends API' do
 
         expect(created_friend.follower_id).to eq(requester.id)
         expect(created_friend.followee_id).to eq(requestee.id)
+        expect(created_friend.request_status).to eq("pending")
+      end
+    end
+  end
+
+  describe 'updating a friend relationship' do
+    describe 'happy path' do
+      it 'can update the status of a friend relationship after the requestee accepts the request' do
+        friendship = create(:friend)
+        other_friendships = create_list(:friend, 3)
+        expect(friendship.request_status).to eq("pending")
+        headers = {"HTTP_REQUEST_STATUS" => "1"}
+
+        patch "/api/v1/friends/#{friendship.id}", headers: headers
+        
+        other_friendships.each do |other|
+          expect(other.request_status).to eq("pending")
+        end
+        
+        accepted_friendship = Friend.first
+        
+        expect(response).to be_successful
+        expect(response.status).to eq(201)
+        expect(accepted_friendship.id).to eq(friendship.id)
+        expect(accepted_friendship.follower_id).to eq(friendship.follower_id)
+        expect(accepted_friendship.followee_id).to eq(friendship.followee_id)
+        expect(accepted_friendship.request_status).to eq("accepted")
       end
     end
   end
