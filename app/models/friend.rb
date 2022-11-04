@@ -6,4 +6,6 @@ class Friend < ApplicationRecord
 
   validates_presence_of :follower_id, :followee_id, :request_status
   validates_numericality_of :follower_id, :followee_id
+
+
 end

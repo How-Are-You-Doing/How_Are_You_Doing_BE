@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   namespace :api do 
     namespace :v1 do 
       resources :emotions, only: [:index]
+      resources :users, only: [:create]
+      resources :friends, only: [:index]
 
       namespace :users do
         resources :posts, only: [:index], path: :history

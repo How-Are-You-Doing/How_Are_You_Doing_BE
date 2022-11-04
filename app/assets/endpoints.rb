@@ -117,6 +117,7 @@ get 'api/v1/friends'
 #headers pass in user
 #this is refering to a specific users friends
 
+(A) User has friends
 { “data” : 
 	[
 		{ 
@@ -132,6 +133,10 @@ get 'api/v1/friends'
 ...
 	]
 }
+
+(B) User doesn't have friends
+{ “data” : [] }
+
 
 
 
@@ -193,9 +198,10 @@ get 'api/v1/users?search=<google_id>'
 
 post 'api/v1/users'
 #pass in info through headers
+#201 return status code
 
 { 
-	"status" : 201
+	"message" : "User successfully created"
 }
 
 
