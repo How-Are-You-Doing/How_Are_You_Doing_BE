@@ -27,7 +27,7 @@
 ## Get all emotions for a post
 get 'api/v1/post_emotions'
 
-<img src="./app/assets/images/post_emotions_endpoint.jpg" alt="This is what we expect to return when we query for a list of emotions for the post page" width="600" height="350" />
+<img src="./app/assets/images/emotions_endpoint.jpg" alt="This is what we expect to return when we query for a list of emotions for the post page" width="600" height="350" />
 
 
 ## Get all friends of a user with a status of pending

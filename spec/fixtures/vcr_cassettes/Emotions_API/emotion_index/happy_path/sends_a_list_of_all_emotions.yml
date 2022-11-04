@@ -4373,6 +4373,7 @@ http_interactions:
         4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
     body:
       encoding: UTF-8
+
       string: '[{"word":"moved","phonetic":"/muːvd/","phonetics":[{"text":"/muːvd/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/moved-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1235993","license":{"name":"BY-SA
         3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
         change place or posture; to go, in any manner, from one place or position
@@ -4561,6 +4562,7 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '446'
       X-Ratelimit-Reset:
+
       - '1667584481'
       Etag:
       - W/"9a1-2OoTnxL430ISEbp9JJz1XUXe5GM"
@@ -4617,6 +4619,7 @@ http_interactions:
       Server:
       - nginx/1.20.0
       Date:
+
       - Fri, 04 Nov 2022 17:52:49 GMT
       Content-Type:
       - application/json; charset=utf-8
@@ -4721,11 +4724,13 @@ http_interactions:
       Server:
       - nginx/1.20.0
       Date:
+
       - Fri, 04 Nov 2022 17:53:15 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
       - '622'
+
       Connection:
       - keep-alive
       X-Powered-By:
@@ -4737,9 +4742,11 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '443'
       X-Ratelimit-Reset:
+
       - '1667584481'
       Etag:
       - W/"26e-R3hPnBb+fh/1s+QoLzj1bVKm/H8"
+
       Vary:
       - Accept-Encoding
       Strict-Transport-Security:
@@ -4747,6 +4754,7 @@ http_interactions:
         4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
     body:
       encoding: UTF-8
+
       string: '[{"word":"tiresome","phonetic":"/ˈtaɪəsəm/","phonetics":[{"text":"/ˈtaɪəsəm/","audio":""},{"text":"/ˈtaɪɹsəm/","audio":""}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Causing
         fatigue or boredom; wearisome.","synonyms":[],"antonyms":[],"example":"Eventually
         his long stories became tiresome."}],"synonyms":["boring","dull","exhausting","irksome","slow","tedious","wearisome"],"antonyms":["energizing","exciting","fresh","interesting"]}],"license":{"name":"CC
@@ -4755,6 +4763,7 @@ http_interactions:
 - request:
     method: get
     uri: https://api.dictionaryapi.dev/api/v2/entries/en/sanguine
+
     body:
       encoding: US-ASCII
       string: ''
@@ -4821,6 +4830,7 @@ http_interactions:
 - request:
     method: get
     uri: https://api.dictionaryapi.dev/api/v2/entries/en/sincere
+
     body:
       encoding: US-ASCII
       string: ''
@@ -4844,6 +4854,7 @@ http_interactions:
       - application/json; charset=utf-8
       Content-Length:
       - '918'
+
       Connection:
       - keep-alive
       X-Powered-By:
@@ -4855,9 +4866,11 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '441'
       X-Ratelimit-Reset:
+
       - '1667584481'
       Etag:
       - W/"396-UP5euRAxnFToquFEun8jlwz5WO8"
+
       Vary:
       - Accept-Encoding
       Strict-Transport-Security:
@@ -4865,6 +4878,7 @@ http_interactions:
         4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
     body:
       encoding: UTF-8
+
       string: '[{"word":"sincere","phonetic":"/sɪnˈsɪə(ɹ)/","phonetics":[{"text":"/sɪnˈsɪə(ɹ)/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/sincere-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1785269","license":{"name":"BY-SA
         3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"adjective","definitions":[{"definition":"Genuine;
         meaning what one says or does; heartfelt.","synonyms":[],"antonyms":[],"example":"I
@@ -4983,6 +4997,7 @@ http_interactions:
 - request:
     method: get
     uri: https://api.dictionaryapi.dev/api/v2/entries/en/forlorn
+
     body:
       encoding: US-ASCII
       string: ''
@@ -5001,7 +5016,9 @@ http_interactions:
       Server:
       - nginx/1.20.0
       Date:
+
       - Fri, 04 Nov 2022 17:57:54 GMT
+
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -5015,11 +5032,13 @@ http_interactions:
       X-Ratelimit-Limit:
       - '450'
       X-Ratelimit-Remaining:
+
       - '448'
       X-Ratelimit-Reset:
       - '1667584781'
       Etag:
       - W/"5a2-HudwekZQLM3dS9lzTtyOeZujfd4"
+
       Vary:
       - Accept-Encoding
       Strict-Transport-Security:
@@ -5027,6 +5046,7 @@ http_interactions:
         4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
     body:
       encoding: UTF-8
+
       string: '[{"word":"forlorn","phonetics":[{"audio":"https://api.dictionaryapi.dev/media/pronunciations/en/forlorn-au.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=75796889","license":{"name":"BY-SA
         4.0","url":"https://creativecommons.org/licenses/by-sa/4.0"}},{"text":"/fɔː-/","audio":""},{"text":"/fɔɹˈlɔɹn/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/forlorn-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=2454043","license":{"name":"BY-SA
         3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
@@ -5041,6 +5061,7 @@ http_interactions:
 - request:
     method: get
     uri: https://api.dictionaryapi.dev/api/v2/entries/en/thrilled
+
     body:
       encoding: US-ASCII
       string: ''
@@ -5059,7 +5080,9 @@ http_interactions:
       Server:
       - nginx/1.20.0
       Date:
+
       - Fri, 04 Nov 2022 17:57:54 GMT
+
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -5073,11 +5096,13 @@ http_interactions:
       X-Ratelimit-Limit:
       - '450'
       X-Ratelimit-Remaining:
+
       - '447'
       X-Ratelimit-Reset:
       - '1667584781'
       Etag:
       - W/"4e4-GEF/jXVtScu27zrlf0T+sUeXY8Q"
+
       Vary:
       - Accept-Encoding
       Strict-Transport-Security:
@@ -5085,6 +5110,7 @@ http_interactions:
         4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
     body:
       encoding: UTF-8
+
       string: '[{"word":"thrilled","phonetic":"/θɹɪld/","phonetics":[{"text":"/θɹɪld/","audio":""}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
         suddenly excite someone, or to give someone great pleasure; to (figuratively)
         electrify; to experience such a sensation.","synonyms":[],"antonyms":[]},{"definition":"To
@@ -5100,6 +5126,7 @@ http_interactions:
 - request:
     method: get
     uri: https://api.dictionaryapi.dev/api/v2/entries/en/stressed
+
     body:
       encoding: US-ASCII
       string: ''
@@ -5118,7 +5145,9 @@ http_interactions:
       Server:
       - nginx/1.20.0
       Date:
+
       - Fri, 04 Nov 2022 17:57:54 GMT
+
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -5132,11 +5161,13 @@ http_interactions:
       X-Ratelimit-Limit:
       - '450'
       X-Ratelimit-Remaining:
+
       - '446'
       X-Ratelimit-Reset:
       - '1667584781'
       Etag:
       - W/"58f-aG2iFDPfB3nvZg9RFGPmlpOJpc8"
+
       Vary:
       - Accept-Encoding
       Strict-Transport-Security:
@@ -5144,6 +5175,7 @@ http_interactions:
         4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
     body:
       encoding: UTF-8
+
       string: '[{"word":"stressed","phonetic":"/stɹɛst/","phonetics":[{"text":"/stɹɛst/","audio":""}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
         apply force to (a body or structure) causing strain.","synonyms":[],"antonyms":[]},{"definition":"To
         apply emotional pressure to (a person or animal).","synonyms":[],"antonyms":[]},{"definition":"To
@@ -5157,4 +5189,5 @@ http_interactions:
         a stress or accent.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":["unstressed"]}],"license":{"name":"CC
         BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/stress","https://en.wiktionary.org/wiki/stressed"]}]'
   recorded_at: Fri, 04 Nov 2022 17:57:54 GMT
+
 recorded_with: VCR 6.1.0
