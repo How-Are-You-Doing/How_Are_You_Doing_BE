@@ -5,7 +5,7 @@ describe 'Friends API' do
   describe 'Friends Index' do
 
     describe 'happy path' do
-
+      
       it 'sends a list of all of users who have a relationship with the logged in user' do
         user = create(:user)
 
@@ -130,12 +130,11 @@ describe 'Friends API' do
     end
 
     describe 'sad path' do
-
       it 'sends an empty data hash back if there are no matches for all friends' do
         user = create(:user)
         randos = create_list(:friend, 5)
 
-        params = { user: "#{user.google_id}"}
+        params = { user: "#{user.google_id}" }
 
         get '/api/v2/friends', params: params
 
@@ -227,7 +226,7 @@ describe 'Friends API' do
         other_friendships = create_list(:friend, 3)
         expect(friendship.request_status).to eq('pending')
 
-        params = { request_status: "1"}
+        params = { request_status: '1' }
 
         patch "/api/v2/friends/#{friendship.id}", params: params
 
@@ -250,7 +249,7 @@ describe 'Friends API' do
         other_friendships = create_list(:friend, 3)
         expect(friendship.request_status).to eq('pending')
 
-        params = { request_status: "2"}
+        params = { request_status: '2' }
 
         patch "/api/v2/friends/#{friendship.id}", params: params
 
