@@ -10,7 +10,6 @@ describe 'Friends API' do
         rejected_friends = create_list(:friend, 3, follower: user, request_status: 2)
         pending_friends = create_list(:friend, 3, follower: user, request_status: 0)
         randos = create_list(:friend, 5)
-
         headers = {"HTTP_USER" => "#{user.google_id}"}
 
         get "/api/v1/friends", headers: headers

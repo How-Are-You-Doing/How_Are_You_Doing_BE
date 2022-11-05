@@ -114,7 +114,7 @@ get '/api/v1/users/history'
 }
 
 get 'api/v1/friends'
-#this is refering to a specific users friends
+#this is refering to a specific users friends, regardless of status
 
 (A) User has friends
 { “data” : 
