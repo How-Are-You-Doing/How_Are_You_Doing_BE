@@ -43,4 +43,5 @@ RSpec.describe ToneService do
       expect(tone_data[:emotion_scores][:fear]).to be_an(Numeric)
     end
   end
+   VCR.turn_on!
 end

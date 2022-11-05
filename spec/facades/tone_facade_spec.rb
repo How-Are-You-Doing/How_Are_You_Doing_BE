@@ -23,4 +23,5 @@ RSpec.describe DefinitionFacade do
       expect(tone).to be_a(String)
     end
   end
+   VCR.turn_on!
 end

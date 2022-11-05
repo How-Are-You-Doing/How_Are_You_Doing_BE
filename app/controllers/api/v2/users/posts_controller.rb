@@ -7,4 +7,11 @@ class Api::V2::Users::PostsController < ApplicationController
       render json:{data: {}}, status: :bad_request
     end
   end
+
+  private
+
+  def current_user_params
+    params.permit(:user)
+  end
+  
 end

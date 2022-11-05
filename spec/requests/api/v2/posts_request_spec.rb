@@ -133,4 +133,5 @@ describe 'Posts API' do
       end
     end
   end
+  VCR.turn_on!
 end
