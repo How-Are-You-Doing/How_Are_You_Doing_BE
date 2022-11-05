@@ -1,6 +1,6 @@
 class UserSerializer
   include JSONAPI::Serializer
-  attributes :name, :email, :google_id
+  attributes :name, :email
 
   def self.render_users_friends(users)
     users.map do |user|
