@@ -4,7 +4,6 @@ class Post < ApplicationRecord
   belongs_to :emotion
 
   validates_presence_of :emotion_id, :description, :post_status, :tone
-  validates_numericality_of :emotion_id, :post_status
-  # validates_associated :emotion
+  validates_numericality_of :emotion_id
 
 end
