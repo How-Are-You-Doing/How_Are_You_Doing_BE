@@ -83,12 +83,26 @@ describe 'Posts API' do
 
         expect(response).to be_successful
         expect(response).to have_http_status(201)
+        post_data = JSON.parse(response.body, symbolize_names: true)
+        post = post_data[:data]
 
         created_post = user.posts.last
 
         expect(created_post.emotion_id).to eq(emotion.id)
         expect(created_post.description).to eq(params[:description])
         expect(created_post.tone).to_not be(nil)
+
+        expect(post_data).to be_a(Hash)
+        expect(post_data.count).to eq(1)
+
+        expect(post[:id].to_i).to eq(created_post.id)
+        expect(post[:type]).to eq('post')
+        expect(post[:attributes].count).to eq(5)
+        expect(post[:attributes][:emotion]).to eq(params[:emotion])
+        expect(post[:attributes][:post_status]).to eq(created_post.post_status)
+        expect(post[:attributes][:description]).to eq(created_post.description)
+        expect(post[:attributes][:tone]).to eq(created_post.tone)
+        expect(post[:attributes][:created_at].to_date).to eq(created_post.created_at.to_date)
       end
 
       it 'Creates a new user post with a personal status if not post status is provided' do
@@ -104,13 +118,27 @@ describe 'Posts API' do
 
         expect(response).to be_successful
         expect(response).to have_http_status(201)
-
+        post_data = JSON.parse(response.body, symbolize_names: true)
+        
+        post = post_data[:data]
         created_post = user.posts.last
 
         expect(created_post.emotion_id).to eq(emotion.id)
         expect(created_post.description).to eq(params[:description])
         expect(created_post.tone).to_not be(nil)
         expect(created_post.post_status).to eq('personal')
+
+        expect(post_data).to be_a(Hash)
+        expect(post_data.count).to eq(1)
+
+        expect(post[:id].to_i).to eq(created_post.id)
+        expect(post[:type]).to eq('post')
+        expect(post[:attributes].count).to eq(5)
+        expect(post[:attributes][:emotion]).to eq(params[:emotion])
+        expect(post[:attributes][:post_status]).to eq(created_post.post_status)
+        expect(post[:attributes][:description]).to eq(created_post.description)
+        expect(post[:attributes][:tone]).to eq(created_post.tone)
+        expect(post[:attributes][:created_at].to_date).to eq(created_post.created_at.to_date)
       end
     end
     describe 'sad path' do

@@ -14,8 +14,9 @@ class Api::V2::PostsController < ApplicationController
     found_emotion = Emotion.find_by(term: emotion_params[:emotion])
     found_tone = ToneFacade.analyze_tone(post_params[:description])
     post = Post.new(user: found_user, tone: found_tone, emotion: found_emotion)
+
     if post.update(post_params)
-      render json: { message: 'User successfully created' }, status: :created
+      render json: PostSerializer.new(post), status: :created
     else
       render json:{data: {}}, status: :bad_request
     end
