@@ -11,7 +11,7 @@ describe 'Posts API' do
 
         params = {"user" => "#{user.google_id}"}
 
-        get '/api/v1/users/history', params: params
+        get '/api/v2/users/history', params: params
 
         expect(response).to be_successful
 
@@ -52,7 +52,7 @@ describe 'Posts API' do
         user = create(:user)
         posts = create_list(:post, 5, user: user)
 
-        get '/api/v1/users/history'
+        get '/api/v2/users/history'
 
         posts = JSON.parse(response.body, symbolize_names: true)
 
@@ -67,7 +67,7 @@ describe 'Posts API' do
 
         params = {"user" => "#{user.google_id}"}
 
-        get '/api/v1/users/history', params: params
+        get '/api/v2/users/history', params: params
 
         posts = JSON.parse(response.body, symbolize_names: true)
 
@@ -83,7 +83,7 @@ describe 'Posts API' do
 
         params = {"user" => "65"}
 
-        get '/api/v1/users/history', params: params
+        get '/api/v2/users/history', params: params
 
         posts = JSON.parse(response.body, symbolize_names: true)
 
@@ -107,7 +107,7 @@ describe 'Posts API' do
        
         params = {"user" => "#{user.google_id}"}
 
-        get '/api/v1/posts/last', params: params
+        get '/api/v2/posts/last', params: params
 
         expect(response).to be_successful
 
@@ -135,13 +135,13 @@ describe 'Posts API' do
 
         params = {"user" => "#{user.google_id}"}
 
-        get '/api/v1/posts/last', params: params
+        get '/api/v2/posts/last', params: params
 
         expect(response).to be_successful
 
         post_data = JSON.parse(response.body, symbolize_names: true)
       
-        expect(post_data).to eq({:data=>[]})
+        expect(post_data).to eq({:data=>{}})
 
       end
     end

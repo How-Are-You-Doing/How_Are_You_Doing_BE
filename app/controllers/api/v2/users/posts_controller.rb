@@ -1,4 +1,4 @@
-class Api::V1::Users::PostsController < ApplicationController 
+class Api::V2::Users::PostsController < ApplicationController 
   def index
     user = User.find_by(google_id: current_user_params[:user])
     if !user.nil?
@@ -12,7 +12,7 @@ class Api::V1::Users::PostsController < ApplicationController
     user = User.find_by(google_id: current_user_params[:user])
     post = user.most_recent_post
     if post.nil?
-      render json: {:data=>[]}
+      render json: {:data=>{}}
     else
       render json: PostSerializer.new(post)
     end
