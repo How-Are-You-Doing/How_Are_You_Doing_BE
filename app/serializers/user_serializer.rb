@@ -10,7 +10,7 @@ class UserSerializer
           "type": user.class.name.downcase,
           attributes: {
               name: user.name,
-              name: user.email
+              email: user.email
             }
         }
       }
