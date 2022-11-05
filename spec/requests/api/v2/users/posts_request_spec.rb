@@ -9,7 +9,7 @@ describe 'Posts API' do
         user = create(:user)
         posts = create_list(:post, 5, user: user)
 
-        params = {"user" => "#{user.google_id}"}
+        params = {user: "#{user.google_id}"}
 
         get '/api/v2/users/history', params: params
 
@@ -65,7 +65,7 @@ describe 'Posts API' do
       it 'sends a empty array is user has no posts' do
         user = create(:user)
 
-        params = {"user" => "#{user.google_id}"}
+        params = {user: "#{user.google_id}"}
 
         get '/api/v2/users/history', params: params
 
@@ -81,7 +81,7 @@ describe 'Posts API' do
       it 'sends a empty data hash if google_id for user is not found' do
         user = create(:user)
 
-        params = {"user" => "65"}
+        params = {user:> "65"}
 
         get '/api/v2/users/history', params: params
 
@@ -105,7 +105,7 @@ describe 'Posts API' do
         newest_post = create(:post, user: user, created_at: 1.day.ago)
         create_list(:post, 5)
        
-        params = {"user" => "#{user.google_id}"}
+        params = {user: "#{user.google_id}"}
 
         get '/api/v2/posts/last', params: params
 
@@ -133,7 +133,7 @@ describe 'Posts API' do
         user = create(:user)
         create_list(:post, 5)
 
-        params = {"user" => "#{user.google_id}"}
+        params = {user: "#{user.google_id}"}
 
         get '/api/v2/posts/last', params: params
 
