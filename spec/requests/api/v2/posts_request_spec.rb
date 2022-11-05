@@ -64,7 +64,7 @@ describe 'Posts API' do
               'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
               'User-Agent'=>'Faraday v2.6.0',
               'X-Rapidapi-Host'=>'twinword-emotion-analysis-v1.p.rapidapi.com',
-              'X-Rapidapi-Key'=>'e43e38501cmsh7ed77fa662e158ep1eb457jsn12d15f5a306c'
+              'X-Rapidapi-Key'=> ENV['tone_api_key']
               }).
          to_return(status: 200, body: json_response, headers: {})
     end
