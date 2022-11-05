@@ -1,0 +1,293 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/contemplative
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Sat, 05 Nov 2022 01:01:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '941'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '449'
+      X-Ratelimit-Reset:
+      - '1667610281'
+      Etag:
+      - W/"3ad-RCqhQ7Xt0A/hYL8gv5rrRtJRMIE"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"contemplative","phonetic":"/kənˈtɛmplətɪv/","phonetics":[{"text":"/kənˈtɛmplətɪv/","audio":""}],"meanings":[{"partOfSpeech":"noun","definitions":[{"definition":"Someone
+        who has dedicated themselves to religious contemplation.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Inclined
+        to contemplate; introspective and thoughtful; meditative.","synonyms":[],"antonyms":[]},{"definition":"Pertaining
+        to a religious contemplative, or a contemplative religious orders, especially
+        the Roman Catholic varieties.","synonyms":[],"antonyms":[]},{"definition":"Relating
+        to, or having the power of, contemplation.","synonyms":[],"antonyms":[],"example":"contemplative
+        faculties"}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/contemplative"]}]'
+  recorded_at: Sat, 05 Nov 2022 01:01:07 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/forlorn
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Sat, 05 Nov 2022 01:01:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '448'
+      X-Ratelimit-Reset:
+      - '1667610281'
+      Etag:
+      - W/"5a2-HudwekZQLM3dS9lzTtyOeZujfd4"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"forlorn","phonetics":[{"audio":"https://api.dictionaryapi.dev/media/pronunciations/en/forlorn-au.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=75796889","license":{"name":"BY-SA
+        4.0","url":"https://creativecommons.org/licenses/by-sa/4.0"}},{"text":"/fɔː-/","audio":""},{"text":"/fɔɹˈlɔɹn/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/forlorn-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=2454043","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        abandon, forsake.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"noun","definitions":[{"definition":"A
+        forlorn hope.","synonyms":[],"antonyms":[]},{"definition":"A member of a forlorn
+        hope.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Abandoned,
+        deserted, left behind.","synonyms":[],"antonyms":[]},{"definition":"Miserable,
+        as when lonely after being abandoned.","synonyms":["forsaken"],"antonyms":[]},{"definition":"Unlikely
+        to succeed; hopeless.","synonyms":[],"antonyms":[]}],"synonyms":["forsaken"],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/forlese","https://en.wiktionary.org/wiki/forlorn"]}]'
+  recorded_at: Sat, 05 Nov 2022 01:01:08 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/thrilled
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Sat, 05 Nov 2022 01:01:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '447'
+      X-Ratelimit-Reset:
+      - '1667610281'
+      Etag:
+      - W/"4e4-GEF/jXVtScu27zrlf0T+sUeXY8Q"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"thrilled","phonetic":"/θɹɪld/","phonetics":[{"text":"/θɹɪld/","audio":""}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        suddenly excite someone, or to give someone great pleasure; to (figuratively)
+        electrify; to experience such a sensation.","synonyms":[],"antonyms":[]},{"definition":"To
+        (cause something to) tremble or quiver.","synonyms":[],"antonyms":[]},{"definition":"To
+        perforate by a pointed instrument; to bore; to transfix; to drill.","synonyms":[],"antonyms":[]},{"definition":"To
+        hurl; to throw; to cast.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"verb","definitions":[{"definition":"To
+        drill and thread in one operation, using a tool bit that cuts the hole and
+        the threads in one series of computer-controlled movements.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Extremely
+        excited or delighted.","synonyms":[],"antonyms":[],"example":"Ben was thrilled
+        to lead the game."}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/thrill","https://en.wiktionary.org/wiki/thrilled"]}]'
+  recorded_at: Sat, 05 Nov 2022 01:01:08 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/stressed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Sat, 05 Nov 2022 01:01:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '446'
+      X-Ratelimit-Reset:
+      - '1667610281'
+      Etag:
+      - W/"58f-aG2iFDPfB3nvZg9RFGPmlpOJpc8"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"stressed","phonetic":"/stɹɛst/","phonetics":[{"text":"/stɹɛst/","audio":""}],"meanings":[{"partOfSpeech":"verb","definitions":[{"definition":"To
+        apply force to (a body or structure) causing strain.","synonyms":[],"antonyms":[]},{"definition":"To
+        apply emotional pressure to (a person or animal).","synonyms":[],"antonyms":[]},{"definition":"To
+        suffer stress; to worry or be agitated.","synonyms":[],"antonyms":[]},{"definition":"To
+        emphasise (a syllable of a word).","synonyms":[],"antonyms":[],"example":"“Emphasis”
+        is stressed on the first syllable, but “emphatic” is stressed on the second."},{"definition":"To
+        emphasise (words in speaking).","synonyms":[],"antonyms":[]},{"definition":"To
+        emphasise (a point) in an argument or discussion.","synonyms":[],"antonyms":[],"example":"I
+        must stress that this information is given in strict confidence."}],"synonyms":["emphasise","emphasize","underline","emphasise","emphasize","emphasise","emphasize"],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Suffering
+        stress (either physical or mental).","synonyms":[],"antonyms":[]},{"definition":"Having
+        a stress or accent.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":["unstressed"]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/stress","https://en.wiktionary.org/wiki/stressed"]}]'
+  recorded_at: Sat, 05 Nov 2022 01:01:08 GMT
+- request:
+    method: get
+    uri: https://api.dictionaryapi.dev/api/v2/entries/en/ecstatic
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.20.0
+      Date:
+      - Sat, 05 Nov 2022 01:01:09 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Ratelimit-Limit:
+      - '450'
+      X-Ratelimit-Remaining:
+      - '445'
+      X-Ratelimit-Reset:
+      - '1667610281'
+      Etag:
+      - W/"4a3-JyMeBVwwJSC2qHrUVifi5AZEMDg"
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - !binary |-
+        4oCcbWF4LWFnZT0xNTc2ODAwMOKAnQ==
+    body:
+      encoding: UTF-8
+      string: '[{"word":"ecstatic","phonetic":"/ɛkˈstætɪk/","phonetics":[{"text":"/ɛkˈstætɪk/","audio":"https://api.dictionaryapi.dev/media/pronunciations/en/ecstatic-us.mp3","sourceUrl":"https://commons.wikimedia.org/w/index.php?curid=1157398","license":{"name":"BY-SA
+        3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"}}],"meanings":[{"partOfSpeech":"noun","definitions":[{"definition":"(in
+        the plural) Transports of delight; words or actions performed in a state of
+        ecstasy.","synonyms":[],"antonyms":[]},{"definition":"A person in a state
+        of ecstasy.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":[]},{"partOfSpeech":"adjective","definitions":[{"definition":"Feeling
+        or characterized by ecstasy.","synonyms":[],"antonyms":[]},{"definition":"Extremely
+        happy.","synonyms":[],"antonyms":[]},{"definition":"Relating to, or caused
+        by, ecstasy or excessive emotion.","synonyms":[],"antonyms":[],"example":"ecstatic
+        gaze; ecstatic trance"}],"synonyms":["blissful","delirious","elated","euphoric","joyful","joyous"],"antonyms":[]}],"license":{"name":"CC
+        BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/ecstatic"]}]'
+  recorded_at: Sat, 05 Nov 2022 01:01:08 GMT
+recorded_with: VCR 6.1.0
