@@ -367,6 +367,13 @@ get '/api/v2/friends?user=<google_id>'
   ``` 
 
 
+## Other endpoints to be updated later
+
+
+Friends:
+get '/api/v2/friends?email=<email>&user=<google_id>'
+get '/api/v2/friends/:friendship_id?request_status=<status>'
+
 
 
 
