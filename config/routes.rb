@@ -19,7 +19,7 @@ Rails.application.routes.draw do
       resources :users, only: [:create, :index]
       resources :friends, only: [:index, :create, :update]
       resources :posts, only: [:create]
-      get "posts/last", to: "users/posts#most_recent"
+      resource :posts, only: [:show], path: "posts/last"
       namespace :users do
         resources :posts, only: [:index], path: :history
       end
