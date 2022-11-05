@@ -20,4 +20,8 @@ class User < ApplicationRecord
   def most_recent_post
     posts.order(created_at: :desc).first
   end
+
+  def public_posts
+    posts.where(post_status: 'shared')
+  end
 end

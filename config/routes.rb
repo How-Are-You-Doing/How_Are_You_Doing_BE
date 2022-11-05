@@ -5,7 +5,9 @@ Rails.application.routes.draw do
     namespace :v1 do 
       resources :emotions, only: [:index]
       resources :users, only: [:create, :index]
-      resources :friends, only: [:index, :create, :update]
+      resources :friends, only: [:index, :create, :update] do
+        resources :posts, only: [:index], module: 'friends'
+      end
       resources :posts, only: [:create]
       get "posts/last", to: "users/posts#most_recent"
       namespace :users do
