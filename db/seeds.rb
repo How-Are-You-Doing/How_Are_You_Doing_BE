@@ -14,6 +14,7 @@ user_4 = User.create!(name: "Randy Bobandy", email: "assistantsupervisor@sunnyva
 user_5 = User.create!(name: "Gon Freecss", email: "gon@hunterassociation.com", google_id: "58544636")
 user_6 = User.create!(name: "Hisoka Morow", email: "hisoka.morow@meteorcity.gov", google_id: "91239464")
 user_7 = User.create!(name: "Jenny", email: "jenny@tommytutone.com", google_id: "8675309")
+user_8 = User.create!(name: "Lonely", email: "noposts@lonely.alone", google_id: "8675310")
 #emotions
 
 e1 = Emotion.create!(term: "Affectionate")
