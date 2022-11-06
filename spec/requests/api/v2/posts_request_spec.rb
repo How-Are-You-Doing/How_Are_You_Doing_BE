@@ -118,8 +118,7 @@ describe 'Posts API' do
         expect(response).to be_successful
         expect(response).to have_http_status(201)
         post_data = JSON.parse(response.body, symbolize_names: true)
-        require 'pry'
-        binding.pry
+        
         post = post_data[:data]
         created_post = user.posts.last
 
@@ -347,4 +346,5 @@ describe 'Posts API' do
       end
     end
   end
+  VCR.turn_on!
 end
