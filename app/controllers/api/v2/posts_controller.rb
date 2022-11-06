@@ -23,14 +23,14 @@ class Api::V2::PostsController < ApplicationController
   end
 
   def update
-    # require "pry"; binding.pry
+
     post = Post.find(params[:id])
     new_emotion = Emotion.find_by(term: emotion_params[:emotion]).id if emotion_params[:emotion].present?
     new_tone = ToneFacade.analyze_tone(post_params[:description]) if find_tone_requirments?(post)
 
     new_post_params = post_params.merge(found_new_params(new_emotion, new_tone))
-    # require "pry"; binding.pry
-    if post.update(new_post_params)
+  
+    if post.update(new_post_params) && new_post_params.present?
       render json: PostSerializer.new(post), status: :created
     else
       render json:{data: {}}, status: :bad_request

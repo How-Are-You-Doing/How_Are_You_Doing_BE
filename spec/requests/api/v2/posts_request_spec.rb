@@ -301,6 +301,23 @@ describe 'Posts API' do
     end
 
     describe 'sad path' do
+      it 'It wont update a post an empty description string is rcvd' do
+        post = create(:post)
+        emotion = create(:emotion, term: 'Annoyed')
+
+        params = {  emotion: emotion.term,
+                    description: ' ' }
+
+        patch "/api/v2/posts/#{post.id}", params: params
+
+        post = JSON.parse(response.body, symbolize_names: true)
+
+        expect(response).to have_http_status(400)
+
+        expect(post).to have_key(:data)
+        expect(post[:data]).to be_a(Hash)
+      end
+
       it 'It wont update a post if the only updated param sent is and empty description string' do
         post = create(:post)
 
@@ -316,7 +333,7 @@ describe 'Posts API' do
         expect(post[:data]).to be_a(Hash)
       end
 
-      it 'It wont update a post if no params sent is and empty description string' do
+      it 'It wont update a post if no params sent' do
         post = create(:post)
 
         patch "/api/v2/posts/#{post.id}"
