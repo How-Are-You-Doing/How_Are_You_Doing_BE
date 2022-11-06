@@ -109,32 +109,14 @@ get '/api/v2/users?email=<email>'
 }
 ```
 
-## returns a user when searching with both name and google_id
-get '/api/v2/users?name=<name>&email=<email>&google_id=<google_id>'
-
-```{
-    "data": {
-        "id": "5",
-        "type": "user",
-        "attributes": {
-            "name": "Gon Freecss"
-        }
-    }
-}
-```
-## returns this if no user is found with that email address
-
-```
-{
-    "data": []
-}
-```
-
-
 ## Post or Create a new user to the backend database
 post 'api/v1/users'
 
 pass in name, google_id, and email in headers
+
+or
+
+post '/api/v2/users?name=<name>&email=<email>&google_id=<google_id>'
 
 ```
 {
@@ -214,7 +196,7 @@ get 'api/v2/users/last?user=<google_id>'
 
 
 ## create a new post
-post '/api/v2/posts?user=<google_id>&emotion=<emotion_term>&description=<description>&post_status=<personal or shared>'
+post '/api/v2/posts?user=<google_id>&emotion=<emotion_term>&description=<description>&post_status=<personal_or_shared>'
 
 # if the post was successfully created
 ```
@@ -236,11 +218,11 @@ post '/api/v2/posts?user=<google_id>&emotion=<emotion_term>&description=<descrip
 # if the post was not successfully created
 ```
 {
-    "data": []
+    "data": {}
 }
 ```
 ## update an existing post
-patch '/api/v2/posts?user=<google_id>&emotion=<emotion_term>&description=<description>&post_status=<personal or shared>'
+patch '/api/v2/posts/:post_id?emotion=<emotion_term>&description=<description>&post_status=<personal_or_shared>'
 
 
 
