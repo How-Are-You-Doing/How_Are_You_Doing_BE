@@ -19,7 +19,7 @@ Rails.application.routes.draw do
     namespace :v2 do 
       resources :users, only: [:create, :index]
       resources :friends, only: [:index, :create, :update]
-      resources :posts, only: [:create]
+      resources :posts, only: [:create, :update]
       resource :posts, only: [:show], path: "posts/last"
       namespace :users do
         resources :posts, only: [:index], path: :history

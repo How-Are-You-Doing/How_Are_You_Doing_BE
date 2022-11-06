@@ -160,12 +160,11 @@ describe 'Posts API' do
       end
     end
   end
-  VCR.turn_on!
 
-  describe 'update a user post', VCR.turn_off! do
+  describe 'update a user post' do
     before :each do
       json_response = File.read('spec/fixtures/tone_analysis_2.json')
-      stub_request(:get, 'https://twinword-emotion-analysis-v1.p.rapidapi.com/analyze/?text=Today%20I%20got%20a%20job%20offer%20for%20the%20company%20that%20I%20really%20loved,%20and%20have%20admired%20for%20a%20long%20time.')
+      stub_request(:get, "https://twinword-emotion-analysis-v1.p.rapidapi.com/analyze/?text=I%20have%20not%20been%20able%20to%20sleep%20very%20well%20lately%20because%20my%20dog%20is%20at%20the%20vet%20sick%20and%20we%20have%20a%20huge%20project%20at%20work%20that%20is%20taking%20a%20lot%20of%20time%20so%20I%20cant%20be%20with%20him%20at%20the%20vet.")
         .with(
           headers: {
             'Accept' => '*/*',
@@ -193,7 +192,7 @@ describe 'Posts API' do
         expect(response).to be_successful
         post_response = JSON.parse(response.body, symbolize_names: true)
 
-        post_data = post_data[:data]
+        post_data = post_response[:data]
         updated_post = user.posts.find(post.id)
 
         expect(updated_post.emotion_id).to eq(emotion.id)
@@ -305,12 +304,11 @@ describe 'Posts API' do
 
     describe 'sad path' do
       it 'It wont update a post if the only updated param sent is and empty description string' do
-        user = create(:user)
-        emotion = create(:emotion, term: 'thrilled')
+        post = create(:post)
 
         params = { description: ' ' }
 
-        patch '/api/v2/posts', params: params
+        patch "/api/v2/posts/#{post.id}", params: params
 
         post = JSON.parse(response.body, symbolize_names: true)
 
@@ -321,8 +319,9 @@ describe 'Posts API' do
       end
 
       it 'It wont update a post if no params sent is and empty description string' do
+        post = create(:post)
 
-        patch '/api/v2/posts'
+        patch "/api/v2/posts/#{post.id}"
 
         post = JSON.parse(response.body, symbolize_names: true)
 
@@ -333,5 +332,4 @@ describe 'Posts API' do
       end
     end
   end
-  VCR.turn_on!
 end
