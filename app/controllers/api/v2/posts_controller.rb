@@ -25,7 +25,7 @@ class Api::V2::PostsController < ApplicationController
   def update
     post = Post.find(params[:id])
     new_emotion = Emotion.find_by(term: emotion_params[:emotion]).id if emotion_params[:emotion].present?
-    new_tone = ToneFacade.analyze_tone(post_params[:description]) if find_tone_requirments?(post)
+    new_tone = ToneFacade.analyze_tone(post_params[:description]) if find_tone_requirements?(post)
 
     new_post_params = post_params.merge(found_new_params(new_emotion, new_tone))
 
@@ -50,7 +50,7 @@ class Api::V2::PostsController < ApplicationController
     params.permit(:description, :post_status)
   end
 
-  def find_tone_requirments?(post)
+  def find_tone_requirements?(post)
     post.description != post_params[:description] && post_params[:description].present?
   end
 

@@ -257,7 +257,7 @@ describe 'Posts API' do
         expect(post_data[:attributes][:created_at].to_date).to eq(post.created_at.to_date)
       end
 
-      it 'Does not update tone an existing user post when same description is recived with new post info' do
+      it 'Does not update tone of an existing user post when same description is recived with new post info' do
         user = create(:user)
         post = create(:post, user: user, post_status: 'personal')
         emotion = create(:emotion, term: 'Annoyed')
@@ -299,7 +299,7 @@ describe 'Posts API' do
     end
 
     describe 'sad path' do
-      it 'It wont update a post an empty description string is rcvd' do
+      it 'It wont update a post if an empty description string is rcvd' do
         post = create(:post)
         emotion = create(:emotion, term: 'Annoyed')
 
@@ -316,7 +316,7 @@ describe 'Posts API' do
         expect(post[:data]).to be_a(Hash)
       end
 
-      it 'It wont update a post if the only updated param sent is and empty description string' do
+      it 'It wont update a post if the only updated param sent is an empty description string' do
         post = create(:post)
 
         params = { description: ' ' }
