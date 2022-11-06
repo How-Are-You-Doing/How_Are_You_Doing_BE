@@ -18,22 +18,21 @@ class Api::V2::PostsController < ApplicationController
     if post.update(post_params)
       render json: PostSerializer.new(post), status: :created
     else
-      render json:{data: {}}, status: :bad_request
+      render json: { data: {} }, status: :bad_request
     end
   end
 
   def update
-
     post = Post.find(params[:id])
     new_emotion = Emotion.find_by(term: emotion_params[:emotion]).id if emotion_params[:emotion].present?
     new_tone = ToneFacade.analyze_tone(post_params[:description]) if find_tone_requirments?(post)
 
     new_post_params = post_params.merge(found_new_params(new_emotion, new_tone))
-  
+
     if post.update(new_post_params) && new_post_params.present?
       render json: PostSerializer.new(post), status: :created
     else
-      render json:{data: {}}, status: :bad_request
+      render json: { data: {} }, status: :bad_request
     end
   end
 
@@ -56,10 +55,9 @@ class Api::V2::PostsController < ApplicationController
   end
 
   def found_new_params(new_emotion, new_tone)
-    emotion_hash = Hash.new
+    emotion_hash = {}
     emotion_hash[:emotion_id] = new_emotion if new_emotion.present?
     emotion_hash[:tone] = new_tone if new_tone.present?
     emotion_hash
   end
-
 end

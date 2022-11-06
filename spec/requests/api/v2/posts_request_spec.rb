@@ -118,7 +118,7 @@ describe 'Posts API' do
         expect(response).to be_successful
         expect(response).to have_http_status(201)
         post_data = JSON.parse(response.body, symbolize_names: true)
-        
+
         post = post_data[:data]
         created_post = user.posts.last
 
@@ -163,7 +163,7 @@ describe 'Posts API' do
   describe 'update a user post' do
     before :each do
       json_response = File.read('spec/fixtures/tone_analysis_2.json')
-      stub_request(:get, "https://twinword-emotion-analysis-v1.p.rapidapi.com/analyze/?text=I%20have%20not%20been%20able%20to%20sleep%20very%20well%20lately%20because%20my%20dog%20is%20at%20the%20vet%20sick%20and%20we%20have%20a%20huge%20project%20at%20work%20that%20is%20taking%20a%20lot%20of%20time%20so%20I%20cant%20be%20with%20him%20at%20the%20vet.")
+      stub_request(:get, 'https://twinword-emotion-analysis-v1.p.rapidapi.com/analyze/?text=I%20have%20not%20been%20able%20to%20sleep%20very%20well%20lately%20because%20my%20dog%20is%20at%20the%20vet%20sick%20and%20we%20have%20a%20huge%20project%20at%20work%20that%20is%20taking%20a%20lot%20of%20time%20so%20I%20cant%20be%20with%20him%20at%20the%20vet.')
         .with(
           headers: {
             'Accept' => '*/*',
@@ -223,9 +223,9 @@ describe 'Posts API' do
         user = create(:user)
         post = create(:post, user: user)
 
-        params = {  
-                    description: 'I have not been able to sleep very well lately because my dog is at the vet sick and we have a huge project at work that is taking a lot of time so I cant be with him at the vet.',
-                   }
+        params = {
+          description: 'I have not been able to sleep very well lately because my dog is at the vet sick and we have a huge project at work that is taking a lot of time so I cant be with him at the vet.'
+        }
 
         patch "/api/v2/posts/#{post.id}", params: params
 
@@ -296,7 +296,6 @@ describe 'Posts API' do
 
         expect(post_data[:attributes][:created_at].to_date).to eq(updated_post.created_at.to_date)
       end
-
     end
 
     describe 'sad path' do
