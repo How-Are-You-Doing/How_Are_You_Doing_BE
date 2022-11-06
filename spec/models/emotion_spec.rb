@@ -32,12 +32,12 @@ RSpec.describe Emotion, type: :model do
 
       it 'does not update emotions that already have a definition in the database', vcr: { record: :new_episodes } do
         emotion_4 = Emotion.create!(term: 'disquiet',
-                                    definition: 'Lack of quiet; absence of tranquility in body or mind', 
-                                    created_at: '2022-8-12', 
+                                    definition: 'Lack of quiet; absence of tranquility in body or mind',
+                                    created_at: '2022-8-12',
                                     updated_at: '2022-8-12')
 
-        emotion_5 = Emotion.create!(term: 'proud', 
-                                    created_at: '2022-8-12', 
+        emotion_5 = Emotion.create!(term: 'proud',
+                                    created_at: '2022-8-12',
                                     updated_at: '2022-8-12')
 
         expect(Emotion.find(emotion_4.id).updated_at).to eq(DateTime.parse('2022-8-12'))

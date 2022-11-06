@@ -7,7 +7,7 @@ describe 'Posts API' do
         user = create(:user)
         posts = create_list(:post, 5, user: user)
 
-        headers = {"HTTP_USER" => "#{user.google_id}"}
+        headers = { 'HTTP_USER' => "#{user.google_id}" }
 
         get '/api/v1/users/history', headers: headers
 
@@ -55,7 +55,7 @@ describe 'Posts API' do
         posts = JSON.parse(response.body, symbolize_names: true)
 
         expect(response).to have_http_status(400)
-        
+
         expect(posts).to have_key(:data)
         expect(posts[:data]).to be_a(Hash)
       end
@@ -63,14 +63,13 @@ describe 'Posts API' do
       it 'sends a empty array is user has no posts' do
         user = create(:user)
 
-        headers = {"HTTP_USER" => "#{user.google_id}"}
+        headers = { 'HTTP_USER' => "#{user.google_id}" }
 
         get '/api/v1/users/history', headers: headers
 
         posts = JSON.parse(response.body, symbolize_names: true)
 
         expect(response).to be_successful
-
 
         expect(posts).to have_key(:data)
         expect(posts[:data]).to be_an(Array)
@@ -87,7 +86,7 @@ describe 'Posts API' do
         newest_post = create(:post, user: user, created_at: 1.day.ago)
         create_list(:post, 5)
 
-        headers = {"HTTP_USER" => "#{user.google_id}"}
+        headers = { 'HTTP_USER' => "#{user.google_id}" }
 
         get '/api/v1/posts/last', headers: headers
 
@@ -100,7 +99,7 @@ describe 'Posts API' do
         expect(post_data.count).to eq(1)
 
         expect(post[:id].to_i).to eq(newest_post.id)
-        expect(post[:type]).to eq("post")
+        expect(post[:type]).to eq('post')
         expect(post[:attributes].count).to eq(5)
         expect(post[:attributes][:emotion]).to eq(newest_post.emotion.term)
         expect(post[:attributes][:post_status]).to eq(newest_post.post_status)
@@ -115,7 +114,7 @@ describe 'Posts API' do
         user = create(:user)
         create_list(:post, 5)
 
-        headers = {"HTTP_USER" => "#{user.google_id}"}
+        headers = { 'HTTP_USER' => "#{user.google_id}" }
 
         get '/api/v1/posts/last', headers: headers
 
@@ -123,8 +122,7 @@ describe 'Posts API' do
 
         post_data = JSON.parse(response.body, symbolize_names: true)
 
-        expect(post_data).to eq({:data=>[]})
-
+        expect(post_data).to eq({ data: [] })
       end
     end
   end

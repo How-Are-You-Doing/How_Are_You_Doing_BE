@@ -5,8 +5,8 @@ describe 'Posts API' do
     describe 'happy path' do
       it 'sends a list of all posts for a current users friend' do
         user = create(:user)
-        posts = create_list(:post, 5, user: user, post_status: :personal)
-        posts = create_list(:post, 5, user: user, post_status: :shared)
+        personal_posts = create_list(:post, 5, user: user, post_status: :personal)
+        shared_posts = create_list(:post, 5, user: user, post_status: :shared)
 
         expect(user.posts.count).to eq(10)
 
@@ -55,7 +55,7 @@ describe 'Posts API' do
         posts = JSON.parse(response.body, symbolize_names: true)
 
         expect(response).to be_successful
-        
+
         expect(posts).to have_key(:data)
         expect(posts[:data]).to be_an(Array)
       end

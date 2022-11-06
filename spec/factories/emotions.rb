@@ -5,4 +5,4 @@ FactoryBot.define do
     term { Faker::Emotion.unique.adjective }
     definition { Faker::Lorem.sentence }
   end
-end 
+end

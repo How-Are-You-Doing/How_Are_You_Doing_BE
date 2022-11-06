@@ -8,8 +8,7 @@ describe 'Users API' do
 
         headers = { HTTP_NAME: 'Green Goblin',
                     HTTP_EMAIL: 'greenestgobble@gmail.com',
-                    HTTP_GOOGLE_ID: '225826428274681000'
-                  }
+                    HTTP_GOOGLE_ID: '225826428274681000' }
 
         post '/api/v1/users', headers: headers
         created_user = User.last

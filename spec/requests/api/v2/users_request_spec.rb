@@ -8,8 +8,7 @@ describe 'Users API' do
 
         params = {  name: 'Green Goblin',
                     email: 'greenestgobble@gmail.com',
-                    google_id: '225826428274681000' 
-                  }
+                    google_id: '225826428274681000' }
 
         post '/api/v2/users', params: params
         created_user = User.last
@@ -72,7 +71,7 @@ describe 'Users API' do
 
         params = { search: u1.google_id }
 
-        get "/api/v2/users", params: params
+        get '/api/v2/users', params: params
 
         expect(response).to be_successful
 

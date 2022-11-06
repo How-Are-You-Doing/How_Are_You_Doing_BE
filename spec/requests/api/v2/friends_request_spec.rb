@@ -1,11 +1,8 @@
 require 'rails_helper'
 
 describe 'Friends API' do
-
   describe 'Friends Index' do
-
     describe 'happy path' do
-      
       it 'sends a list of all of users who have a relationship with the logged in user' do
         user = create(:user)
 
@@ -196,9 +193,7 @@ describe 'Friends API' do
   end
 
   describe 'creating a friend relationship' do
-
     describe 'happy path' do
-
       it 'Can create a new friend relationship with a default status of pending' do
         requester = create(:user)
         requestee = create(:user)
@@ -222,9 +217,7 @@ describe 'Friends API' do
   end
 
   describe 'updating a friend relationship' do
-
     describe 'happy path' do
-
       it 'can update the status of a friend relationship after the requestee accepts the request' do
         friendship = create(:friend)
         other_friendships = create_list(:friend, 3)

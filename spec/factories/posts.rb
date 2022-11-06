@@ -8,4 +8,4 @@ FactoryBot.define do
     user
     emotion
   end
-end 
+end

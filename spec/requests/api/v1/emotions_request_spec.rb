@@ -3,7 +3,7 @@ require 'rails_helper'
 describe 'Emotions API' do
   describe 'emotion index' do
     describe 'happy path' do
-      it 'sends a list of all emotions', vcr: {record: :new_episodes} do
+      it 'sends a list of all emotions', vcr: { record: :new_episodes } do
         Emotion.create!(term: 'contemplative')
         Emotion.create!(term: 'forlorn')
         Emotion.create!(term: 'thrilled')

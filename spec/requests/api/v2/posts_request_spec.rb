@@ -4,6 +4,7 @@ describe 'Posts API' do
   before :each do
     Faker::UniqueGenerator.clear
   end
+  
   describe 'user most recent post/ post show' do
     describe 'happy path' do
       it 'returns a users most recent post if a user has posts' do
@@ -69,6 +70,7 @@ describe 'Posts API' do
         )
         .to_return(status: 200, body: json_response, headers: {})
     end
+
     describe 'happy path' do
       it 'Creates a new user post' do
         user = create(:user)
@@ -140,6 +142,7 @@ describe 'Posts API' do
         expect(post[:attributes][:created_at].to_date).to eq(created_post.created_at.to_date)
       end
     end
+
     describe 'sad path' do
       it 'It wont create a new user if required params are missing' do
         user = create(:user)

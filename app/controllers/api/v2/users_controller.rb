@@ -13,7 +13,6 @@ class Api::V2::UsersController < ApplicationController
     end
   end
 
-
   private
 
   def user_params
@@ -22,11 +21,11 @@ class Api::V2::UsersController < ApplicationController
 
   def render_user_by_email
     user = User.find_by(email: user_params[:email])
-      if user.present?
-        render json: UserSerializer.new(user)
-      else
-        render json: {data: {}}
-      end
+    if user.present?
+      render json: UserSerializer.new(user)
+    else
+      render json: { data: {} }
+    end
   end
 
   def render_user_by_google_id
@@ -34,7 +33,7 @@ class Api::V2::UsersController < ApplicationController
     if user.present?
       render json: UserSerializer.new(user)
     else
-      render json: {data: {}}
+      render json: { data: {} }
     end
   end
 end

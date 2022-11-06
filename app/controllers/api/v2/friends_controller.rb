@@ -1,5 +1,4 @@
 class Api::V2::FriendsController < ApplicationController
-
   def index
     user = User.find_by(google_id: current_user_params[:user])
 
