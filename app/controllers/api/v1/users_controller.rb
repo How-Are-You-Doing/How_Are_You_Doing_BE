@@ -24,7 +24,7 @@ class Api::V1::UsersController < ApplicationController
   def render_user_by_email
       if User.exists?(email: params[:email])
         user = User.find_by(email: params[:email])
-        render json: UserSerializer.user_email(user)
+        render json: UserSerializer.new(user)
       else
         render json: {:data=>[]}
       end
@@ -33,7 +33,7 @@ class Api::V1::UsersController < ApplicationController
   def render_user_by_google_id
     if User.exists?(google_id: params[:search])
       user = User.find_by(google_id: params[:search])
-      render json: UserSerializer.user_google_id(user)
+      render json: UserSerializer.new(user)
     else
       render json: {:data=>[]}
     end

@@ -41,8 +41,10 @@ describe "Users API" do
 
         expect(user[:id].to_i).to eq(u1.id)
         expect(user[:type]).to eq("user")
-        expect(user[:attributes].count).to eq(1)
+        expect(user[:attributes].count).to eq(3)
         expect(user[:attributes][:name]).to eq(u1.name)
+        expect(user[:attributes][:email]).to eq(u1.email)
+        expect(user[:attributes][:google_id]).to eq(u1.google_id)
       end
     end
 
