@@ -25,9 +25,10 @@ describe 'Friends API' do
         friends.each do |friend|
           expect(friend[:id].to_i).to be_a(Integer)
           expect(friend[:type]).to eq("user")
-          expect(friend[:attributes].count).to eq(2)
+          expect(friend[:attributes].count).to eq(3)
           expect(friend[:attributes][:name]).to be_a(String)
           expect(friend[:attributes][:email]).to be_a(String)
+          expect(friend[:attributes][:google_id]).to be_a(String)
         end
       end
 
@@ -56,9 +57,10 @@ describe 'Friends API' do
         friends.each do |friend|
           expect(friend[:id].to_i).to be_a(Integer)
           expect(friend[:type]).to eq("user")
-          expect(friend[:attributes].count).to eq(2)
+          expect(friend[:attributes].count).to eq(3)
           expect(friend[:attributes][:name]).to be_a(String)
           expect(friend[:attributes][:email]).to be_a(String)
+          expect(friend[:attributes][:google_id]).to be_a(String)
         end
       end
 
@@ -87,9 +89,10 @@ describe 'Friends API' do
         friends.each do |friend|
           expect(friend[:id].to_i).to be_a(Integer)
           expect(friend[:type]).to eq("user")
-          expect(friend[:attributes].count).to eq(2)
+          expect(friend[:attributes].count).to eq(3)
           expect(friend[:attributes][:name]).to be_a(String)
           expect(friend[:attributes][:email]).to be_a(String)
+          expect(friend[:attributes][:google_id]).to be_a(String)
         end
       end
 
@@ -119,9 +122,10 @@ describe 'Friends API' do
         friends.each do |friend|
           expect(friend[:id].to_i).to be_a(Integer)
           expect(friend[:type]).to eq("user")
-          expect(friend[:attributes].count).to eq(2)
+          expect(friend[:attributes].count).to eq(3)
           expect(friend[:attributes][:name]).to be_a(String)
           expect(friend[:attributes][:email]).to be_a(String)
+          expect(friend[:attributes][:google_id]).to be_a(String)
         end
       end
     end
