@@ -233,7 +233,7 @@ describe 'Posts API' do
         expect(response).to be_successful
         post_response = JSON.parse(response.body, symbolize_names: true)
 
-        post_data = post_data[:data]
+        post_data = post_response[:data]
         updated_post = user.posts.find(post.id)
 
         expect(updated_post.emotion_id).to eq(post.emotion_id)
@@ -272,12 +272,12 @@ describe 'Posts API' do
         expect(response).to be_successful
         post_response = JSON.parse(response.body, symbolize_names: true)
 
-        post_data = post_data[:data]
+        post_data = post_response[:data]
         updated_post = user.posts.find(post.id)
 
         expect(updated_post.emotion_id).to eq(emotion.id)
         expect(updated_post.description).to eq(post.description)
-        expect(updated_post.tone).to be(post.tone)
+        expect(updated_post.tone).to eq(post.tone)
 
         expect(post_response).to be_a(Hash)
         expect(post_response.count).to eq(1)
@@ -291,11 +291,9 @@ describe 'Posts API' do
         expect(post_data[:attributes][:post_status]).to eq(updated_post.post_status)
         expect(post_data[:attributes][:post_status]).to_not eq(post.post_status)
 
-        expect(post_data[:attributes][:description]).to eq(updated_post.description)
-        expect(post_data[:attributes][:description]).to_not eq(upost.description)
+        expect(post_data[:attributes][:description]).to eq(post.description)
 
-        expect(post_data[:attributes][:tone]).to eq(updated_post.tone)
-        expect(post_data[:attributes][:tone]).to_not eq(post.tone)
+        expect(post_data[:attributes][:tone]).to eq(post.tone)
 
         expect(post_data[:attributes][:created_at].to_date).to eq(updated_post.created_at.to_date)
       end
