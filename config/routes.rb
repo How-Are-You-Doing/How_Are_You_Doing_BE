@@ -5,7 +5,6 @@ Rails.application.routes.draw do
     namespace :v1 do 
       resources :emotions, only: [:index]
       resources :users, only: [:create ]
-      get '/users', to: 'users#search'
       resources :friends, only: [:index, :create, :update] do
         resources :posts, only: [:index], module: 'friends'
       end
@@ -17,7 +16,8 @@ Rails.application.routes.draw do
     end
 
     namespace :v2 do 
-      resources :users, only: [:create, :index]
+      resources :users, only: [:create]
+      get '/users', to: 'users#search'
       resources :friends, only: [:index, :create, :update]
       resources :posts, only: [:create, :update]
       resource :posts, only: [:show], path: "posts/last"
