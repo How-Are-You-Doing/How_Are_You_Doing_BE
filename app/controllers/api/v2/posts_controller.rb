@@ -10,6 +10,7 @@ class Api::V2::PostsController < ApplicationController
   end
 
   def create
+    require "pry"; binding.pry
     found_user = User.find_by(google_id: current_user_params[:user])
     found_emotion = Emotion.find_by(term: emotion_params[:emotion])
     found_tone = ToneFacade.analyze_tone(post_params[:description])
