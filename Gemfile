@@ -40,6 +40,7 @@ group :development, :test do
   gem 'vcr'
   gem 'webmock'
   gem 'jsonapi-serializer'
+  gem 'figaro'
 end
 
 group :development do

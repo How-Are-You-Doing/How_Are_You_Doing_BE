@@ -1,0 +1,26 @@
+{
+  "emotions_detected": [
+    "joy"
+  ],
+  "emotion_scores": {
+    "joy": 0.10639158091358722,
+    "surprise": 0.014349093772355978,
+    "disgust": 0,
+    "sadness": 0,
+    "anger": 0,
+    "fear": 0
+  },
+  "thresholds": {
+    "disgust": 0.04,
+    "sadness": 0.04,
+    "anger": 0.04,
+    "joy": 0.04,
+    "surprise": 0.04,
+    "fear": 0.04
+  },
+  "version": "7.0.8",
+  "author": "twinword inc.",
+  "email": "help@twinword.com",
+  "result_code": "200",
+  "result_msg": "Success"
+}

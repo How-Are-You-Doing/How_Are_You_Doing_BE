@@ -1,11 +1,8 @@
 require 'rails_helper'
 
 describe 'Posts API' do
-
   describe 'user post index' do
-
     describe 'happy path' do
-
       it 'sends a list of all posts for a user' do
         user = create(:user)
         posts = create_list(:post, 5, user: user)
@@ -49,7 +46,6 @@ describe 'Posts API' do
     end
 
     describe 'sad path' do
-      
       it 'sends a 400 error if no user google_id recived in params for a user' do
         user = create(:user)
         posts = create_list(:post, 5, user: user)
@@ -92,59 +88,6 @@ describe 'Posts API' do
 
         expect(posts).to have_key(:data)
         expect(posts[:data]).to be_an(Hash)
-      end
-    end
-  end
-
-  describe 'user post most_recent' do
-
-    describe 'happy path' do
-
-      it 'returns a users most recent post if a user has posts' do
-        user = create(:user)
-        oldest_post = create(:post, user: user, created_at: 100.day.ago)
-        middle_post = create(:post, user: user, created_at: 50.day.ago)
-        newest_post = create(:post, user: user, created_at: 1.day.ago)
-        create_list(:post, 5)
-
-        params = { user: "#{user.google_id}" }
-
-        get '/api/v2/posts/last', params: params
-
-        expect(response).to be_successful
-
-        post_data = JSON.parse(response.body, symbolize_names: true)
-        post = post_data[:data]
-
-        expect(post_data).to be_a(Hash)
-        expect(post_data.count).to eq(1)
-
-        expect(post[:id].to_i).to eq(newest_post.id)
-        expect(post[:type]).to eq('post')
-        expect(post[:attributes].count).to eq(5)
-        expect(post[:attributes][:emotion]).to eq(newest_post.emotion.term)
-        expect(post[:attributes][:post_status]).to eq(newest_post.post_status)
-        expect(post[:attributes][:description]).to eq(newest_post.description)
-        expect(post[:attributes][:tone]).to eq(newest_post.tone)
-        expect(post[:attributes][:created_at].to_date).to eq(newest_post.created_at.to_date)
-      end
-    end
-
-    describe 'sad path' do
-
-      it 'returns an empty array if a user has no posts' do
-        user = create(:user)
-        create_list(:post, 5)
-
-        params = { user: "#{user.google_id}" }
-
-        get '/api/v2/posts/last', params: params
-
-        expect(response).to be_successful
-
-        post_data = JSON.parse(response.body, symbolize_names: true)
-
-        expect(post_data).to eq({ data: {} })
       end
     end
   end
