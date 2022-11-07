@@ -8,6 +8,7 @@ class Api::V2::Users::PostsController < ApplicationController
     end
   end
 
+
   private
 
   def current_user_params

@@ -348,5 +348,20 @@ describe 'Posts API' do
       end
     end
   end
+
+  describe 'post destroy' do
+    describe 'happy path' do
+      it 'destroys a post' do
+        post = create(:post)
+
+        expect(Post.count).to eq(1)
+
+        delete "/api/v2/posts/#{post.id}"
+        
+        expect(response).to have_http_status(204)
+        expect(Post.count).to eq(0)
+      end
+    end
+  end
   VCR.turn_on!
 end

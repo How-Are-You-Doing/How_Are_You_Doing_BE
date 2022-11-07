@@ -35,6 +35,14 @@ class Api::V2::PostsController < ApplicationController
       render json: { data: {} }, status: :bad_request
     end
   end
+  
+  def destroy
+    post = Post.find(params[:id])
+    post.destroy
+    render json: { message: 'Post successfully deleted' }, status: 204
+
+  end
+
 
   private
 
