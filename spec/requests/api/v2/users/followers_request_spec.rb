@@ -131,6 +131,30 @@ describe 'User Followers API' do
     end
 
     describe 'sad path' do
+      it 'sends a 400 error if no user google_id recived in params for a user' do
+        randos = create_list(:friend, 5)
+
+        get '/api/v2/users/followers'
+
+        expect(response).to have_http_status(400)
+        
+        followers_data = JSON.parse(response.body, symbolize_names: true)
+        expect(followers_data).to eq({ data: [] })
+      end
+
+      it 'sends a 400 error if no user google_id recived in params for a user but request status param is sent' do
+        randos = create_list(:friend, 5)
+
+        params = { request_status: 'accepted' }
+
+        get '/api/v2/users/followers', params: params
+
+        expect(response).to have_http_status(400)
+
+        followers_data = JSON.parse(response.body, symbolize_names: true)
+        expect(followers_data).to eq({ data: [] })
+      end
+
       it 'sends an empty data hash back if there are no matches for all followers' do
         user = create(:user)
         randos = create_list(:friend, 5)
