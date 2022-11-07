@@ -24,7 +24,7 @@ class Api::V2::UsersController < ApplicationController
     if user.present?
       render json: UserSerializer.new(user)
     else
-      render json: { data: {} }
+      render json: { data: [] }
     end
   end
 
@@ -33,7 +33,7 @@ class Api::V2::UsersController < ApplicationController
     if user.present?
       render json: UserSerializer.new(user)
     else
-      render json: { data: {} }
+      render json: { data: [] }
     end
   end
 end
