@@ -59,7 +59,7 @@ describe 'Users API' do
         expect(response).to be_successful
 
         user_data = JSON.parse(response.body, symbolize_names: true)
-        expect(user_data).to eq({ data: {} })
+        expect(user_data).to eq({ data: [] })
       end
     end
   end
@@ -96,7 +96,7 @@ describe 'Users API' do
         expect(response).to be_successful
 
         user_data = JSON.parse(response.body, symbolize_names: true)
-        expect(user_data).to eq({ data: {} })
+        expect(user_data).to eq({ data: [] })
       end
     end
   end

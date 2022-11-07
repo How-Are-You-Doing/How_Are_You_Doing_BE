@@ -24,4 +24,8 @@ class User < ApplicationRecord
   def public_posts
     posts.where(post_status: 'shared')
   end
+
+  def followers_by_status(status)
+    following_users.where(request_status: status).pluck(:follower_id)
+  end
 end
