@@ -1,11 +1,8 @@
 class ToneService
-
   def self.get_tone(description)
     response = conn.get("/analyze/?text=#{description}")
     parse(response.body)
   end
-
-  private 
 
   def self.conn
     Faraday.new('https://twinword-emotion-analysis-v1.p.rapidapi.com') do |f|

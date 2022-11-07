@@ -4,8 +4,6 @@ class DefinitionService
     parse(response.body)
   end
 
-  private 
-
   def self.conn
     Faraday.new('https://api.dictionaryapi.dev')
   end

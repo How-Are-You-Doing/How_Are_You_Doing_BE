@@ -5,5 +5,4 @@ class Post < ApplicationRecord
 
   validates_presence_of :emotion_id, :description, :post_status, :tone
   validates_numericality_of :emotion_id
-
 end

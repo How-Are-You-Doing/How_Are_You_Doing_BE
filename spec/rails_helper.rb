@@ -1,5 +1,4 @@
 require 'simplecov'
-require 'simplecov'
 SimpleCov.start 'rails'
 SimpleCov.add_filter ['config', 'channels', 'jobs', 'mailers', 'app/assets/endpoints.rb']
 # This file is copied to spec/ when you run 'rails generate rspec:install'

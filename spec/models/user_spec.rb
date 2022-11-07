@@ -1,10 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe User do
-  
   describe 'validations' do
     it { should validate_presence_of :name }
-    
+
     it { should validate_presence_of :email }
 
     it { should validate_presence_of :google_id }
@@ -12,7 +11,7 @@ RSpec.describe User do
 
   describe 'relationships' do
     it { should have_many(:posts) }
-    
+
     it { should have_many(:followees).through(:followed_users) }
 
     it { should have_many(:followers).through(:following_users) }
@@ -27,11 +26,12 @@ RSpec.describe User do
         rejected_friends = create_list(:friend, 3, follower: user, request_status: 2)
         pending_friends = create_list(:friend, 3, follower: user, request_status: 0)
         randos = create_list(:friend, 5)
-    
-        expect(user.friends_by_status("accepted").count).to eq(3)
-        expect(user.friends_by_status("accepted")).to be_a(Array)
-        expect(user.friends_by_status("accepted")).to include(accepted_friends.first.followee_id)
-        expect(user.friends_by_status("accepted")).to_not include(rejected_friends.last.followee_id)
+
+        expect(user.friends_by_status('accepted').count).to eq(3)
+        expect(user.friends_by_status('accepted')).to be_a(Array)
+        expect(user.friends_by_status('accepted')).to include(accepted_friends.first.followee_id)
+        expect(user.friends_by_status('accepted')).to_not include(rejected_friends.last.followee_id)
+        expect(user.friends_by_status('accepted')).to_not include(pending_friends.last.followee_id)
       end
 
       it 'can determine the ids of which of a users friends are pending' do
@@ -41,11 +41,12 @@ RSpec.describe User do
         rejected_friends = create_list(:friend, 3, follower: user, request_status: 2)
         pending_friends = create_list(:friend, 3, follower: user, request_status: 0)
         randos = create_list(:friend, 5)
-    
-        expect(user.friends_by_status("pending").count).to eq(3)
-        expect(user.friends_by_status("pending")).to be_a(Array)
-        expect(user.friends_by_status("pending")).to include(pending_friends.first.followee_id)
-        expect(user.friends_by_status("pending")).to_not include(rejected_friends.last.followee_id)
+
+        expect(user.friends_by_status('pending').count).to eq(3)
+        expect(user.friends_by_status('pending')).to be_a(Array)
+        expect(user.friends_by_status('pending')).to include(pending_friends.first.followee_id)
+        expect(user.friends_by_status('pending')).to_not include(rejected_friends.last.followee_id)
+        expect(user.friends_by_status('pending')).to_not include(accepted_friends.last.followee_id)
       end
 
       it 'can determine the ids of which of a users friends are rejected' do
@@ -55,11 +56,12 @@ RSpec.describe User do
         rejected_friends = create_list(:friend, 3, follower: user, request_status: 2)
         pending_friends = create_list(:friend, 3, follower: user, request_status: 0)
         randos = create_list(:friend, 5)
-    
-        expect(user.friends_by_status("rejected").count).to eq(3)
-        expect(user.friends_by_status("rejected")).to be_a(Array)
-        expect(user.friends_by_status("rejected")).to include(rejected_friends.first.followee_id)
-        expect(user.friends_by_status("rejected")).to_not include(accepted_friends.last.followee_id)
+
+        expect(user.friends_by_status('rejected').count).to eq(3)
+        expect(user.friends_by_status('rejected')).to be_a(Array)
+        expect(user.friends_by_status('rejected')).to include(rejected_friends.first.followee_id)
+        expect(user.friends_by_status('rejected')).to_not include(accepted_friends.last.followee_id)
+        expect(user.friends_by_status('rejected')).to_not include(pending_friends.last.followee_id)
       end
 
       it 'returns an empty array if a user has no friends' do
@@ -67,9 +69,9 @@ RSpec.describe User do
 
         randos = create_list(:friend, 5)
 
-        expect(user.friends_by_status("rejected")).to eq([])
-        expect(user.friends_by_status("accepted")).to eq([])
-        expect(user.friends_by_status("pending")).to eq([])
+        expect(user.friends_by_status('rejected')).to eq([])
+        expect(user.friends_by_status('accepted')).to eq([])
+        expect(user.friends_by_status('pending')).to eq([])
       end
     end
 
@@ -81,13 +83,13 @@ RSpec.describe User do
         rejected_friends = create_list(:friend, 3, follower: user, request_status: 2)
         pending_friends = create_list(:friend, 3, follower: user, request_status: 0)
         randos = create_list(:friend, 5)
-    
+
         expect(user.all_friend_ids.count).to eq(9)
         expect(user.all_friend_ids).to be_a(Array)
         expect(user.all_friend_ids).to include(rejected_friends.first.followee_id)
         expect(user.all_friend_ids).to include(accepted_friends.first.followee_id)
-        expect(user.all_friend_ids).to include(pending_friends.last.followee_id) 
-        expect(user.all_friend_ids).to_not include(randos.last.followee_id) 
+        expect(user.all_friend_ids).to include(pending_friends.last.followee_id)
+        expect(user.all_friend_ids).to_not include(randos.last.followee_id)
       end
 
       it 'returns an empty array if a user has no friend relationships' do
@@ -105,7 +107,7 @@ RSpec.describe User do
         middle_post = create(:post, user: user, created_at: 50.day.ago)
         newest_post = create(:post, user: user, created_at: 1.day.ago)
         create_list(:post, 5)
-        
+
         expect(user.most_recent_post).to eq(newest_post)
       end
     end
@@ -131,4 +133,3 @@ RSpec.describe User do
     end
   end
 end
-

@@ -16,7 +16,7 @@ RSpec.describe ToneService do
         )
         .to_return(status: 200, body: json_response, headers: {})
     end
-    
+
     it 'can get the emotional tone of a sentance/s pased to it' do
       tone_data = ToneService.get_tone('Today I got a job offer for the company that I really loved, and have admired for a long time.')
 
@@ -43,5 +43,5 @@ RSpec.describe ToneService do
       expect(tone_data[:emotion_scores][:fear]).to be_an(Numeric)
     end
   end
-   VCR.turn_on!
+  VCR.turn_on!
 end
