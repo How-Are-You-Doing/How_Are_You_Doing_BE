@@ -13,7 +13,7 @@ describe 'User Followers API' do
 
         params = { 'user' => "#{user.google_id}" }
 
-        get '/api/v2/user/followers', params: params
+        get '/api/v2/users/followers', params: params
 
         expect(response).to be_successful
 
@@ -51,8 +51,8 @@ describe 'User Followers API' do
 
         followers = followers_data[:data]
         expect(followers.count).to eq(3)
-        expect(accepted_followers.first.followee_id).to eq(followers.first[:id].to_i)
-        expect(accepted_followers.last.followee_id).to eq(followers.last[:id].to_i)
+        expect(accepted_followers.first.follower_id).to eq(followers.first[:id].to_i)
+        expect(accepted_followers.last.follower_id).to eq(followers.last[:id].to_i)
 
         followers.each do |follower|
           expect(follower[:id].to_i).to be_a(Integer)
@@ -83,8 +83,8 @@ describe 'User Followers API' do
 
         followers = followers_data[:data]
         expect(followers.count).to eq(3)
-        expect(pending_followers.first.followee_id).to eq(followers.first[:id].to_i)
-        expect(pending_followers.last.followee_id).to eq(followers.last[:id].to_i)
+        expect(pending_followers.first.follower_id).to eq(followers.first[:id].to_i)
+        expect(pending_followers.last.follower_id).to eq(followers.last[:id].to_i)
 
         followers.each do |follower|
           expect(follower[:id].to_i).to be_a(Integer)
@@ -116,8 +116,8 @@ describe 'User Followers API' do
         followers = followers_data[:data]
 
         expect(followers.count).to eq(3)
-        expect(rejected_followers.first.followee_id).to eq(followers.first[:id].to_i)
-        expect(rejected_followers.last.followee_id).to eq(followers.last[:id].to_i)
+        expect(rejected_followers.first.follower_id).to eq(followers.first[:id].to_i)
+        expect(rejected_followers.last.follower_id).to eq(followers.last[:id].to_i)
 
         followers.each do |follower|
           expect(follower[:id].to_i).to be_a(Integer)
