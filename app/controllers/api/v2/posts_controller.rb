@@ -40,7 +40,6 @@ class Api::V2::PostsController < ApplicationController
     post = Post.find(params[:id])
     post.destroy
     render json: { message: 'Post successfully deleted' }, status: 204
-
   end
 
 

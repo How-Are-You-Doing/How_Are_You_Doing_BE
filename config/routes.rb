@@ -23,6 +23,7 @@ Rails.application.routes.draw do
       resource :posts, only: [:show], path: 'posts/last'
       namespace :users do
         resources :posts, only: [:index], path: :history
+        get "/posts", to: "posts#show"
       end
     end
   end
