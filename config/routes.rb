@@ -16,14 +16,15 @@ Rails.application.routes.draw do
     end
 
     namespace :v2 do
-      resources :users, only: [:create]
-      get '/users', to: 'users#search'
+      resource :users, only: [:show], action: :search
+      resource :users, only: [:create] do
+        resources :followers, only: [:index], module: :users
+        resources :posts, only: [:index], path: :history, module: :users
+      end
+      
       resources :friends, only: [:index, :create, :update]
       resources :posts, only: [:create, :update]
       resource :posts, only: [:show], path: 'posts/last'
-      namespace :users do
-        resources :posts, only: [:index], path: :history
-      end
     end
   end
 end
