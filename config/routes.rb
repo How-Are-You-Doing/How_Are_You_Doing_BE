@@ -23,8 +23,12 @@ Rails.application.routes.draw do
       end
       
       resources :friends, only: [:index, :create, :update]
-      resources :posts, only: [:create, :update]
+      resources :posts, only: [:create, :update, :destroy]
       resource :posts, only: [:show], path: 'posts/last'
+      namespace :users do
+        resources :posts, only: [:index], path: :history
+        get "/posts", to: "posts#show"
+      end
     end
   end
 end

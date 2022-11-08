@@ -91,4 +91,47 @@ describe 'Posts API' do
       end
     end
   end
+
+  describe 'user post show' do
+    describe 'happy path' do
+      it 'shows one post that the user is trying to look up if the post exists' do
+        user = create(:user)
+        desired_post = create(:post, user: user)
+        extra_posts = create_list(:post, 3, user: user)
+
+        sent_params = { user: "#{user.google_id}", post: "#{desired_post.id}" }
+        
+        get "/api/v2/users/posts", params: sent_params
+        
+        expect(response).to be_successful
+        
+        post_data = JSON.parse(response.body, symbolize_names: true)
+        post = post_data[:data]
+        
+        expect(post[:type]).to eq("post")
+        expect(post[:id].to_i).to eq(desired_post.id)
+        expect(post[:attributes][:emotion]).to eq(desired_post.emotion.term)
+        expect(post[:attributes][:post_status]).to eq(desired_post.post_status)
+        expect(post[:attributes][:description]).to eq(desired_post.description)
+        expect(post[:attributes][:tone]).to eq(desired_post.tone)
+      end
+    end
+
+    describe 'sad path' do
+      it 'sends an empty data hash back if the user has no posts' do
+        user = create(:user)
+
+        sent_params = { user: "#{user.google_id}" }
+        
+        get "/api/v2/users/posts", params: sent_params
+
+        posts = JSON.parse(response.body, symbolize_names: true)
+
+        expect(response).to have_http_status(400)
+        expect(posts).to have_key(:data)
+        expect(posts[:data]).to be_an(Hash)
+      end
+    end
+  end
+
 end
