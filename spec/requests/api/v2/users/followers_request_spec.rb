@@ -30,6 +30,7 @@ describe 'User Followers API' do
           expect(follower[:attributes][:name]).to be_a(String)
           expect(follower[:attributes][:email]).to be_a(String)
           expect(follower[:attributes][:google_id]).to be_a(String)
+          expect(follower[:attributes][:request_status]).to be_a(String)
         end
       end
 
@@ -63,6 +64,7 @@ describe 'User Followers API' do
           expect(follower[:attributes][:name]).to be_a(String)
           expect(follower[:attributes][:email]).to be_a(String)
           expect(follower[:attributes][:google_id]).to be_a(String)
+          expect(follower[:attributes][:request_status]).to be_a(String)
         end
       end
 
@@ -96,6 +98,7 @@ describe 'User Followers API' do
           expect(follower[:attributes][:name]).to be_a(String)
           expect(follower[:attributes][:email]).to be_a(String)
           expect(follower[:attributes][:google_id]).to be_a(String)
+          expect(follower[:attributes][:request_status]).to be_a(String)
         end
       end
 
@@ -130,6 +133,7 @@ describe 'User Followers API' do
           expect(follower[:attributes][:name]).to be_a(String)
           expect(follower[:attributes][:email]).to be_a(String)
           expect(follower[:attributes][:google_id]).to be_a(String)
+          expect(follower[:attributes][:request_status]).to be_a(String)
         end
       end
     end

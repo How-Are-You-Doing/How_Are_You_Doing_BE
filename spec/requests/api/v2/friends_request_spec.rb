@@ -30,6 +30,7 @@ describe 'Friends API' do
           expect(friend[:attributes][:name]).to be_a(String)
           expect(friend[:attributes][:email]).to be_a(String)
           expect(friend[:attributes][:google_id]).to be_a(String)
+          expect(friend[:attributes][:request_status]).to be_a(String)
         end
       end
 
@@ -63,6 +64,7 @@ describe 'Friends API' do
           expect(friend[:attributes][:name]).to be_a(String)
           expect(friend[:attributes][:email]).to be_a(String)
           expect(friend[:attributes][:google_id]).to be_a(String)
+          expect(friend[:attributes][:request_status]).to be_a(String)
         end
       end
 
@@ -96,6 +98,7 @@ describe 'Friends API' do
           expect(friend[:attributes][:name]).to be_a(String)
           expect(friend[:attributes][:email]).to be_a(String)
           expect(friend[:attributes][:google_id]).to be_a(String)
+          expect(friend[:attributes][:request_status]).to be_a(String)
         end
       end
 
@@ -130,6 +133,7 @@ describe 'Friends API' do
           expect(friend[:attributes][:name]).to be_a(String)
           expect(friend[:attributes][:email]).to be_a(String)
           expect(friend[:attributes][:google_id]).to be_a(String)
+          expect(friend[:attributes][:request_status]).to be_a(String)
         end
       end
     end
