@@ -14,7 +14,7 @@ class Api::V2::FriendsController < ApplicationController
   def create
     follower = User.find_by(google_id: current_user_params[:user])
     followee = User.find_by(email: friend_params[:email])
-    friend = Friend.new(follower: follower, followee: followee, request_status: 0)
+    friend = Friend.create(follower: follower, followee: followee, request_status: 0)
     render json: UserSerializer.friend(friend, "followee"), status: 201
   end
 

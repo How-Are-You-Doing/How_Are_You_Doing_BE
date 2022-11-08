@@ -30,18 +30,17 @@ class UserSerializer
     user = User.find(friend_id)
     {
     data:
-    {
-      id: user.id,
-      friendship_id: friend.id,
-      type: "friend_#{type}",
-      attributes: {
-        name: user.name,
-        email: user.email,
-        google_id: user.google_id,
-        request_status: friend.request_status
+      {
+        id: user.id,
+        friendship_id: friend.id,
+        type: "friend_#{type}",
+        attributes: {
+          name: user.name,
+          email: user.email,
+          google_id: user.google_id,
+          request_status: friend.request_status
+        }
       }
     }
-  }
-
   end
 end
