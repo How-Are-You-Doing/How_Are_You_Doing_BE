@@ -4,10 +4,10 @@ class Api::V2::FriendsController < ApplicationController
 
     if friend_params[:request_status].present?
       followee_friends = user.followees_by_status(friend_params[:request_status])
-      render json: UserSerializer.followees(followee_friends)
+      render json: UserSerializer.friends(followee_friends, "followee")
     else
       all_followees = user.followed_users
-      render json: UserSerializer.followees(all_followees)
+      render json: UserSerializer.friends(all_followees, "followee")
     end
   end
 
