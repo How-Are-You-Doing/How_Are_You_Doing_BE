@@ -221,6 +221,22 @@ describe 'Friends API' do
         expect(created_friend.followee_id).to eq(requestee.id)
         expect(created_friend.request_status).to eq('pending')
       end
+
+      it 'sends back the information about the friendship to the front end' do
+        requester = create(:user)
+        requestee = create(:user)
+        create_list(:user, 3)
+
+        params = { user: "#{requester.google_id}",
+                   email: "#{requestee.email}" }
+
+        post '/api/v2/friends', params: params
+
+        expect(response).to be_successful
+        friend_data = JSON.parse(response.body, symbolize_names: true)
+        binding.pry
+      end
+
     end
   end
 
