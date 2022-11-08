@@ -13,7 +13,7 @@ class User < ApplicationRecord
     followed_users.pluck(:followee_id)
   end
 
-  def friends_by_status(status)
+  def followees_ids_by_status(status)
     followed_users.where(request_status: status).pluck(:followee_id)
   end
 

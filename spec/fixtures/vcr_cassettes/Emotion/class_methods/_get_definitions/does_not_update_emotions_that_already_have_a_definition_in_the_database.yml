@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.20.0
       Date:
-      - Thu, 03 Nov 2022 03:22:22 GMT
+      - Tue, 08 Nov 2022 03:29:57 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -35,9 +35,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '450'
       X-Ratelimit-Remaining:
-      - '446'
+      - '445'
       X-Ratelimit-Reset:
-      - '1667445997'
+      - '1667878296'
       Etag:
       - W/"3ad-RCqhQ7Xt0A/hYL8gv5rrRtJRMIE"
       Vary:
@@ -54,7 +54,7 @@ http_interactions:
         the Roman Catholic varieties.","synonyms":[],"antonyms":[]},{"definition":"Relating
         to, or having the power of, contemplation.","synonyms":[],"antonyms":[],"example":"contemplative
         faculties"}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/contemplative"]}]'
-  recorded_at: Thu, 03 Nov 2022 03:22:22 GMT
+  recorded_at: Tue, 08 Nov 2022 03:29:57 GMT
 - request:
     method: get
     uri: https://api.dictionaryapi.dev/api/v2/entries/en/forlorn
@@ -76,7 +76,7 @@ http_interactions:
       Server:
       - nginx/1.20.0
       Date:
-      - Thu, 03 Nov 2022 03:22:23 GMT
+      - Tue, 08 Nov 2022 03:29:57 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -90,9 +90,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '450'
       X-Ratelimit-Remaining:
-      - '445'
+      - '444'
       X-Ratelimit-Reset:
-      - '1667445997'
+      - '1667878296'
       Etag:
       - W/"5a2-HudwekZQLM3dS9lzTtyOeZujfd4"
       Vary:
@@ -112,7 +112,7 @@ http_interactions:
         as when lonely after being abandoned.","synonyms":["forsaken"],"antonyms":[]},{"definition":"Unlikely
         to succeed; hopeless.","synonyms":[],"antonyms":[]}],"synonyms":["forsaken"],"antonyms":[]}],"license":{"name":"CC
         BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/forlese","https://en.wiktionary.org/wiki/forlorn"]}]'
-  recorded_at: Thu, 03 Nov 2022 03:22:23 GMT
+  recorded_at: Tue, 08 Nov 2022 03:29:57 GMT
 - request:
     method: get
     uri: https://api.dictionaryapi.dev/api/v2/entries/en/thrilled
@@ -134,7 +134,7 @@ http_interactions:
       Server:
       - nginx/1.20.0
       Date:
-      - Thu, 03 Nov 2022 03:22:23 GMT
+      - Tue, 08 Nov 2022 03:29:57 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -148,9 +148,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '450'
       X-Ratelimit-Remaining:
-      - '444'
+      - '443'
       X-Ratelimit-Reset:
-      - '1667445997'
+      - '1667878296'
       Etag:
       - W/"4e4-GEF/jXVtScu27zrlf0T+sUeXY8Q"
       Vary:
@@ -171,7 +171,7 @@ http_interactions:
         excited or delighted.","synonyms":[],"antonyms":[],"example":"Ben was thrilled
         to lead the game."}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC BY-SA
         3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/thrill","https://en.wiktionary.org/wiki/thrilled"]}]'
-  recorded_at: Thu, 03 Nov 2022 03:22:23 GMT
+  recorded_at: Tue, 08 Nov 2022 03:29:57 GMT
 - request:
     method: get
     uri: https://api.dictionaryapi.dev/api/v2/entries/en/proud
@@ -193,7 +193,7 @@ http_interactions:
       Server:
       - nginx/1.20.0
       Date:
-      - Thu, 03 Nov 2022 03:22:23 GMT
+      - Tue, 08 Nov 2022 03:29:58 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -207,9 +207,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '450'
       X-Ratelimit-Remaining:
-      - '443'
+      - '442'
       X-Ratelimit-Reset:
-      - '1667445997'
+      - '1667878296'
       Etag:
       - W/"657-X1qkq3W9XrGQcPCdr/RQdii2ztw"
       Vary:
@@ -234,5 +234,5 @@ http_interactions:
         valiant; gallant.","synonyms":[],"antonyms":[]},{"definition":"Excited by
         sexual desire; specifically of a female animal: in heat.","synonyms":[],"antonyms":[]}],"synonyms":[],"antonyms":["ashamed"]}],"license":{"name":"CC
         BY-SA 3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/proud"]}]'
-  recorded_at: Thu, 03 Nov 2022 03:22:23 GMT
+  recorded_at: Tue, 08 Nov 2022 03:29:58 GMT
 recorded_with: VCR 6.1.0
