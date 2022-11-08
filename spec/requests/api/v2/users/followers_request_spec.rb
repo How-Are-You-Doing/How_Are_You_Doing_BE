@@ -26,10 +26,11 @@ describe 'User Followers API' do
           expect(follower[:id].to_i).to be_a(Integer)
           expect(follower[:friendship_id].to_i).to be_a(Integer)
           expect(follower[:type]).to eq('friend_follower')
-          expect(follower[:attributes].count).to eq(3)
+          expect(follower[:attributes].count).to eq(4)
           expect(follower[:attributes][:name]).to be_a(String)
           expect(follower[:attributes][:email]).to be_a(String)
           expect(follower[:attributes][:google_id]).to be_a(String)
+          expect(follower[:attributes][:request_status]).to be_a(String)
         end
       end
 
@@ -59,10 +60,11 @@ describe 'User Followers API' do
           expect(follower[:id].to_i).to be_a(Integer)
           expect(follower[:friendship_id].to_i).to be_a(Integer)
           expect(follower[:type]).to eq('friend_follower')
-          expect(follower[:attributes].count).to eq(3)
+          expect(follower[:attributes].count).to eq(4)
           expect(follower[:attributes][:name]).to be_a(String)
           expect(follower[:attributes][:email]).to be_a(String)
           expect(follower[:attributes][:google_id]).to be_a(String)
+          expect(follower[:attributes][:request_status]).to be_a(String)
         end
       end
 
@@ -92,10 +94,11 @@ describe 'User Followers API' do
           expect(follower[:id].to_i).to be_a(Integer)
           expect(follower[:friendship_id].to_i).to be_a(Integer)
           expect(follower[:type]).to eq('friend_follower')
-          expect(follower[:attributes].count).to eq(3)
+          expect(follower[:attributes].count).to eq(4)
           expect(follower[:attributes][:name]).to be_a(String)
           expect(follower[:attributes][:email]).to be_a(String)
           expect(follower[:attributes][:google_id]).to be_a(String)
+          expect(follower[:attributes][:request_status]).to be_a(String)
         end
       end
 
@@ -126,10 +129,11 @@ describe 'User Followers API' do
           expect(follower[:id].to_i).to be_a(Integer)
           expect(follower[:friendship_id].to_i).to be_a(Integer)
           expect(follower[:type]).to eq('friend_follower')
-          expect(follower[:attributes].count).to eq(3)
+          expect(follower[:attributes].count).to eq(4)
           expect(follower[:attributes][:name]).to be_a(String)
           expect(follower[:attributes][:email]).to be_a(String)
           expect(follower[:attributes][:google_id]).to be_a(String)
+          expect(follower[:attributes][:request_status]).to be_a(String)
         end
       end
     end

@@ -16,7 +16,8 @@ class UserSerializer
           attributes: {
             name: user.name,
             email: user.email,
-            google_id: user.google_id
+            google_id: user.google_id,
+            request_status: friend.request_status
           }
         }
       end
