@@ -2,10 +2,10 @@ class Api::V1::FriendsController < ApplicationController
   def index
     user = User.find_by(google_id: request.headers.env['HTTP_USER'])
     if params[:request_status]
-      friend_ids = user.friends_by_status(params[:request_status])
+      friend_ids = user.followees_ids_by_status(params[:request_status])
       render json: UserSerializer.new(User.find(friend_ids))
     else
-      all_friend_ids = user.all_friend_ids
+      all_friend_ids = user.all_followees_ids
       render json: UserSerializer.new(User.find(all_friend_ids))
     end
   end

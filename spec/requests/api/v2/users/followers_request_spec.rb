@@ -24,7 +24,8 @@ describe 'User Followers API' do
 
         followers.each do |follower|
           expect(follower[:id].to_i).to be_a(Integer)
-          expect(follower[:type]).to eq('user')
+          expect(follower[:friendship_id].to_i).to be_a(Integer)
+          expect(follower[:type]).to eq('friend_follower')
           expect(follower[:attributes].count).to eq(3)
           expect(follower[:attributes][:name]).to be_a(String)
           expect(follower[:attributes][:email]).to be_a(String)
@@ -56,7 +57,8 @@ describe 'User Followers API' do
 
         followers.each do |follower|
           expect(follower[:id].to_i).to be_a(Integer)
-          expect(follower[:type]).to eq('user')
+          expect(follower[:friendship_id].to_i).to be_a(Integer)
+          expect(follower[:type]).to eq('friend_follower')
           expect(follower[:attributes].count).to eq(3)
           expect(follower[:attributes][:name]).to be_a(String)
           expect(follower[:attributes][:email]).to be_a(String)
@@ -88,7 +90,8 @@ describe 'User Followers API' do
 
         followers.each do |follower|
           expect(follower[:id].to_i).to be_a(Integer)
-          expect(follower[:type]).to eq('user')
+          expect(follower[:friendship_id].to_i).to be_a(Integer)
+          expect(follower[:type]).to eq('friend_follower')
           expect(follower[:attributes].count).to eq(3)
           expect(follower[:attributes][:name]).to be_a(String)
           expect(follower[:attributes][:email]).to be_a(String)
@@ -121,7 +124,8 @@ describe 'User Followers API' do
 
         followers.each do |follower|
           expect(follower[:id].to_i).to be_a(Integer)
-          expect(follower[:type]).to eq('user')
+          expect(follower[:friendship_id].to_i).to be_a(Integer)
+          expect(follower[:type]).to eq('friend_follower')
           expect(follower[:attributes].count).to eq(3)
           expect(follower[:attributes][:name]).to be_a(String)
           expect(follower[:attributes][:email]).to be_a(String)

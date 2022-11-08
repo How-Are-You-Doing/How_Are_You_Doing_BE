@@ -9,12 +9,16 @@ class User < ApplicationRecord
 
   validates_presence_of :name, :email, :google_id
 
-  def all_friend_ids
+  def all_followees_ids
     followed_users.pluck(:followee_id)
   end
 
-  def friends_by_status(status)
+  def followees_ids_by_status(status)
     followed_users.where(request_status: status).pluck(:followee_id)
+  end
+
+  def followees_by_status(status)
+    followed_users.where(request_status: status)
   end
 
   def most_recent_post
@@ -26,6 +30,6 @@ class User < ApplicationRecord
   end
 
   def followers_by_status(status)
-    following_users.where(request_status: status).pluck(:follower_id)
+    following_users.where(request_status: status)
   end
 end

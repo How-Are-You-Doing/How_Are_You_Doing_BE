@@ -21,8 +21,8 @@ class Api::V2::Users::FollowersController < ApplicationController
 
   def render_followers_by_status(user)
     if user.present?
-      follower_ids = user.followers_by_status(status_params[:request_status])
-      render json: UserSerializer.new(User.find(follower_ids))
+      follower_friends = user.followers_by_status(status_params[:request_status])
+      render json: UserSerializer.friends(follower_friends, "follower")
     else
       render json: { data: [] }, status: :bad_request
     end
@@ -30,7 +30,7 @@ class Api::V2::Users::FollowersController < ApplicationController
 
   def render_all_followers(user)
     if user.present?
-      render json: UserSerializer.new(user.followers)
+      render json: UserSerializer.friends(user.following_users, "follower")
     else
       render json: { data: [] }, status: :bad_request
     end

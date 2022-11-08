@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.20.0
       Date:
-      - Thu, 03 Nov 2022 03:16:33 GMT
+      - Tue, 08 Nov 2022 03:30:01 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -35,9 +35,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '450'
       X-Ratelimit-Remaining:
-      - '449'
+      - '441'
       X-Ratelimit-Reset:
-      - '1667445397'
+      - '1667878296'
       Etag:
       - W/"4e4-GEF/jXVtScu27zrlf0T+sUeXY8Q"
       Vary:
@@ -58,5 +58,5 @@ http_interactions:
         excited or delighted.","synonyms":[],"antonyms":[],"example":"Ben was thrilled
         to lead the game."}],"synonyms":[],"antonyms":[]}],"license":{"name":"CC BY-SA
         3.0","url":"https://creativecommons.org/licenses/by-sa/3.0"},"sourceUrls":["https://en.wiktionary.org/wiki/thrill","https://en.wiktionary.org/wiki/thrilled"]}]'
-  recorded_at: Thu, 03 Nov 2022 03:16:33 GMT
+  recorded_at: Tue, 08 Nov 2022 03:30:01 GMT
 recorded_with: VCR 6.1.0
