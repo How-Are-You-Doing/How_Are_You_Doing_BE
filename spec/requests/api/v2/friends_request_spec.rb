@@ -314,8 +314,8 @@ describe 'Friends API' do
         friend_data = JSON.parse(response.body, symbolize_names: true)
         friend = friend_data[:data]
 
-        expect(friend[:id]).to eq(friendship.followee_id)
-        expect(friend[:type]).to eq("friend_followee")
+        expect(friend[:id]).to eq(friendship.follower_id)
+        expect(friend[:type]).to eq("friend_follower")
         expect(friend[:attributes][:name]).to be_a(String)
         expect(friend[:attributes][:email]).to be_a(String)
         expect(friend[:attributes][:google_id]).to be_a(String)
@@ -342,8 +342,8 @@ describe 'Friends API' do
         friend_data = JSON.parse(response.body, symbolize_names: true)
         friend = friend_data[:data]
    
-        expect(friend[:id]).to eq(friendship.followee_id)
-        expect(friend[:type]).to eq("friend_followee")
+        expect(friend[:id]).to eq(friendship.follower_id)
+        expect(friend[:type]).to eq("friend_follower")
         expect(friend[:attributes][:name]).to be_a(String)
         expect(friend[:attributes][:email]).to be_a(String)
         expect(friend[:attributes][:google_id]).to be_a(String)
