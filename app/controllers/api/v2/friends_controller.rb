@@ -3,11 +3,11 @@ class Api::V2::FriendsController < ApplicationController
     user = User.find_by(google_id: current_user_params[:user])
 
     if friend_params[:request_status].present?
-      friend_ids = user.friends_by_status(friend_params[:request_status])
-      render json: UserSerializer.new(User.find(friend_ids))
+      followee_friends = user.followees_by_status(friend_params[:request_status])
+      render json: UserSerializer.followees(followee_friends)
     else
-      all_friend_ids = user.all_friend_ids
-      render json: UserSerializer.new(User.find(all_friend_ids))
+      all_followees = user.followed_users
+      render json: UserSerializer.followees(all_followees)
     end
   end
 
