@@ -222,7 +222,7 @@ describe 'Friends API' do
         expect(created_friend.request_status).to eq('pending')
       end
 
-      it 'sends back the information about the friendship to the front end' do
+      it 'sends back the information about the new friendship to the front end' do
         follower = create(:user)
         followee = create(:user)
         create_list(:user, 3)
@@ -255,7 +255,7 @@ describe 'Friends API' do
         other_friendships = create_list(:friend, 3)
         expect(friendship.request_status).to eq('pending')
 
-        params = { request_status: '1' }
+        params = { request_status: 'accepted' }
 
         patch "/api/v2/friends/#{friendship.id}", params: params
 
@@ -278,7 +278,7 @@ describe 'Friends API' do
         other_friendships = create_list(:friend, 3)
         expect(friendship.request_status).to eq('pending')
 
-        params = { request_status: '2' }
+        params = { request_status: 'rejected' }
 
         patch "/api/v2/friends/#{friendship.id}", params: params
 
@@ -295,6 +295,63 @@ describe 'Friends API' do
         expect(rejected_friendship.followee_id).to eq(friendship.followee_id)
         expect(rejected_friendship.request_status).to eq('rejected')
       end
+
+      it 'sends back the information about the updated friendship to the front end if friendship is accepted' do
+        friendship = create(:friend)
+        other_friendships = create_list(:friend, 3)
+        expect(friendship.request_status).to eq('pending')
+
+        params = { request_status: 'accepted' }
+
+        patch "/api/v2/friends/#{friendship.id}", params: params
+
+        other_friendships.each do |other|
+          expect(other.request_status).to eq('pending')
+        end
+
+        expect(response).to be_successful
+
+        friend_data = JSON.parse(response.body, symbolize_names: true)
+        friend = friend_data[:data]
+   
+        expect(friend[:id]).to eq(friendship.followee_id)
+        expect(friend[:type]).to eq("friend_followee")
+        expect(friend[:attributes][:name]).to be_a(String)
+        expect(friend[:attributes][:email]).to be_a(String)
+        expect(friend[:attributes][:google_id]).to be_a(String)
+        expect(friend[:attributes][:request_status]).to be_a(String)
+        expect(friend[:attributes][:request_status]).to_not eq(friendship.request_status)
+        expect(friend[:attributes][:request_status]).to eq("accepted")
+      end
+      
+      it 'sends back the information about the updated friendship to the front end if friendship is rejected' do
+        friendship = create(:friend)
+        other_friendships = create_list(:friend, 3)
+        expect(friendship.request_status).to eq('pending')
+
+        params = { request_status: 'rejected' }
+
+        patch "/api/v2/friends/#{friendship.id}", params: params
+
+        other_friendships.each do |other|
+          expect(other.request_status).to eq('pending')
+        end
+
+        expect(response).to be_successful
+
+        friend_data = JSON.parse(response.body, symbolize_names: true)
+        friend = friend_data[:data]
+   
+        expect(friend[:id]).to eq(friendship.followee_id)
+        expect(friend[:type]).to eq("friend_followee")
+        expect(friend[:attributes][:name]).to be_a(String)
+        expect(friend[:attributes][:email]).to be_a(String)
+        expect(friend[:attributes][:google_id]).to be_a(String)
+        expect(friend[:attributes][:request_status]).to be_a(String)
+        expect(friend[:attributes][:request_status]).to_not eq(friendship.request_status)
+        expect(friend[:attributes][:request_status]).to eq("rejected")
+      end
+
     end
   end
 end

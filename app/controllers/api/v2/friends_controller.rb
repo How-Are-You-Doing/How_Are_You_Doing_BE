@@ -20,8 +20,8 @@ class Api::V2::FriendsController < ApplicationController
 
   def update
     friendship = Friend.find(params[:id])
-    friendship.update(request_status: friend_params[:request_status].to_i)
-    render json: { message: "This request was #{friendship.request_status}" }, status: 201 if friendship.save
+    friendship.update(request_status: friend_params[:request_status])
+    render json: UserSerializer.friend(friendship, "followee"), status: 201 if friendship.save
   end
 
   private
