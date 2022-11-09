@@ -85,7 +85,7 @@ u7_p5 = Post.create!(description: "This is the text for user 7 post 5", post_sta
 #friends
 u1_u2 = Friend.create!(follower: user_1, followee: user_2, request_status: 1)
 u1_u3 = Friend.create!(follower: user_1, followee: user_3, request_status: 2)
-u1_u4 = Friend.create!(follower: user_1, followee: user_3, request_status: 2)
+u1_u4 = Friend.create!(follower: user_1, followee: user_4, request_status: 2)
 u1_u7 = Friend.create!(follower: user_1, followee: user_7, request_status: 0)
 
 
@@ -98,7 +98,7 @@ u3_u5 = Friend.create!(follower: user_3, followee: user_5, request_status: 0)
 u3_u6 = Friend.create!(follower: user_3, followee: user_6, request_status: 0)
 
 u4_u3 = Friend.create!(follower: user_4, followee: user_3, request_status: 0)
-u4_u6 = Friend.create!(follower: user_4, followee: user_3, request_status: 0)
+u4_u6 = Friend.create!(follower: user_4, followee: user_6, request_status: 0)
 
 u5_u7 = Friend.create!(follower: user_5, followee: user_7, request_status: 1)
 u5_u6 = Friend.create!(follower: user_5, followee: user_6, request_status: 1)
@@ -109,5 +109,5 @@ u6_u4 = Friend.create!(follower: user_6, followee: user_4, request_status: 2)
 
 u7_u1 = Friend.create!(follower: user_7, followee: user_1, request_status: 2)
 u7_u4 = Friend.create!(follower: user_7, followee: user_4, request_status: 2)
-u7_u5 = Friend.create!(follower: user_7, followee: user_4, request_status: 1)
+u7_u5 = Friend.create!(follower: user_7, followee: user_5, request_status: 1)
 
