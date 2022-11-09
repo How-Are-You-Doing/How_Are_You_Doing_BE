@@ -14,13 +14,18 @@ class Api::V2::FriendsController < ApplicationController
   def create
     follower = User.find_by(google_id: current_user_params[:user])
     followee = User.find_by(email: friend_params[:email])
-    follower_followed_ids = follower.all_followees_ids
-    if !follower_followed_ids.include?(followee.id)
-      friend = Friend.create(follower: follower, followee: followee, request_status: 0) 
-      render json: UserSerializer.friend(friend, "followee"), status: 201 if friend.save
-    else
-      render json: { message: "You have already requested this user." }, status: 400
-    end
+    # follower_followed_ids = follower.all_followees_ids
+    # if !follower_followed_ids.include?(followee.id)
+      friend = Friend.new(follower: follower, followee: followee, request_status: 0) 
+      if friend.save
+        render json: UserSerializer.friend(friend, "followee"), status: 201
+      else
+        render json: { errors: friend.errors.full_messages.to_sentence }, status: 400
+      end
+
+    # else
+    #   render json: { message: "You have already requested this user." }, status: 400
+    # end
   end
 
   def update

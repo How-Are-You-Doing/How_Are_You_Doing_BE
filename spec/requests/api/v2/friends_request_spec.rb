@@ -261,11 +261,35 @@ describe 'Friends API' do
           email: "#{followee.email}" }
 
           post '/api/v2/friends', params: params
+
+          expect(Friend.count).to eq(1)
+
           expect(response).to have_http_status(400)
      
-          message = JSON.parse(response.body, symbolize_names: true)
+          error_message = JSON.parse(response.body, symbolize_names: true)
+          expect(error_message[:errors]).to eq("Request status : you have already requested this user.")
+        end
+      end
 
-          expect(message[:message]).to eq("You have already requested this user.")
+      context 'a user tries to friend themself' do
+        it 'does not allow thenm to friend themself' do
+          follower = create(:user)
+          followee = create(:user)
+          Friend.create(follower: follower, followee: followee, request_status: 0 )
+
+          create_list(:user, 3)
+          
+          params = { user: "#{follower.google_id}",
+          email: "#{follower.email}" }
+
+          post '/api/v2/friends', params: params
+          # binding.pry
+          expect(Friend.count).to eq(1)
+          # expect(response).to have_http_status(400)
+     
+          # message = JSON.parse(response.body, symbolize_names: true)
+
+          # expect(message[:message]).to eq("Sorry, you can't follow yourself")
         end
       end
     end
