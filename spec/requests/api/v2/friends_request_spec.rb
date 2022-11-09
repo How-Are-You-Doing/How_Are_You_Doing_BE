@@ -225,6 +225,7 @@ describe 'Friends API' do
       it 'sends back the information about the new friendship to the front end' do
         follower = create(:user)
         followee = create(:user)
+
         create_list(:user, 3)
 
         params = { user: "#{follower.google_id}",
@@ -245,6 +246,28 @@ describe 'Friends API' do
         expect(friend[:attributes][:request_status]).to be_a(String)
       end
 
+    end
+
+    describe 'sad path' do
+      context 'a user tries to friend request someone twice' do
+        it 'does not allow them to send a second request' do
+          follower = create(:user)
+          followee = create(:user)
+          Friend.create(follower: follower, followee: followee, request_status: 0 )
+
+          create_list(:user, 3)
+          
+          params = { user: "#{follower.google_id}",
+          email: "#{followee.email}" }
+
+          post '/api/v2/friends', params: params
+          expect(response).to have_http_status(400)
+     
+          message = JSON.parse(response.body, symbolize_names: true)
+
+          expect(message[:message]).to eq("You have already requested this user.")
+        end
+      end
     end
   end
 
