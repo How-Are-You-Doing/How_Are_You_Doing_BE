@@ -10,7 +10,7 @@ class Friend < ApplicationRecord
   validates_presence_of :follower_id, :followee_id, :request_status
   validates_numericality_of :follower_id, :followee_id
   validate :check_for_requesting_self
-  validate :check_for_existing_request
+  validate :check_for_existing_request, on: :create
 
 
 
@@ -20,7 +20,7 @@ class Friend < ApplicationRecord
   private 
 
   def check_for_requesting_self
-    errors.add(:followee_id, "Sorry, you can't follow yourself.") if follower_id == followee_id
+    errors.add(:follower_id, ": Sorry, you can't follow yourself.") if follower_id == followee_id
   end
 
   def check_for_existing_request

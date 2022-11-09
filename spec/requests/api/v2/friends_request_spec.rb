@@ -253,9 +253,9 @@ describe 'Friends API' do
         it 'does not allow them to send a second request' do
           follower = create(:user)
           followee = create(:user)
-          Friend.create(follower: follower, followee: followee, request_status: 0 )
-
           create_list(:user, 3)
+          Friend.create(follower: follower, followee: followee, request_status: 0 )
+          expect(Friend.count).to eq(1)
           
           params = { user: "#{follower.google_id}",
           email: "#{followee.email}" }
@@ -263,7 +263,6 @@ describe 'Friends API' do
           post '/api/v2/friends', params: params
 
           expect(Friend.count).to eq(1)
-
           expect(response).to have_http_status(400)
      
           error_message = JSON.parse(response.body, symbolize_names: true)
@@ -272,24 +271,24 @@ describe 'Friends API' do
       end
 
       context 'a user tries to friend themself' do
-        it 'does not allow thenm to friend themself' do
+        it 'does not allow them to friend themself' do
           follower = create(:user)
           followee = create(:user)
+          create_list(:user, 3)
           Friend.create(follower: follower, followee: followee, request_status: 0 )
 
-          create_list(:user, 3)
-          
           params = { user: "#{follower.google_id}",
           email: "#{follower.email}" }
 
           post '/api/v2/friends', params: params
-          # binding.pry
+      
           expect(Friend.count).to eq(1)
-          # expect(response).to have_http_status(400)
-     
-          # message = JSON.parse(response.body, symbolize_names: true)
+          expect(response).to have_http_status(400)
+          
+          
+          error_message = JSON.parse(response.body, symbolize_names: true)
 
-          # expect(message[:message]).to eq("Sorry, you can't follow yourself")
+          expect(error_message[:errors]).to eq("Follower : Sorry, you can't follow yourself.")
         end
       end
     end
@@ -311,7 +310,7 @@ describe 'Friends API' do
         end
 
         accepted_friendship = Friend.first
-
+   
         expect(response).to be_successful
         expect(response.status).to eq(201)
         expect(accepted_friendship.id).to eq(friendship.id)
