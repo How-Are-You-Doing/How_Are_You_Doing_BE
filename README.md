@@ -19,8 +19,10 @@
 - Clone your fork
 - From the command line, install gems and set up your DB:
 - `bundle install`
-- `rails db:create`
-- `rails db:migrate`
+- `rails db:{create,migrate,seed}`
+- run the server with 'rails s'
+- Go to Postman and use one of these endpoints. The endpoints must look something like: http://localhost:5000/api/v1/users/history
+- Alternatively you can download the Postman Suite and run the [premade endpoints](./app/assets/files/HAYD.postman_collection.json)
 
 # Endpoints
 
@@ -63,7 +65,7 @@ get 'api/v1/emotions'
 ## Users
 
 ## Get a specific user based on their google id
-get 'api/v1/users?search=<google_id>'
+get 'api/v2/users?search=<google_id>'
 ```
 {
     "data": {
@@ -86,21 +88,22 @@ get 'api/v1/users?search=<google_id>'
 ```
 
 ## Search for a user using their email address
-get '/api/v1/users?by_email=#{email}'
-or
 get '/api/v2/users?email=<email>'
 
-
-```{
+```
+{
     "data": {
         "id": "5",
         "type": "user",
         "attributes": {
-            "name": "Gon Freecss"
+            "name": "Gon Freecss",
+            "email": "gon@hunterassociation.com",
+            "google_id": "58544636"
         }
     }
 }
 ```
+
 ## returns this if no user is found with that email address
 
 ```
@@ -123,8 +126,6 @@ post '/api/v2/users?name=<name>&email=<email>&google_id=<google_id>'
     "message": "User successfully created"
 }
 ```
-
-
 
 ## Posts [And by Posts we mean posts that a user makes on their dashboard]
 ## Get all posts of a user (history)
@@ -173,9 +174,20 @@ get '/api/v2/users/history?user=<google_id>'
 }
   ``` 
 
+## returns this is a user has no posts
+
+  ``` 
+{
+    "data": []
+}
+  ``` 
+
+
 ## Get the last post of a user (recent post)
 
 get 'api/v2/users/last?user=<google_id>'
+or
+get 'api/v1/posts/last & pass in user google id through headers
 
  ``` 
 { “data” : 
@@ -193,6 +205,13 @@ get 'api/v2/users/last?user=<google_id>'
 }
   ``` 
 
+## returns this if a user has no posts
+
+  ``` 
+{
+    "data": []
+}
+  ``` 
 
 
 ## create a new post
@@ -215,12 +234,14 @@ post '/api/v2/posts?user=<google_id>&emotion=<emotion_term>&description=<descrip
   }
 }
 ```
+
 # if the post was not successfully created
 ```
 {
     "data": {}
 }
 ```
+
 ## update an existing post
 patch '/api/v2/posts/:post_id?emotion=<emotion_term>&description=<description>&post_status=<personal_or_shared>'
 
@@ -232,11 +253,42 @@ patch '/api/v2/posts/:post_id?emotion=<emotion_term>&description=<description>&p
 ## Get all posts of a particular friend of a user
 get '/api/v1/friends/<google_id>/posts'
 
-<img src="./app/assets/images/friends_posts_endpoint.jpg" />
+# if the friend has posts
+```
+{
+    "data": [
+        {
+            "id": "17",
+            "type": "post",
+            "attributes": {
+                "emotion": "Embarrassed",
+                "post_status": "shared",
+                "description": "This is the text for user 5 post 1",
+                "tone": "eager",
+                "created_at": "2022-11-10T16:46:38.465Z"
+            }
+        },
+        {
+            "id": "20",
+            "type": "post",
+            "attributes": {
+                "emotion": "Disconnected",
+                "post_status": "shared",
+                "description": "This is the text for user 5 post 4",
+                "tone": "melancholy",
+                "created_at": "2022-11-10T16:46:38.476Z"
+            }
+        }
+    ]
+}
+```
 
-
-
-
+# if the friend has no posts
+```
+{
+    "data": []
+}
+```
 
 ## Friends
 
