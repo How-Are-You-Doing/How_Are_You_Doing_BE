@@ -1,8 +1,10 @@
-# How are you doing? ((Backend))
+# "How Are You Doing?" is a group project where a user can create an account, reflect and log their feelings, and check in on friends.
+- [How are you doing? Front-end](https://github.com/Alaina-Noel/How_Are_You_Doing_FE)
 
 ## Table of contents
 
 - [Schema](#Schema)
+- [Setup](#Setup)
 - [Endpoints](#endpoints)
 - [Contributors](#contributors)
 
