@@ -1,0 +1,827 @@
+{
+	"info": {
+		"_postman_id": "a8742aa8-a30a-4186-9d80-d8f589329d6b",
+		"name": "HAYD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23644394"
+	},
+	"item": [
+		{
+			"name": "New User",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "name",
+						"value": "Alaina FROM POSTMAN222",
+						"type": "text"
+					},
+					{
+						"key": "google_id",
+						"value": "124214124",
+						"type": "text"
+					},
+					{
+						"key": "email",
+						"value": "alaina@gmail.com",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Post for User",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "name",
+						"value": "Alaina FROM POSTMAN",
+						"type": "text"
+					},
+					{
+						"key": "google_id",
+						"value": "124214124",
+						"type": "text"
+					},
+					{
+						"key": "email",
+						"value": "alaina@gmail.com",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v2/posts?user=124214124&emotion=Affectionate&description=today&post_status=shared",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v2",
+						"posts"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "124214124"
+						},
+						{
+							"key": "emotion",
+							"value": "Affectionate"
+						},
+						{
+							"key": "description",
+							"value": "today"
+						},
+						{
+							"key": "post_status",
+							"value": "shared"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "emotions",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"accept": true,
+					"user-agent": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "name",
+						"value": "Alaina",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "phone_number",
+						"value": "124214124",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "email",
+						"value": "alaina@gmail.com",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/emotions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"emotions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "A user's history",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "19023306",
+						"type": "text"
+					},
+					{
+						"key": "phone_number",
+						"value": "124214124",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "email",
+						"value": "alaina@gmail.com",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/users/history",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"history"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "A user's history v2",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "19023306",
+						"type": "text"
+					},
+					{
+						"key": "phone_number",
+						"value": "124214124",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "email",
+						"value": "alaina@gmail.com",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v2/users/history?user=52785579",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v2",
+						"users",
+						"history"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "52785579"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users Friends (accepted status)",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "19023306",
+						"type": "text"
+					},
+					{
+						"key": "phone_number",
+						"value": "124214124",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "email",
+						"value": "alaina@gmail.com",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/friends?request_status=accepted",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"friends"
+					],
+					"query": [
+						{
+							"key": "request_status",
+							"value": "accepted"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users Friends (pending status) Copy",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "83465653",
+						"type": "text"
+					},
+					{
+						"key": "phone_number",
+						"value": "124214124",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "email",
+						"value": "alaina@gmail.com",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/friends?request_status=pending",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"friends"
+					],
+					"query": [
+						{
+							"key": "request_status",
+							"value": "pending"
+						},
+						{
+							"key": "user",
+							"value": "91239464",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User's Friends (all status) v1",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "19023306",
+						"type": "text"
+					},
+					{
+						"key": "phone_number",
+						"value": "124214124",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "email",
+						"value": "alaina@gmail.com",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/friends",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"friends"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "91239464",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User's Followers (who is following them) (all status) v2",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "19023306",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "phone_number",
+						"value": "124214124",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "email",
+						"value": "alaina@gmail.com",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v2/users/followers?user=91239464",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v2",
+						"users",
+						"followers"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "91239464"
+						},
+						{
+							"key": "request_status",
+							"value": "<status>",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User's Followers (who is following them) (accepted status)) v2",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "19023306",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "phone_number",
+						"value": "124214124",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "email",
+						"value": "alaina@gmail.com",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v2/users/followers?user=91239464&request_status=accepted",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v2",
+						"users",
+						"followers"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "91239464"
+						},
+						{
+							"key": "request_status",
+							"value": "accepted"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User's Followers (who is following them) (rejected status)) v2",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "19023306",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "phone_number",
+						"value": "124214124",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "email",
+						"value": "alaina@gmail.com",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v2/users/followers?user=91239464&request_status=rejected",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v2",
+						"users",
+						"followers"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "91239464"
+						},
+						{
+							"key": "request_status",
+							"value": "rejected"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User's Followers (who is following them) (pending status)) v2",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "19023306",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "phone_number",
+						"value": "124214124",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "email",
+						"value": "alaina@gmail.com",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v2/users/followers?user=91239464&request_status=pending",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v2",
+						"users",
+						"followers"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "91239464"
+						},
+						{
+							"key": "request_status",
+							"value": "pending"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User's Friend(one) Posts",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "19023306",
+						"type": "text"
+					},
+					{
+						"key": "phone_number",
+						"value": "124214124",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "email",
+						"value": "alaina@gmail.com",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/friends/:google_id/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"friends",
+						":google_id",
+						"posts"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "91239464",
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
+							"key": "google_id",
+							"value": "58544636"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User's Last Post",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "19023306",
+						"type": "text"
+					},
+					{
+						"key": "phone_number",
+						"value": "124214124",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "email",
+						"value": "alaina@gmail.com",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v2/posts/last?user=19023306",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v2",
+						"posts",
+						"last"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "19023306"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find User by Email",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "19023306",
+						"type": "text"
+					},
+					{
+						"key": "phone_number",
+						"value": "124214124",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "email",
+						"value": "alaina@gmail.com",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v2/users?email=gon@hunterassociation.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "91239464",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "gon@hunterassociation.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find User by Google id",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "19023306",
+						"type": "text"
+					},
+					{
+						"key": "phone_number",
+						"value": "124214124",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "email",
+						"value": "alaina@gmail.com",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/v2/users?search=91239464",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "91239464",
+							"disabled": true
+						},
+						{
+							"key": "search",
+							"value": "91239464"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
