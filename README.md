@@ -292,12 +292,12 @@ get '/api/v1/friends/<google_id>/posts'
 
 ## Friends
 
-## Get all friends of a user with a status of pending
+## Get all users a user is following with a status of pending
 get 'api/v1/friends?request_status=pending'
 or
 get '/api/v2/friends?request_status=<status>&user=<google_id>'
 
-
+# v1 response
  ``` 
 {
     "data": [
@@ -321,7 +321,26 @@ get '/api/v2/friends?request_status=<status>&user=<google_id>'
 }
   ``` 
 
-# returns the following if the user doesn't have any pending friend requests
+# v2 response
+  ``` 
+{
+    "data": [
+        {
+            "id": 7,
+            "friendship_id": 4,
+            "type": "friend_followee",
+            "attributes": {
+                "name": "Jenny",
+                "email": "jenny@tommytutone.com",
+                "google_id": "8675309",
+                "request_status": "pending"
+            }
+        }
+    ]
+}
+  ``` 
+
+# returns the following if the user doesn't have any pending requests to follow another user
   ``` 
   {
     "data": []
@@ -329,12 +348,12 @@ get '/api/v2/friends?request_status=<status>&user=<google_id>'
   ``` 
 
 
-## Get all friends of a user with a status of accepted
+## Get all users the current user is following with a request status of accepted
 get 'api/v1/friends?request_status=accepted'
 or 
 get '/api/v2/friends?request_status=<status>&user=<google_id>'
 
-
+# v1 response
  ``` 
 {
     "data": [
@@ -357,7 +376,27 @@ get '/api/v2/friends?request_status=<status>&user=<google_id>'
     ]
 }
   ``` 
-# returns the following if the user doesn't have any accepted friend requests
+
+# v2 response 
+  ``` 
+{
+    "data": [
+        {
+            "id": 2,
+            "friendship_id": 1,
+            "type": "friend_followee",
+            "attributes": {
+                "name": "Bubbles",
+                "email": "catlover69@hotmail.com",
+                "google_id": "7357151",
+                "request_status": "accepted"
+            }
+        }
+    ]
+}
+  ``` 
+
+# returns the following if no user has accepted the current users follow request
   ``` 
   {
     "data": []
@@ -365,12 +404,12 @@ get '/api/v2/friends?request_status=<status>&user=<google_id>'
   ``` 
 
 
-
-## Get all friends of a user regardless of acceptance/rejected/pending status
+## Get all users a user has requested to follow regardless of status
 get 'api/v1/friends'
 or
 get '/api/v2/friends?user=<google_id>'
 
+# v1 response
  ``` 
 {
     "data": [
@@ -393,7 +432,207 @@ get '/api/v2/friends?user=<google_id>'
     ]
 }
   ``` 
-# returns the following if the user doesn't have any friends regardless of status
+
+# v2 response
+  ``` 
+    {
+    "data": [
+        {
+            "id": 2,
+            "friendship_id": 1,
+            "type": "friend_followee",
+            "attributes": {
+                "name": "Bubbles",
+                "email": "catlover69@hotmail.com",
+                "google_id": "7357151",
+                "request_status": "accepted"
+            }
+        },
+        {
+            "id": 3,
+            "friendship_id": 2,
+            "type": "friend_followee",
+            "attributes": {
+                "name": "Jim Lahey",
+                "email": "supervisor@sunnyvale.ca",
+                "google_id": "83465653",
+                "request_status": "rejected"
+            }
+        },
+        {
+            "id": 4,
+            "friendship_id": 3,
+            "type": "friend_followee",
+            "attributes": {
+                "name": "Randy Bobandy",
+                "email": "assistantsupervisor@sunnyvale.ca",
+                "google_id": "52785579",
+                "request_status": "rejected"
+            }
+        },
+        {
+            "id": 7,
+            "friendship_id": 4,
+            "type": "friend_followee",
+            "attributes": {
+                "name": "Jenny",
+                "email": "jenny@tommytutone.com",
+                "google_id": "8675309",
+                "request_status": "pending"
+            }
+        }
+    ]
+}
+  ``` 
+
+# returns the following if a user has not requested to follow any other users
+  ``` 
+  {
+    "data": []
+}
+  ``` 
+## Get all users following the current user regardless of request status
+
+get 'api/v2/users/followers?user=<google_id>'
+  ```
+{
+    "data": [
+        {
+            "id": 3,
+            "friendship_id": 10,
+            "type": "friend_follower",
+            "attributes": {
+                "name": "Jim Lahey",
+                "email": "supervisor@sunnyvale.ca",
+                "google_id": "83465653",
+                "request_status": "pending"
+            }
+        },
+        {
+            "id": 4,
+            "friendship_id": 12,
+            "type": "friend_follower",
+            "attributes": {
+                "name": "Randy Bobandy",
+                "email": "assistantsupervisor@sunnyvale.ca",
+                "google_id": "52785579",
+                "request_status": "pending"
+            }
+        },
+        {
+            "id": 5,
+            "friendship_id": 14,
+            "type": "friend_follower",
+            "attributes": {
+                "name": "Gon Freecss",
+                "email": "gon@hunterassociation.com",
+                "google_id": "58544636",
+                "request_status": "accepted"
+            }
+        }
+    ]
+}
+ ``` 
+ # returns the following if no one has requested to follow the user
+  ``` 
+  {
+    "data": []
+}
+  ``` 
+
+## Get all users where the current user has accepted a follow request
+
+get /api/v2/users/followers?user=<google_id>&request_status=accepted
+
+```
+{
+    "data": [
+        {
+            "id": 5,
+            "friendship_id": 14,
+            "type": "friend_follower",
+            "attributes": {
+                "name": "Gon Freecss",
+                "email": "gon@hunterassociation.com",
+                "google_id": "58544636",
+                "request_status": "accepted"
+            }
+        }
+    ]
+}
+```
+
+# returns the following if the user has not accepted any follow requests
+  ``` 
+  {
+    "data": []
+}
+  ``` 
+
+## Get all users that have requested to follow the current user with a status of pending
+
+get /api/v2/users/followers?user=<google_id>&request_status=pending
+
+```
+{
+    "data": [
+        {
+            "id": 3,
+            "friendship_id": 10,
+            "type": "friend_follower",
+            "attributes": {
+                "name": "Jim Lahey",
+                "email": "supervisor@sunnyvale.ca",
+                "google_id": "83465653",
+                "request_status": "pending"
+            }
+        },
+        {
+            "id": 4,
+            "friendship_id": 12,
+            "type": "friend_follower",
+            "attributes": {
+                "name": "Randy Bobandy",
+                "email": "assistantsupervisor@sunnyvale.ca",
+                "google_id": "52785579",
+                "request_status": "pending"
+            }
+        }
+    ]
+}
+```
+
+# returns the following if the user has no pending follow requests
+  ``` 
+  {
+    "data": []
+}
+  ``` 
+
+## Get all users that have requested to follow the current user where current user rejected request
+
+get /api/v2/users/followers?user=<google_id>&request_status=rejected
+ 
+ ``` 
+{
+    "data": [
+        {
+            "id": 1,
+            "friendship_id": 2,
+            "type": "friend_follower",
+            "attributes": {
+                "name": "Ricky LaFleur",
+                "email": "igotmy@grade10.com",
+                "google_id": "19023306",
+                "request_status": "rejected"
+            }
+        }
+    ]
+}
+
+ ``` 
+
+ # returns the following if the user has no rejected follow requests
   ``` 
   {
     "data": []
